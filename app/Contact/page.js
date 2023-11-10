@@ -1,10 +1,10 @@
-import Image from "next/image";
 import NavBar from "@/components/NavBar";
 
-export default function Home() {
+export default function Contact() {
   return (
-    <main className="">
+    <main>
       <NavBar />
+      <h1>Contact Page</h1>
     </main>
   );
 }
