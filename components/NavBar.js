@@ -25,7 +25,7 @@ export default function NavBar() {
           <Link href={"#"}>
             <li>Gallery</li>
           </Link>
-          <Link href={"#"}>
+          <Link href={"/About"}>
             <li>About</li>
           </Link>
           <Link href={"/Contact"}>
