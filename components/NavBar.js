@@ -11,11 +11,13 @@ export default function NavBar() {
         id="container"
         className={`flex ${
           pathname === "/" ? "justify-end" : "justify-between"
-        }`}
+        } h-14 bg-gray-100 items-center`}
       >
-        {pathname !== "/" && (
-          <h1 className="text-2xl">OLLIE SCARTH-SAUNDERS</h1>
-        )}
+        <Link href={"/"}>
+          {pathname !== "/" && (
+            <h1 className="text-2xl">OLLIE SCARTH-SAUNDERS</h1>
+          )}
+        </Link>
         <ul className="flex justify-end items-center gap-6 ">
           <Link href={"#"}>
             <li>Work</li>
