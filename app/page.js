@@ -6,14 +6,14 @@ import AboutSection from "@/components/AboutSection";
 export default function Home() {
   return (
     <>
-      <section id="hero-navbar" className="h-screen bg-gray-200">
+      <section id="hero-navbar" className="md:h-screen bg-gray-200">
         <NavBar />
         <Hero />
       </section>
       <section id="work-section" className="mt-10">
         <WorkSection />
       </section>
-      <section id="about-section" className="mt-10">
+      <section id="about-section" className="md:mt-10">
         <AboutSection />
       </section>
     </>
