@@ -6,8 +6,8 @@ export default function AboutSection() {
           ABOUT
         </p>
       </div>
-      <div className="mt-10 h-screen grid grid-cols-1 md:grid-cols-12 bg-gray-300 rounded-lg">
-        <div className="md:col-span-6 bg-slate-600 rounded-lg px-4 flex items-center">
+      <div className="mt-10 h grid grid-cols-1 md:grid-cols-12 bg-gray-300 rounded-lg ">
+        <div className="md:col-span-6 bg-slate-600 rounded-lg px-4 py-20 md:py-32 md:px-20  flex items-center">
           <p className="text-bone md:text-xl">
             Hi! I'm Ollie, a director and producer with a chameleon-like
             approach to storytelling. I believe that the best way to create
@@ -20,7 +20,7 @@ export default function AboutSection() {
             expertise.
           </p>
         </div>
-        <div className="md:col-span-6 rounded-lg px-10 flex items-center justify-center">
+        <div className="md:col-span-6 rounded-lg px-10 flex items-center justify-center py-20">
           <p className="text-7xl">IMAGE</p>
         </div>
       </div>

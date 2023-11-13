@@ -31,3 +31,9 @@ body {
     padding: 1rem;
   }
 }
+
+@media (min-width: 1500px) {
+  body {
+    padding: 2rem 15rem;
+  }
+}
