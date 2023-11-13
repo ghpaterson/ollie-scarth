@@ -1,38 +1,42 @@
 import Image from "next/image";
 import NavBar from "@/components/NavBar";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
-    <main className="h-screen bg-gray-200">
-      <NavBar />
-      <section id="hero" className="grid grid-cols-12">
-        <div className="col-span-10 bg-gray-300 px-10 py-12">
-          <div className="text-9xl font-fungis">
-            <h1>OLLIE</h1>
-            <h2>SCARTH-</h2>
-            <h3>SAUNDERS</h3>
-          </div>
-          <div className="flex gap-8 text-xl">
-            <p className="border border-black rounded-full py-1 px-2">
-              SERIES DIRECTOR
-            </p>
-            <p className="border border-black rounded-full py-1 px-2">
-              PRODUCER // DIRECTOR
-            </p>
-            <p className="border border-black rounded-full py-1 px-2">
-              EDIT PRODUCER
-            </p>
-          </div>
+    <>
+      <section id="hero-navbar" className="h-screen bg-gray-200">
+        <NavBar />
+        <Hero />
+      </section>
+      <section id="work-section" className="mt-10">
+        <div>
+          <p className="text-5xl border border-black rounded-full py-1 px-4">
+            WORK
+          </p>
         </div>
-        <div className="col-span-2 bg-gray-400 flex justify-end items-center">
-          <div className="bg-gray-100 px-4 py-10">
-            <div className="flex flex-col gap-4 items-center">
-              <p className="text-3xl">OSS</p>
-              <p>London, UK</p>
-            </div>
+        <div className="grid grid-cols-12 py-10">
+          <div className="col-span-12 flex flex-col items-end">
+            <ul className="flex flex-col gap-12 items-end font-fungis text-7xl text-gray-500">
+              <li className="hover:text-black hover:cursor-pointer hover:-translate-x-32 transition duration-500 ease-in">
+                BODY IN THE SUITCASE
+              </li>
+              <li className="hover:text-black hover:cursor-pointer hover:-translate-x-20 transition duration-500 ease-in">
+                TALES FROM THE KITCHEN GARDEN
+              </li>
+              <li className="hover:text-black hover:cursor-pointer hover:-translate-x-32 transition duration-500 ease-in">
+                OUR DEMENTIA CHOIR
+              </li>
+              <li className="hover:text-black hover:cursor-pointer hover:-translate-x-32 transition duration-500 ease-in">
+                GREAT GARDEN REVOLUTION
+              </li>
+              <li className="hover:text-black hover:cursor-pointer hover:-translate-x-32 transition duration-500 ease-in">
+                LIVING WITH A SERIAL KILLER
+              </li>
+            </ul>
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 }
