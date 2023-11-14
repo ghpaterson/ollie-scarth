@@ -1,11 +1,6 @@
 export default function AboutSection() {
   return (
     <main>
-      <div className="flex justify-end">
-        <p className="text-xl md:text-5xl border border-black rounded-full py-1 px-4">
-          ABOUT
-        </p>
-      </div>
       <div className="mt-10 h grid grid-cols-1 md:grid-cols-12 bg-gray-300 rounded-lg ">
         <div className="md:col-span-6 bg-slate-600 rounded-lg px-4 py-20 md:py-32 md:px-20  flex items-center">
           <p className="text-bone md:text-xl">

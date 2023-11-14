@@ -10,8 +10,10 @@ export default function NavBar() {
       <div
         id="container"
         className={`flex ${
-          pathname === "/" ? "justify-end" : "justify-between"
-        } h-14 bg-gray-100 items-center`}
+          pathname === "/"
+            ? "justify-center md:justify-end text-bone"
+            : "justify-between"
+        } h-14 bg-transparent items-center md:px-6`}
       >
         <Link href={"/"}>
           {pathname !== "/" && <h1 className="text-2xl">OSS</h1>}

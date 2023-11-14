@@ -9,22 +9,27 @@ import WorkCarousel from "@/components/WorkCarousel";
 export default function Home() {
   return (
     <>
-      <section id="hero-navbar" className="md:h-screen bg-gray-200">
-        <NavBar />
-        <Hero />
-      </section>
-      <section id="work-section" className="py-10">
-        <div className="">
-          <WorkCarousel />
-        </div>
-        <WorkSection />
-      </section>
-      <section id="about-section" className="md:mt-10">
-        <AboutSection />
-      </section>
-      <section id="footer" className="py-6">
-        <Footer />
-      </section>
+      <main className="scroll-smooth">
+        <section
+          id="hero-navbar"
+          className="md:h-screen bg-hero-image bg-cover "
+        >
+          <NavBar />
+          <Hero />
+        </section>
+        <section id="work-section" className="py-10">
+          <div className="">
+            <WorkCarousel />
+          </div>
+          <WorkSection />
+        </section>
+        <section id="about-section" className="md:mt-10">
+          <AboutSection />
+        </section>
+        <section id="footer" className="py-12">
+          <Footer />
+        </section>
+      </main>
     </>
   );
 }

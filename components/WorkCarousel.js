@@ -6,13 +6,6 @@ import { useRef } from "react";
 export default function WorkCarousel() {
   return (
     <>
-      <section>
-        <div className="flex justify-start mb-10 ">
-          <p className="text-xl md:text-5xl border border-black rounded-full py-1 px-4">
-            WORK
-          </p>
-        </div>
-      </section>
       <section id="scrolling-section">
         <div className="">
           <HorizontalScrollCarousel />
@@ -31,10 +24,7 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-80%"]);
 
   return (
-    <section
-      ref={targetRef}
-      className="relative h-[300vh] bg-neutral-100 pb-20"
-    >
+    <section ref={targetRef} className="relative h-[300vh] bg-bone pb-20">
       <div className="sticky top-0 flex h-96 md:h-[500px] items-center overflow-hidden pt-40">
         <m.div style={{ x }} className="flex gap-4">
           {cards.map((card) => {
@@ -61,7 +51,7 @@ const Card = ({ card }) => {
         className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110 group-hover:cursor-pointer"
       ></div>
       <div className="absolute inset-0 z-10 grid place-content-center">
-        <p className=" p-8 text-md md:text-2xl  text-white">{card.title}</p>
+        <p className=" p-8 text-sm md:text-2xl  text-white">{card.title}</p>
       </div>
     </div>
   );
@@ -69,27 +59,27 @@ const Card = ({ card }) => {
 
 const cards = [
   {
-    url: "/imgs/abstract/1.jpg",
+    url: "https://images.pexels.com/photos/1008155/pexels-photo-1008155.jpeg",
     title: "Body In The Suitcase",
     id: 1,
   },
   {
-    url: "/imgs/abstract/2.jpg",
+    url: "https://images.pexels.com/photos/4916163/pexels-photo-4916163.jpeg",
     title: "Tales From The Kitchen Garden",
     id: 2,
   },
   {
-    url: "/imgs/abstract/3.jpg",
+    url: "https://images.pexels.com/photos/6193908/pexels-photo-6193908.jpeg",
     title: "Our Dementia Choir",
     id: 3,
   },
   {
-    url: "/imgs/abstract/4.jpg",
+    url: "https://images.pexels.com/photos/1446975/pexels-photo-1446975.jpeg",
     title: "Great Garden Revolution",
     id: 4,
   },
   {
-    url: "/imgs/abstract/4.jpg",
+    url: "https://images.pexels.com/photos/6069511/pexels-photo-6069511.jpeg",
     title: "Living With A Serial Killer",
     id: 4,
   },
