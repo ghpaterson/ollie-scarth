@@ -1,11 +1,11 @@
 export default function WorkSection() {
   return (
     <main>
-      <div className="flex justify-start">
+      {/* <div className="flex justify-start">
         <p className="text-xl md:text-5xl border border-black rounded-full py-1 px-4">
           WORK
         </p>
-      </div>
+      </div> */}
       <div className="grid grid-cols-12 py-10">
         <div className="col-span-12 flex flex-col items-start md:items-end">
           <ul className="flex flex-col gap-4 md:gap-12 items-start md:items-end font-fungis text-xl md:text-6xl text-gray-500">
