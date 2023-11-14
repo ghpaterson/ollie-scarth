@@ -3,6 +3,8 @@ import Link from "next/link";
 export default function Footer() {
   const linkedinURL =
     "https://www.linkedin.com/in/oliver-scarth-saunders-619aab1b0/";
+
+  const instaURL = "https://www.instagram.com/olliescarth/";
   return (
     <>
       <div className="flex justify-start py-4">
@@ -14,7 +16,9 @@ export default function Footer() {
             <Link href={linkedinURL} target="_blank">
               Linkedin
             </Link>
-            <Link href={"#"}>Instagram</Link>
+            <Link href={instaURL} target="_blank">
+              Instagram
+            </Link>
           </div>
         </div>
       </div>

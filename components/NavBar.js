@@ -14,9 +14,7 @@ export default function NavBar() {
         } h-14 bg-gray-100 items-center`}
       >
         <Link href={"/"}>
-          {pathname !== "/" && (
-            <h1 className="text-2xl">OLLIE SCARTH-SAUNDERS</h1>
-          )}
+          {pathname !== "/" && <h1 className="text-2xl">OSS</h1>}
         </Link>
         <ul className="flex justify-end items-center gap-6 ">
           <Link href={"#"}>
