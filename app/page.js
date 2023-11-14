@@ -3,6 +3,7 @@ import NavBar from "@/components/NavBar";
 import Hero from "@/components/Hero";
 import WorkSection from "@/components/WorkSection";
 import AboutSection from "@/components/AboutSection";
+import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
@@ -15,6 +16,9 @@ export default function Home() {
       </section>
       <section id="about-section" className="md:mt-10">
         <AboutSection />
+      </section>
+      <section id="footer" className="py-6">
+        <Footer />
       </section>
     </>
   );
