@@ -24,13 +24,83 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-80%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] bg-bone pb-20">
-      <div className="sticky top-0 flex h-96 md:h-[500px] items-center overflow-hidden pt-40">
+    <section
+      ref={targetRef}
+      className="relative h-[300vh] bg-bone pb-20 border-t-2 border-blak"
+    >
+      <div className="flex justify-start gap-6 py-10 px-10 text-blak font-raleway text-6xl">
+        <h1>{`WORK (*5)`}</h1>
+      </div>
+      <div className="sticky top-0 flex h-96 md:h-[600px] items-center overflow-hidden pt-40 md:-mt-40">
         <m.div style={{ x }} className="flex gap-4">
           {cards.map((card) => {
             return <Card card={card} key={card.id} />;
           })}
         </m.div>
+      </div>
+      <div className="flex flex-col items-center gap-6 py-2 px-6 text-shade/10 font-raleway md:text-5xl">
+        <p className="">A Collection of work I am extremly proud of!</p>
+        <p>{`(This is a placeholder! What should I include?)`}</p>
+        <p>
+          <span className="text-honey/30">Body in the suitcase</span> * Tales
+          from the Kitchen Garden
+        </p>
+        <p>
+          Our Dementia Choir *{" "}
+          <span className="text-honey/30">Great Garden Revolution</span>
+        </p>
+        <p>
+          <span className="text-honey/30">Living with a Serial Killer</span> *
+          Body in the suitcase
+        </p>
+        <p>
+          Tales from the Kitchen Garden *{" "}
+          <span className="text-honey/30">Our Dementia Choir</span>
+        </p>
+        <p>
+          <span className="text-honey/30">Great Garden Revolution</span> *
+          Living with a Serial Killer
+        </p>
+        <p>
+          <span className="text-honey/30">Body in the suitcase</span> * Tales
+          from the Kitchen Garden
+        </p>
+        <p>
+          Our Dementia Choir *{" "}
+          <span className="text-honey/30">Great Garden Revolution</span>
+        </p>
+        <p>
+          <span className="text-honey/30">Living with a Serial Killer</span> *
+          Body in the suitcase
+        </p>
+        <p>
+          Tales from the Kitchen Garden *{" "}
+          <span className="text-honey/30">Our Dementia Choir</span>
+        </p>
+        <p>
+          <span className="text-honey/30">Great Garden Revolution</span> *
+          Living with a Serial Killer
+        </p>
+        <p>
+          <span className="text-honey/30">Body in the suitcase</span> * Tales
+          from the Kitchen Garden
+        </p>
+        <p>
+          Our Dementia Choir *{" "}
+          <span className="text-honey/30">Great Garden Revolution</span>
+        </p>
+        <p>
+          <span className="text-honey/30">Living with a Serial Killer</span> *
+          Body in the suitcase
+        </p>
+        <p>
+          Tales from the Kitchen Garden *{" "}
+          <span className="text-honey/30">Our Dementia Choir</span>
+        </p>
+        <p>
+          <span className="text-honey/30">Great Garden Revolution</span> *
+          Living with a Serial Killer
+        </p>
       </div>
     </section>
   );
@@ -40,7 +110,7 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group relative h-[200px] w-[300px] md:h-[400px] md:w-[550px] overflow-hidden bg-gray-800"
+      className="group relative h-[200px] w-[300px] md:h-[400px] md:w-[550px] overflow-hidden bg-shade rounded-xl"
     >
       <div
         style={{
@@ -48,10 +118,12 @@ const Card = ({ card }) => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110 group-hover:cursor-pointer"
+        className="absolute inset-0 z-0 grayscale group-hover:grayscale-0 transition-transform duration-300 group-hover:scale-110 group-hover:cursor-pointer"
       ></div>
       <div className="absolute inset-0 z-10 grid place-content-center">
-        <p className=" p-8 text-sm md:text-2xl  text-white">{card.title}</p>
+        <p className=" p-8 text-sm md:text-2xl font-raleway  text-bone">
+          {card.title}
+        </p>
       </div>
     </div>
   );

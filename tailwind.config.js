@@ -13,9 +13,13 @@ module.exports = {
       },
       fontFamily: {
         fungis: ["fungis", "sans-serif"],
+        raleway: ["raleway", "sans-serif"],
       },
       colors: {
-        bone: "#FAFAF5",
+        bone: "#F6F6F6",
+        blak: "#111111",
+        shade: "#2F2F2F",
+        honey: "#FFCB74",
       },
     },
   },

@@ -16,17 +16,17 @@ export default function NavBar() {
         } h-14 bg-transparent items-center md:px-6`}
       >
         <Link href={"/"}>
-          {pathname !== "/" && <h1 className="text-2xl">OSS</h1>}
+          {pathname !== "/" && <h1 className="text-2xl font-fungis">O.S-S</h1>}
         </Link>
-        <ul className="flex justify-end items-center gap-6 ">
+        <ul className="flex justify-end items-center gap-6 font-raleway">
           <Link href={"#"}>
             <li>Work</li>
           </Link>
-          <Link href={"#"}>
-            <li>Gallery</li>
-          </Link>
           <Link href={"/About"}>
             <li>About</li>
+          </Link>
+          <Link href={"#"}>
+            <li>Gallery</li>
           </Link>
           <Link href={"/Contact"}>
             <li>Contact</li>

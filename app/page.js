@@ -23,10 +23,10 @@ export default function Home() {
           </div>
           <WorkSection />
         </section>
-        <section id="about-section" className="md:mt-10">
+        <section id="about-section" className="md:pb-10">
           <AboutSection />
         </section>
-        <section id="footer" className="py-12">
+        <section id="footer" className="mt-12 py-10 border-t-2 border-shade">
           <Footer />
         </section>
       </main>
