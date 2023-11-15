@@ -1,9 +1,9 @@
 export default function AboutSection() {
   return (
     <main>
-      <div className="mt-10 h grid grid-cols-1 md:grid-cols-12 bg-honey rounded-lg border-b-4 border-honey ">
-        <div className="md:col-span-6 bg-shade rounded-lg px-4 py-20 md:py-32 md:px-20  flex items-center">
-          <p className="text-bone md:text-xl font-raleway font-bold">
+      <div className="grid grid-cols-1 md:grid-cols-12  rounded-lg border-b-2 border-t-2 border-blak ">
+        <div className="md:col-span-6 rounded-lg px-4 py-20 md:py-32 md:px-20  flex items-center">
+          <p className="text-blak md:text-xl font-raleway font-bold">
             Hi! I'm Ollie, a director and producer with a chameleon-like
             approach to storytelling. I believe that the best way to create
             impactful content is to adapt to the unique vision and voice of each
@@ -15,9 +15,7 @@ export default function AboutSection() {
             expertise.
           </p>
         </div>
-        <div className="md:col-span-6 rounded-lg px-10 flex items-center justify-center py-20">
-          <p className="text-7xl text-shade">IMAGE</p>
-        </div>
+        <div className="md:col-span-6 rounded-lg px-10 flex items-center justify-center py-20 bg-landing-about bg-cover bg-no-repeat"></div>
       </div>
     </main>
   );

@@ -20,9 +20,9 @@ export default function Hero() {
         </div>
       </div>
       <div className="md:col-span-2 bg-transparent flex justify-end items-center">
-        <div className="bg-bone border-l-2 border-honey rounded-l-xl px-4 py-10 invisible md:visible">
+        <div className="bg-bone rounded-l-xl px-4 py-10 invisible md:visible">
           <div className="flex flex-col gap-4 items-center">
-            <p className="text-3xl font-fungis">O.S-S</p>
+            <p className="text-3xl font-raleway font-extrabold">{`O.S-(*S)`}</p>
             <p className="font-raleway">London, UK</p>
           </div>
         </div>

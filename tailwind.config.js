@@ -10,6 +10,8 @@ module.exports = {
       backgroundImage: {
         "hero-image":
           "url('https://images.pexels.com/photos/3178786/pexels-photo-3178786.jpeg')",
+        "landing-about":
+          "url('https://images.pexels.com/photos/3692639/pexels-photo-3692639.jpeg')",
       },
       fontFamily: {
         fungis: ["fungis", "sans-serif"],

@@ -16,7 +16,9 @@ export default function NavBar() {
         } h-14 bg-transparent items-center md:px-6`}
       >
         <Link href={"/"}>
-          {pathname !== "/" && <h1 className="text-2xl font-fungis">O.S-S</h1>}
+          {pathname !== "/" && (
+            <h1 className="text-2xl font-raleway">{`O.S-(*S)`}</h1>
+          )}
         </Link>
         <ul className="flex justify-end items-center gap-6 font-raleway">
           <Link href={"#"}>

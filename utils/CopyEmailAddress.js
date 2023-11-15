@@ -13,11 +13,11 @@ export default function CopyEmailAddress() {
     }
   };
   return (
-    <div className="text-bone">
+    <div className="text-blak">
       <div className="flex gap-2">
-        <h2 className="font-fungis text-xl">olliescarth686@gmail</h2>
+        <h2 className="font-raleway text-xl">olliescarth686@gmail.com</h2>
         <div
-          className="text-lg text-bone hover:cursor-pointer"
+          className="text-lg text-blak hover:cursor-pointer"
           onClick={copyEmailToClipboard}
         >
           <BsCopy />

@@ -17,7 +17,7 @@ export default function Home() {
           <NavBar />
           <Hero />
         </section>
-        <section id="work-section" className="py-10">
+        <section id="work-section" className="">
           <div className="">
             <WorkCarousel />
           </div>
@@ -26,7 +26,7 @@ export default function Home() {
         <section id="about-section" className="md:pb-10">
           <AboutSection />
         </section>
-        <section id="footer" className="mt-12 py-10 border-t-2 border-shade">
+        <section id="footer" className="py-10">
           <Footer />
         </section>
       </main>
