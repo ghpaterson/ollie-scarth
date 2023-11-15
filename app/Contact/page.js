@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import CopyEmailAddress from "@/utils/CopyEmailAddress";
 import Link from "next/link";
@@ -37,6 +38,9 @@ export default function Contact() {
           <p>{`(or inbuilt message function)`}</p>
         </div>
       </div>
+      <section className="py-10">
+        <Footer />
+      </section>
     </main>
   );
 }
