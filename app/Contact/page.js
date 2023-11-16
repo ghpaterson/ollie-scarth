@@ -17,7 +17,7 @@ export default function Contact() {
       <NavBar />
       <m.section variants={pageTransition} initial="hidden" whileInView="show">
         <div className="mt-10 h grid grid-cols-1 md:grid-cols-12 border-t-2 border-b-2 border-blak rounded-lg ">
-          <div className="md:col-span-6 text-blak rounded-lg px-4 py-10 md:py-32 md:px-20  flex flex-col items-start border-r-2 border-blak">
+          <div className="md:col-span-6 text-blak rounded-lg px-4 py-10 md:py-32 md:px-20  flex flex-col items-start border-blak">
             <h1 className="text-blak text-2xl md:text-4xl font-raleway">
               GET IN TOUCH
             </h1>

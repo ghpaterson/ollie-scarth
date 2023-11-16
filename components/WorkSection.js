@@ -12,7 +12,7 @@ export default function WorkSection() {
     >
       <div className="grid grid-cols-12 pt-10 pb-10 md:py-20 border-t-2 border-b-2 border-blak rounded-xl">
         <div className="col-span-12 flex flex-col items-start md:items-end">
-          <ul className="flex flex-col gap-4 md:gap-12 items-start md:items-end font-raleway text-LG md:text-6xl text-blak">
+          <ul className="flex flex-col gap-4 md:gap-6 items-start md:items-end font-raleway text-lg md:text-6xl text-blak">
             <li className="group hover:text-shade/90 hover:cursor-pointer hover:translate-x-6 md:hover:-translate-x-8 transition duration-500 ease-in flex">
               <span className="text-xs md:text-3xl px-2">{`(*1)`}</span> BODY IN
               THE SUITCASE{" "}
@@ -48,22 +48,20 @@ export default function WorkSection() {
                 <GoArrowUpRight />
               </span>
             </li>
-            {/* <li className="hover:text-shade/90 hover:cursor-pointer hover:translate-x-6 md:hover:-translate-x-8 transition duration-500 ease-in">
-              <span className="text-sm md:text-3xl">{`(*2)`}</span> TALES FROM
-              THE KITCHEN GARDEN
+            <li className="group hover:text-shade/90 hover:cursor-pointer hover:translate-x-6 md:hover:-translate-x-8 transition duration-500 ease-in flex">
+              <span className="text-xs md:text-3xl px-2">{`(*6)`}</span> YOUR
+              GARDEN MADE PERFECT{" "}
+              <span className="invisible group-hover:visible px-2">
+                <GoArrowUpRight />
+              </span>
             </li>
-            <li className="hover:text-shade/90 hover:cursor-pointer hover:translate-x-6 md:hover:-translate-x-8 transition duration-500 ease-in">
-              <span className="text-sm md:text-3xl">{`(*3)`}</span> OUR DEMENTIA
-              CHOIR
+            <li className="group hover:text-shade/90 hover:cursor-pointer hover:translate-x-6 md:hover:-translate-x-8 transition duration-500 ease-in flex">
+              <span className="text-xs md:text-3xl px-2">{`(*7)`}</span> YOUR
+              HOME MADE PERFECT{" "}
+              <span className="invisible group-hover:visible px-2">
+                <GoArrowUpRight />
+              </span>
             </li>
-            <li className="hover:text-shade/90 hover:cursor-pointer hover:translate-x-6 md:hover:-translate-x-8 transition duration-500 ease-in">
-              <span className="text-sm md:text-3xl">{`(*4)`}</span> GREAT GARDEN
-              REVOLUTION
-            </li>
-            <li className="hover:text-shade/90 hover:cursor-pointer hover:translate-x-6 md:hover:-translate-x-8 transition duration-500 ease-in">
-              <span className="text-sm md:text-3xl">{`(*5)`}</span> LIVING WITH
-              A SERIAL KILLER
-            </li> */}
           </ul>
         </div>
       </div>

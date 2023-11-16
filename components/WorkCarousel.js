@@ -30,7 +30,7 @@ const HorizontalScrollCarousel = () => {
       className="relative h-[300vh] bg-bone pb-20 border-t-2 border-b-2 rounded-xl border-blak"
     >
       <div className="flex justify-start gap-6 py-10 px-10 text-blak font-raleway text-3xl md:text-6xl">
-        <h1>{`WORK (*5)`}</h1>
+        <h1>{`WORK (*7)`}</h1>
       </div>
       <div className="sticky top-0 flex h-96 md:h-[600px] items-center overflow-hidden pt-40 -mt-32 md:-mt-40">
         <m.div style={{ x }} className="flex gap-4">
@@ -60,8 +60,8 @@ const Card = ({ card }) => {
         }}
         className="absolute inset-0 z-0 grayscale group-hover:grayscale-0 transition-transform duration-300 group-hover:scale-110 group-hover:cursor-pointer"
       ></div>
-      <div className="absolute inset-0 z-10 grid place-content-center">
-        <p className=" p-8 text-sm md:text-2xl font-raleway  text-bone">
+      <div className="group absolute inset-0 z-10 grid place-content-center">
+        <p className=" p-2 text-sm md:text-2xl font-raleway group-hover:bg-blak opacity-70 text-bone group-hover:text-honey rounded-xl">
           {card.title}
         </p>
       </div>
@@ -86,13 +86,23 @@ const cards = [
     id: 3,
   },
   {
-    url: "https://images.pexels.com/photos/1446975/pexels-photo-1446975.jpeg",
+    url: "../images/garden-revolution-press.jpeg",
     title: "Great Garden Revolution",
     id: 4,
   },
   {
     url: "https://images.pexels.com/photos/6069511/pexels-photo-6069511.jpeg",
     title: "Living With A Serial Killer",
-    id: 4,
+    id: 5,
+  },
+  {
+    url: "../images/garden-perfect-press.jpeg",
+    title: "Your Garden Made Perfect",
+    id: 6,
+  },
+  {
+    url: "../images/home-perfect.webp",
+    title: "Your Home Made Perfect",
+    id: 7,
   },
 ];
