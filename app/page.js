@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import WorkSection from "@/components/WorkSection";
 import AboutSection from "@/components/AboutSection";
 import WorkCarousel from "@/components/WorkCarousel";
+import ScrollToTop from "@/utils/scrollToTop";
 
 import Loading from "@/components/Loading";
 import { motion as m } from "framer-motion";
@@ -58,6 +59,7 @@ export default function Home() {
         >
           <AboutSection />
         </m.section>
+        <ScrollToTop />
       </m.main>
     </>
   );

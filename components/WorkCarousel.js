@@ -2,6 +2,7 @@
 
 import { motion as m, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
+import DummyText from "@/utils/textPassages";
 
 export default function WorkCarousel() {
   return (
@@ -38,69 +39,8 @@ const HorizontalScrollCarousel = () => {
           })}
         </m.div>
       </div>
-      <div className="flex flex-col items-center gap-6 py-2 px-6 text-shade/10 font-raleway md:text-5xl invisible md:visible">
-        <p className="">A Collection of work I am extremly proud of!</p>
-        <p>{`(This is a placeholder! What should I include?)`}</p>
-        <p>
-          <span className="text-honey/30">Body in the suitcase</span> * Tales
-          from the Kitchen Garden
-        </p>
-        <p>
-          Our Dementia Choir *{" "}
-          <span className="text-honey/30">Great Garden Revolution</span>
-        </p>
-        <p>
-          <span className="text-honey/30">Living with a Serial Killer</span> *
-          Body in the suitcase
-        </p>
-        <p>
-          Tales from the Kitchen Garden *{" "}
-          <span className="text-honey/30">Our Dementia Choir</span>
-        </p>
-        <p>
-          <span className="text-honey/30">Great Garden Revolution</span> *
-          Living with a Serial Killer
-        </p>
-        <p>
-          <span className="text-honey/30">Body in the suitcase</span> * Tales
-          from the Kitchen Garden
-        </p>
-        <p>
-          Our Dementia Choir *{" "}
-          <span className="text-honey/30">Great Garden Revolution</span>
-        </p>
-        <p>
-          <span className="text-honey/30">Living with a Serial Killer</span> *
-          Body in the suitcase
-        </p>
-        <p>
-          Tales from the Kitchen Garden *{" "}
-          <span className="text-honey/30">Our Dementia Choir</span>
-        </p>
-        <p>
-          <span className="text-honey/30">Great Garden Revolution</span> *
-          Living with a Serial Killer
-        </p>
-        <p>
-          <span className="text-honey/30">Body in the suitcase</span> * Tales
-          from the Kitchen Garden
-        </p>
-        <p>
-          Our Dementia Choir *{" "}
-          <span className="text-honey/30">Great Garden Revolution</span>
-        </p>
-        <p>
-          <span className="text-honey/30">Living with a Serial Killer</span> *
-          Body in the suitcase
-        </p>
-        <p>
-          Tales from the Kitchen Garden *{" "}
-          <span className="text-honey/30">Our Dementia Choir</span>
-        </p>
-        <p>
-          <span className="text-honey/30">Great Garden Revolution</span> *
-          Living with a Serial Killer
-        </p>
+      <div className="flex flex-col items-center py-2 px-6 text-shade/10 font-raleway md:text-2xl invisible md:visible">
+        <DummyText />
       </div>
     </section>
   );
