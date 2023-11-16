@@ -7,6 +7,7 @@ export default function Hero() {
       variants={pageTransition}
       initial="hidden"
       whileInView="show"
+      viewport={{ once: true }}
       id="hero"
       className="grid grid-cols-1 md:grid-cols-12"
     >

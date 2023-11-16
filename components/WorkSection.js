@@ -1,6 +1,14 @@
+import { elementFade } from "@/utils/motions";
+import { motion as m } from "framer-motion";
+
 export default function WorkSection() {
   return (
-    <main>
+    <m.main
+      variants={elementFade}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+    >
       <div className="grid grid-cols-12 pt-10 pb-10 md:py-20 border-t-2 border-b-2 border-blak rounded-xl px-4">
         <div className="col-span-12 flex flex-col items-start md:items-end">
           <ul className="flex flex-col gap-4 md:gap-12 items-start md:items-end font-raleway text-xl md:text-6xl text-blak">
@@ -27,6 +35,6 @@ export default function WorkSection() {
           </ul>
         </div>
       </div>
-    </main>
+    </m.main>
   );
 }

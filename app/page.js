@@ -6,10 +6,10 @@ import WorkSection from "@/components/WorkSection";
 import AboutSection from "@/components/AboutSection";
 import WorkCarousel from "@/components/WorkCarousel";
 
-import { useState, useEffect } from "react";
 import Loading from "@/components/Loading";
 import { motion as m } from "framer-motion";
 import { heroImageFade } from "@/utils/motions";
+import { elementFade } from "@/utils/motions";
 
 export default function Home() {
   //TRYING TO FIGURE OUT LOADING STATE TO ONLY RENDER ON FIRST VISIT TO WEBPAGE
@@ -37,15 +37,27 @@ export default function Home() {
           <NavBar />
           <Hero />
         </section>
-        <section id="work-section" className="">
+        <m.section
+          variants={elementFade}
+          initial="hidden"
+          whileInView="show"
+          id="work-section"
+        >
           <div className="">
             <WorkCarousel />
           </div>
           <WorkSection />
-        </section>
-        <section id="about-section" className="md:pb-10">
+        </m.section>
+        <m.section
+          variants={elementFade}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          id="about-section"
+          className="md:pb-10"
+        >
           <AboutSection />
-        </section>
+        </m.section>
       </m.main>
     </>
   );
