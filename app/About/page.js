@@ -1,4 +1,5 @@
 import NavBar from "@/components/NavBar";
+import { motion as m } from "framer-motion";
 
 export default function About() {
   return (

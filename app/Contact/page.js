@@ -38,9 +38,6 @@ export default function Contact() {
           <p>{`(or inbuilt message function)`}</p>
         </div>
       </div>
-      <section className="py-10">
-        <Footer />
-      </section>
     </main>
   );
 }

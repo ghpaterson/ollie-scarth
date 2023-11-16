@@ -19,9 +19,6 @@ export default function Gallery() {
         <div className="md:col-span-4 bg-gray-200 h-60 hover:bg-gray-500"></div>
         <div className="md:col-span-4 bg-gray-200 h-60 hover:bg-gray-500"></div>
       </section>
-      <section className="py-10">
-        <Footer />
-      </section>
     </>
   );
 }
