@@ -1,11 +1,12 @@
 import { motion as m } from "framer-motion";
+import { pageTransition } from "@/utils/motions";
 
 export default function Hero() {
   return (
     <m.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2, ease: "easeIn" }}
+      variants={pageTransition}
+      initial="hidden"
+      whileInView="show"
       id="hero"
       className="grid grid-cols-1 md:grid-cols-12"
     >
@@ -15,7 +16,7 @@ export default function Hero() {
           <h2>SCARTH-</h2>
           <h3>SAUNDERS</h3>
         </div>
-        <div className="flex flex-col items-start md:flex-row gap-2 md:gap-8 text-sm md:text-xl text-bone font-raleway">
+        <m.div className="flex flex-col items-start md:flex-row gap-2 md:gap-8 text-sm md:text-xl text-bone font-raleway">
           <p className="border-b-2 border-honey rounded-full py-1 px-2">
             SERIES DIRECTOR
           </p>
@@ -25,7 +26,7 @@ export default function Hero() {
           <p className="border-b-2 border-honey rounded-full py-1 px-2">
             EDIT PRODUCER
           </p>
-        </div>
+        </m.div>
       </div>
       <div className="md:col-span-2 bg-transparent flex justify-end items-center">
         <div className="bg-bone rounded-l-xl px-4 py-10 invisible md:visible">

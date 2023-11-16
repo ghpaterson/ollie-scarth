@@ -4,12 +4,12 @@ import NavBar from "@/components/NavBar";
 import Hero from "@/components/Hero";
 import WorkSection from "@/components/WorkSection";
 import AboutSection from "@/components/AboutSection";
-import Footer from "@/components/Footer";
 import WorkCarousel from "@/components/WorkCarousel";
 
 import { useState, useEffect } from "react";
 import Loading from "@/components/Loading";
 import { motion as m } from "framer-motion";
+import { heroImageFade } from "@/utils/motions";
 
 export default function Home() {
   //TRYING TO FIGURE OUT LOADING STATE TO ONLY RENDER ON FIRST VISIT TO WEBPAGE
@@ -29,12 +29,7 @@ export default function Home() {
   // }
   return (
     <>
-      <m.main
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, ease: "easeOut" }}
-        className=""
-      >
+      <m.main variants={heroImageFade} initial="hidden" whileInView="show">
         <section
           id="hero-navbar"
           className="md:h-screen bg-hero-image bg-cover"

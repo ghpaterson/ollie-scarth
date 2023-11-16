@@ -2,15 +2,12 @@
 
 import NavBar from "@/components/NavBar";
 import { motion as m } from "framer-motion";
+import { pageTransition } from "@/utils/motions";
 export default function Gallery() {
   return (
     <main>
       <NavBar />
-      <m.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, ease: "easeIn" }}
-      >
+      <m.section variants={pageTransition} initial="hidden" whileInView="show">
         <section>
           <h1 className="font-raleway text-3xl md:text-6xl py-6 md:py-10 md:px-6">{`GALLERY(*8)`}</h1>
         </section>

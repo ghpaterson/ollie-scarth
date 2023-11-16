@@ -4,8 +4,8 @@ import NavBar from "@/components/NavBar";
 import CopyEmailAddress from "@/utils/CopyEmailAddress";
 import Link from "next/link";
 
-import { easeIn, motion as m } from "framer-motion";
-
+import { motion as m } from "framer-motion";
+import { pageTransition } from "@/utils/motions";
 export default function Contact() {
   const linkedinURL =
     "https://www.linkedin.com/in/oliver-scarth-saunders-619aab1b0/";
@@ -15,11 +15,7 @@ export default function Contact() {
   return (
     <main>
       <NavBar />
-      <m.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, ease: "easeIn" }}
-      >
+      <m.section variants={pageTransition} initial="hidden" whileInView="show">
         <div className="mt-10 h grid grid-cols-1 md:grid-cols-12 border-t-2 border-b-2 border-blak rounded-lg ">
           <div className="md:col-span-6 text-blak rounded-lg px-4 py-10 md:py-32 md:px-20  flex flex-col items-start border-r-2 border-blak">
             <h1 className="text-blak text-2xl md:text-4xl font-raleway">
