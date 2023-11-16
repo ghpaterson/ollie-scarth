@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 export default function NavBar() {
   const pathname = usePathname();
   return (
-    <nav>
+    <nav className="">
       <div
         id="container"
         className={`flex ${

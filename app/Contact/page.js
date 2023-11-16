@@ -1,7 +1,8 @@
-import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import CopyEmailAddress from "@/utils/CopyEmailAddress";
 import Link from "next/link";
+
+import { motion as m } from "framer-motion";
 
 export default function Contact() {
   const linkedinURL =

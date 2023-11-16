@@ -1,6 +1,14 @@
+import { motion as m } from "framer-motion";
+
 export default function Hero() {
   return (
-    <section id="hero" className="grid grid-cols-1 md:grid-cols-12">
+    <m.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2, ease: "easeIn" }}
+      id="hero"
+      className="grid grid-cols-1 md:grid-cols-12"
+    >
       <div className="md:col-span-10 bg-transparent px-6 md:px-10 py-12">
         <div className="text-6xl md:text-9xl font-fungis py-12 md:py-6 text-bone">
           <h1>OLLIE</h1>
@@ -27,6 +35,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </section>
+    </m.section>
   );
 }

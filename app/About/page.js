@@ -1,10 +1,10 @@
 import NavBar from "@/components/NavBar";
-import { motion as m } from "framer-motion";
 
 export default function About() {
   return (
     <main>
       <NavBar />
+
       <section>
         <h1 className="font-raleway text-3xl md:text-6xl py-6 md:py-10 md:px-6">
           {`ABOUT(*Ollie)`}

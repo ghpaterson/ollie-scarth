@@ -29,10 +29,15 @@ export default function Home() {
   // }
   return (
     <>
-      <main className="">
+      <m.main
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className=""
+      >
         <section
           id="hero-navbar"
-          className="md:h-screen bg-hero-image bg-cover "
+          className="md:h-screen bg-hero-image bg-cover"
         >
           <NavBar />
           <Hero />
@@ -46,7 +51,7 @@ export default function Home() {
         <section id="about-section" className="md:pb-10">
           <AboutSection />
         </section>
-      </main>
+      </m.main>
     </>
   );
 }
