@@ -11,7 +11,7 @@ export default function Footer() {
 
   const instaURL = "https://www.instagram.com/olliescarth/";
   return (
-    <main className="relative z-20">
+    <main className="relative bottom-0 z-20 py-4">
       {pathname === "/" && (
         <div
           id="contact-details"
