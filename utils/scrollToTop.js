@@ -23,7 +23,7 @@ export default function ScrollToTop() {
   }, []);
 
   return (
-    <div className="flex justify-center text-3xl font-raleway">
+    <div className="flex justify-center text-3xl font-raleway py-10">
       <button id="scrollToTopBtn">{`(*Scroll to Top)`}</button>
     </div>
   );

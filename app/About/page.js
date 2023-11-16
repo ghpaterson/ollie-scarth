@@ -3,6 +3,7 @@
 import NavBar from "@/components/NavBar";
 import { motion as m } from "framer-motion";
 import { pageTransition } from "@/utils/motions";
+import ScrollToTop from "@/utils/scrollToTop";
 
 export default function About() {
   return (
@@ -33,6 +34,7 @@ export default function About() {
           </div>
         </section>
       </m.section>
+      <ScrollToTop />
     </main>
   );
 }
