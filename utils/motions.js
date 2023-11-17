@@ -21,7 +21,7 @@ export const pageTransition = {
 export const elementFade = {
   hidden: {
     opacity: 0,
-    y: 20,
+    y: 5,
     transition: {
       duration: 2,
       ease: "easeIn",

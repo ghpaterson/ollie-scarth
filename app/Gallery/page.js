@@ -23,10 +23,7 @@ export default function Gallery() {
             id="gallery-card"
             className="group md:col-span-4 bg-gray-200 h-60 hover:bg-landing-about bg-cover bg-no-repeat flex flex-col items-center justify-center text-7xl md:text-8xl"
           >
-            <h1
-              id="gallery-card-number"
-              className="group-hover:hidden mt-10"
-            >{`(*1)`}</h1>
+            <h1 className="group-hover:hidden mt-10">{`(*1)`}</h1>
             <h2 className=" text-honey text-3xl py-2 px-4 bg-blak opacity-80 backdrop-blur-xl rounded-xl">
               Image
             </h2>
