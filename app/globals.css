@@ -32,6 +32,10 @@ body {
   body {
     padding: 1rem;
   }
+
+  #scrolling-section {
+    display: none;
+  }
 }
 
 @media (min-width: 1500px) {

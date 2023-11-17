@@ -12,7 +12,7 @@ export default function WorkSection() {
     >
       <div className="grid grid-cols-12 pt-10 pb-10 md:py-20 border-t-2 border-b-2 border-blak rounded-xl">
         <div className="col-span-12 flex flex-col items-start md:items-end">
-          <ul className="flex flex-col gap-4 md:gap-6 items-start md:items-end font-raleway text-lg md:text-6xl text-blak">
+          <ul className="flex flex-col gap-4 md:gap-6 items-start md:items-end font-raleway text-md md:text-6xl text-blak">
             <li className="group hover:text-shade/90 hover:cursor-pointer hover:translate-x-6 md:hover:-translate-x-8 transition duration-500 ease-in flex">
               <span className="text-xs md:text-3xl px-2">{`(*1)`}</span> BODY IN
               THE SUITCASE{" "}

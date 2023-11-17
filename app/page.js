@@ -44,9 +44,7 @@ export default function Home() {
           whileInView="show"
           id="work-section"
         >
-          <div className="">
-            <WorkCarousel />
-          </div>
+          <WorkCarousel />
           <WorkSection />
         </m.section>
         <m.section

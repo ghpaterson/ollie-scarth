@@ -8,9 +8,7 @@ export default function WorkCarousel() {
   return (
     <>
       <section id="scrolling-section">
-        <div className="">
-          <HorizontalScrollCarousel />
-        </div>
+        <HorizontalScrollCarousel />
       </section>
     </>
   );
