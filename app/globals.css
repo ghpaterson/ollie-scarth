@@ -36,6 +36,36 @@ body {
   #scrolling-section {
     display: none;
   }
+
+  #gallery-card {
+    background-image: url('https://images.pexels.com/photos/3692639/pexels-photo-3692639.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #gallery-card h1 {
+    display: none;
+  }
+
+  
+
+  /* #gallery-card-number {
+    display: none;
+  } */
+}
+
+@media (min-width: 1024px) {
+  #work-sub-heading {
+    display: none;
+  }
+  #gallery-card h2 {
+    opacity: 0;
+  }
+
+  #gallery-card:hover h2 {
+    opacity: 1;
+  }
+ 
 }
 
 @media (min-width: 1500px) {
