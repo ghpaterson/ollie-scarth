@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function NavBar() {
   const pathname = usePathname();
@@ -20,29 +21,32 @@ export default function NavBar() {
           pathname === "/" && isMenuOpen
             ? "justify-end text-blak"
             : "justify-between text-bone"
-        } h-14 bg-transparent items-center px-2`}
+        } h-14 bg-transparent items-center px-2 relative`}
       >
-        <Link href={"/"}>
-          {pathname !== "/" && (
-            <h1 className="text-2xl font-raleway text-blak z-0">{`O.S-(*S)`}</h1>
-          )}
-        </Link>
+        <div id="logo">
+          <Link href={"/"}>
+            {pathname !== "/" && (
+              <h1 className="text-2xl w-60 font-raleway text-blak z-0">{`O.S-(*S)`}</h1>
+            )}
+          </Link>
+        </div>
         <button
           className={`md:hidden ${
             pathname === "/" ? "text-bone" : "text-blak"
-          }  focus:outline-none font-raleway flex justify-end`}
+          }  focus:outline-none font-raleway flex justify-end px-4 text-2xl`}
           onClick={toggleMenu}
         >
-          {isMenuOpen ? "X" : "Menu"}
+          {isMenuOpen ? "X" : <GiHamburgerMenu />}
         </button>
         <nav
-          className={`md:flex md:justify-end md:items-center absolute top-full right-0 md:py-0  py-6 w-full ${
+          id="navbar"
+          className={`md:flex md:justify-end md:items-center absolute top-full right-0 md:py-0  py-6 w-96 md:-mt-10 ${
             isMenuOpen ? "flex justify-center bg-bone" : "hidden"
           } z-10`}
         >
           <ul
             className={`flex flex-col items-center gap-4 md:flex-row md:items-center
-               font-raleway md:px-4 text-xl ${
+               font-raleway md:px-4 text-lg ${
                  pathname === "/"
                    ? isMenuOpen
                      ? "text-blak"
