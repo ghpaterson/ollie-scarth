@@ -50,3 +50,16 @@ export const heroImageFade = {
     },
   },
 };
+
+export const imageReveal = {
+  hidden: {
+    height: 0,
+  },
+  show: {
+    height: "100%",
+    transition: {
+      duration: 2,
+      ease: [],
+    },
+  },
+};

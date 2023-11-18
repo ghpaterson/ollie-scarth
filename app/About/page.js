@@ -34,6 +34,7 @@ export default function About() {
           </div>
         </section>
       </m.section>
+
       <ScrollToTop />
     </main>
   );

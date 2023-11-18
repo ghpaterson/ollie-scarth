@@ -41,12 +41,12 @@ export default function NavBar() {
         <nav
           id="navbar"
           className={`md:flex md:justify-end md:items-center absolute top-full right-0 md:py-0  py-6 w-96 md:-mt-10 ${
-            isMenuOpen ? "flex justify-center bg-bone" : "hidden"
+            isMenuOpen ? "flex justify-center bg-bone h-screen" : "hidden"
           } z-10`}
         >
           <ul
             className={`flex flex-col items-center gap-4 md:flex-row md:items-center
-               font-raleway md:px-4 text-lg ${
+               font-raleway md:px-4 text-2xl md:py-0 py-10 ${
                  pathname === "/"
                    ? isMenuOpen
                      ? "text-blak"
