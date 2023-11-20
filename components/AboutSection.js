@@ -1,7 +1,7 @@
 export default function AboutSection() {
   return (
     <main>
-      <div className="grid grid-cols-1 md:grid-cols-12  rounded-lg border-b-4 border-t-2 border-blak ">
+      <div className="grid grid-cols-1 md:grid-cols-12   ">
         <div className="md:col-span-6 rounded-lg px-4 py-20 md:py-32 md:px-20  flex items-center">
           <p className="text-blak md:text-xl font-raleway font-bold">
             Hi! I'm Ollie, a director and producer with a chameleon-like

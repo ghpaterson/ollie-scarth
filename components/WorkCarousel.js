@@ -23,12 +23,9 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-80%"]);
 
   return (
-    <section
-      ref={targetRef}
-      className="relative h-[300vh] bg-bone pb-20 border-t-2 border-b-2 rounded-xl border-blak"
-    >
+    <section ref={targetRef} className="relative h-[300vh] bg-bone pb-20">
       <div className="flex justify-start gap-6 py-10 px-10 text-blak font-raleway text-3xl md:text-6xl">
-        <h1>{`WORK (*7)`}</h1>
+        <h1>{`HIGHLIGHTS (*7)`}</h1>
       </div>
       <div className="sticky top-0 flex h-96 md:h-[600px] items-center overflow-hidden pt-40 -mt-32 md:-mt-40">
         <m.div style={{ x }} className="flex gap-4">

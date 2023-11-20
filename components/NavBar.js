@@ -18,20 +18,18 @@ export default function NavBar() {
   };
 
   return (
-    <header className="relative pb-4 z-20">
+    <header className=" sticky top-0  pb-4 z-20">
       <div
         id="container"
         className="flex justify-between text-blak
-         h-14 bg-transparent items-center px-2 relative"
+         h-14 bg-bone items-center px-2 relative"
       >
         <div id="logo">
           <Link href={"/"}>
-            {/* {pathname !== "/" && ( */}
             <h1
               onClick={closeMenu}
               className="text-2xl w-60 font-raleway text-blak z-0"
             >{`O.S-(*S)`}</h1>
-            {/* )} */}
           </Link>
         </div>
         <button

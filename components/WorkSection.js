@@ -10,7 +10,7 @@ export default function WorkSection() {
       whileInView="show"
       viewport={{ once: true }}
     >
-      <div className="grid grid-cols-12 pt-10 pb-10 md:py-20 border-t-2 border-b-2 border-blak rounded-xl">
+      <div className="grid grid-cols-12 pt-10 pb-10 md:py-20 ">
         <div
           id="work-sub-heading"
           className="flex justify-start pb-6 px-4 text-blak font-raleway text-3xl"

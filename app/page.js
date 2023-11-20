@@ -10,6 +10,7 @@ import ScrollToTop from "@/utils/scrollToTop";
 import { motion as m } from "framer-motion";
 import { heroImageFade } from "@/utils/motions";
 import { elementFade } from "@/utils/motions";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
         >
           <AboutSection />
         </m.section>
+        <Testimonials />
         <ScrollToTop />
       </m.main>
     </>
