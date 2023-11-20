@@ -13,21 +13,6 @@ import { heroImageFade } from "@/utils/motions";
 import { elementFade } from "@/utils/motions";
 
 export default function Home() {
-  //TRYING TO FIGURE OUT LOADING STATE TO ONLY RENDER ON FIRST VISIT TO WEBPAGE
-  // const [isFirstLoad, setIsFirstLoad] = useState(true);
-
-  // useEffect(() => {
-  //   if (isFirstLoad) {
-  //     setTimeout(() => {
-  //       setIsFirstLoad(false); // Update the state after the delay
-  //       sessionStorage.setItem("isFirstLoad", false);
-  //     }, 3000);
-  //   }
-  // }, []);
-
-  // if (isFirstLoad) {
-  //   return <Loading />; // Render the loading component on initial load
-  // }
   return (
     <>
       <m.main variants={heroImageFade} initial="hidden" whileInView="show">
