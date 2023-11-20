@@ -7,7 +7,6 @@ import AboutSection from "@/components/AboutSection";
 import WorkCarousel from "@/components/WorkCarousel";
 import ScrollToTop from "@/utils/scrollToTop";
 
-import Loading from "@/components/Loading";
 import { motion as m } from "framer-motion";
 import { heroImageFade } from "@/utils/motions";
 import { elementFade } from "@/utils/motions";
