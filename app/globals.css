@@ -9,6 +9,11 @@
   src: url("/fonts/Fungis-Bold.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "latosce";
+  src: url("/fonts/latosce.ttf") format("truetype");
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

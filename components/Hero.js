@@ -12,7 +12,7 @@ export default function Hero() {
       className="grid grid-cols-1 md:grid-cols-12"
     >
       <div className="md:col-span-10 bg-transparent px-6 md:px-10 py-6">
-        <div className="text-6xl md:text-[150px] font-raleway py-12 md:py-6 text-bone">
+        <div className="text-6xl md:text-[150px] font-latosce py-12 md:py-6 text-bone">
           <h1>OLLIE</h1>
           <h2>SCARTH-</h2>
           <h3>SAUNDERS</h3>

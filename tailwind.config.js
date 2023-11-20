@@ -16,6 +16,7 @@ module.exports = {
       fontFamily: {
         fungis: ["fungis", "sans-serif"],
         raleway: ["raleway", "sans-serif"],
+        latosce: ["latosce", "sans-serif"],
       },
       colors: {
         bone: "#F6F6F6",

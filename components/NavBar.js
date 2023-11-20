@@ -33,7 +33,7 @@ export default function NavBar() {
         <button
           className={`md:hidden ${
             pathname === "/" ? "text-bone" : "text-blak"
-          }  focus:outline-none font-raleway flex justify-end px-4 text-2xl`}
+          }  focus:outline-none font-fungis flex justify-end items-center px-4 text-2xl`}
           onClick={toggleMenu}
         >
           {isMenuOpen ? "X" : <GiHamburgerMenu />}
@@ -46,7 +46,7 @@ export default function NavBar() {
         >
           <ul
             className={`flex flex-col items-center gap-4 md:flex-row md:items-center
-               font-raleway md:px-4 text-2xl md:py-0 py-10 ${
+               font-raleway md:px-4 text-2xl md:text-lg md:py-0 py-10 ${
                  pathname === "/"
                    ? isMenuOpen
                      ? "text-blak"
