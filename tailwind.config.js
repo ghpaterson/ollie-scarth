@@ -23,6 +23,7 @@ module.exports = {
         blak: "#111111",
         shade: "#2F2F2F",
         honey: "#FFCB74",
+        sand: "#C0BAB2",
       },
     },
   },

@@ -18,7 +18,7 @@ export default function NavBar() {
   };
 
   return (
-    <header className="relative">
+    <header className="relative pb-4">
       <div
         id="container"
         className="flex justify-between text-blak

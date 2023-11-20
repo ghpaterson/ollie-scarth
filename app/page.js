@@ -16,13 +16,8 @@ export default function Home() {
   return (
     <>
       <m.main variants={heroImageFade} initial="hidden" whileInView="show">
-        <section
-          id="hero-navbar"
-          className="md:h-screen bg-hero-image bg-cover"
-        >
-          {/* <NavBar /> */}
-          <Hero />
-        </section>
+        {/* <NavBar /> */}
+        <Hero />
         <m.section
           variants={elementFade}
           initial="hidden"
