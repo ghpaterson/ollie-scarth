@@ -8,7 +8,7 @@ import ScrollToTop from "@/utils/scrollToTop";
 export default function About() {
   return (
     <main>
-      <NavBar />
+      {/* <NavBar /> */}
       <m.section variants={pageTransition} initial="hidden" whileInView="show">
         <section>
           <h1 className="font-raleway text-3xl md:text-6xl py-6 md:py-10 md:px-6">

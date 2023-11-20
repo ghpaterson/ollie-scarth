@@ -35,7 +35,7 @@ export default function Home() {
           id="hero-navbar"
           className="md:h-screen bg-hero-image bg-cover"
         >
-          <NavBar />
+          {/* <NavBar /> */}
           <Hero />
         </section>
         <m.section

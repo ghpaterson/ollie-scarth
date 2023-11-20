@@ -7,7 +7,7 @@ import { pageTransition } from "@/utils/motions";
 export default function Gallery() {
   return (
     <main>
-      <NavBar />
+      {/* <NavBar /> */}
       <m.section
         variants={pageTransition}
         initial="hidden"

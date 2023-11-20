@@ -13,26 +13,30 @@ export default function NavBar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="relative">
       <div
         id="container"
-        className={`flex ${
-          pathname === "/" && isMenuOpen
-            ? "justify-end text-blak"
-            : "justify-between text-bone"
-        } h-14 bg-transparent items-center px-2 relative`}
+        className="flex justify-between text-blak
+         h-14 bg-transparent items-center px-2 relative"
       >
         <div id="logo">
           <Link href={"/"}>
-            {pathname !== "/" && (
-              <h1 className="text-2xl w-60 font-raleway text-blak z-0">{`O.S-(*S)`}</h1>
-            )}
+            {/* {pathname !== "/" && ( */}
+            <h1
+              onClick={closeMenu}
+              className="text-2xl w-60 font-raleway text-blak z-0"
+            >{`O.S-(*S)`}</h1>
+            {/* )} */}
           </Link>
         </div>
         <button
           className={`md:hidden ${
-            pathname === "/" ? "text-bone" : "text-blak"
+            pathname === "/" ? "text-blak" : "text-blak"
           }  focus:outline-none font-fungis flex justify-end items-center px-4 text-2xl`}
           onClick={toggleMenu}
         >
@@ -45,45 +49,23 @@ export default function NavBar() {
           } z-10`}
         >
           <ul
-            className={`flex flex-col items-center gap-4 md:flex-row md:items-center
-               font-raleway md:px-4 text-2xl md:text-lg md:py-0 py-10 ${
-                 pathname === "/"
-                   ? isMenuOpen
-                     ? "text-blak"
-                     : "text-bone"
-                   : "text-blak"
-               }`}
+            className="flex flex-col items-center gap-4 md:flex-row md:items-center
+               font-raleway md:px-4 text-2xl md:text-lg md:py-0 py-10 text-blak"
           >
             <Link href="#">
-              <li>Work</li>
+              <li onClick={closeMenu}>Work</li>
             </Link>
             <Link href={"/About"}>
-              <li>About</li>
+              <li onClick={closeMenu}>About</li>
             </Link>
             <Link href={"/Gallery"}>
-              <li>Gallery</li>
+              <li onClick={closeMenu}>Gallery</li>
             </Link>
             <Link href={"/Contact"}>
-              <li>Contact</li>
+              <li onClick={closeMenu}>Contact</li>
             </Link>
           </ul>
         </nav>
-        {/* <nav>
-          <ul className="flex justify-end items-center gap-6 font-raleway">
-            <Link href={"#"}>
-              <li>Work</li>
-            </Link>
-            <Link href={"/About"}>
-              <li>About</li>
-            </Link>
-            <Link href={"/Gallery"}>
-              <li>Gallery</li>
-            </Link>
-            <Link href={"/Contact"}>
-              <li>Contact</li>
-            </Link>
-          </ul>
-        </nav> */}
       </div>
     </header>
   );
