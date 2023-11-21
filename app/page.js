@@ -1,10 +1,10 @@
 "use client";
 
-import NavBar from "@/components/NavBar";
 import Hero from "@/components/Hero";
 import WorkCarousel from "@/components/WorkCarousel";
 import ScrollToTop from "@/utils/scrollToTop";
 import DocumentaryList from "@/components/DocumentaryList";
+import FactEntList from "@/components/FactEntList";
 import AboutSection from "@/components/AboutSection";
 
 import { motion as m } from "framer-motion";
@@ -25,6 +25,7 @@ export default function Home() {
         >
           <WorkCarousel />
           <DocumentaryList />
+          <FactEntList />
         </m.section>
         <m.section
           variants={elementFade}

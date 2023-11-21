@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="grid grid-cols-1 md:grid-cols-12 w-full md:h-screen bg-sand rounded-t-3xl md:rounded-t-[100px] pt-10 pb-10 md:pt-20"
+      className="grid grid-cols-1 md:grid-cols-12 w-full md:h-screen bg-sand rounded-t-3xl rounded-b-xl md:rounded-t-[100px] pt-10 pb-10 md:pt-20"
     >
       <div className="md:col-span-12 bg-transparent px-6 md:px-10 py-6 flex flex-col justify-start ">
         <m.div
