@@ -52,6 +52,10 @@ body {
     display: none;
   }
 
+  #warped-hero {
+    display: none;
+  }
+
   #gallery-card {
     background-image: url('https://images.pexels.com/photos/3692639/pexels-photo-3692639.jpeg');
     background-size: cover;
@@ -80,6 +84,10 @@ body {
   #gallery-card:hover h2 {
     opacity: 1;
   }
+
+  /* #warped-hero-small {
+    display: none;
+  } */
  
 }
 
