@@ -2,10 +2,10 @@
 
 import NavBar from "@/components/NavBar";
 import Hero from "@/components/Hero";
-import WorkSection from "@/components/WorkSection";
-import AboutSection from "@/components/AboutSection";
 import WorkCarousel from "@/components/WorkCarousel";
 import ScrollToTop from "@/utils/scrollToTop";
+import DocumentaryList from "@/components/DocumentaryList";
+import AboutSection from "@/components/AboutSection";
 
 import { motion as m } from "framer-motion";
 import { heroImageFade } from "@/utils/motions";
@@ -16,7 +16,6 @@ export default function Home() {
   return (
     <>
       <m.main variants={heroImageFade} initial="hidden" whileInView="show">
-        {/* <NavBar /> */}
         <Hero />
         <m.section
           variants={elementFade}
@@ -25,7 +24,7 @@ export default function Home() {
           id="work-section"
         >
           <WorkCarousel />
-          <WorkSection />
+          <DocumentaryList />
         </m.section>
         <m.section
           variants={elementFade}
