@@ -6,7 +6,6 @@ import ScrollToTop from "@/utils/scrollToTop";
 import DocumentaryList from "@/components/DocumentaryList";
 import FactEntList from "@/components/FactEntList";
 import AboutSection from "@/components/AboutSection";
-
 import { motion as m } from "framer-motion";
 import { heroImageFade } from "@/utils/motions";
 import { elementFade } from "@/utils/motions";
@@ -25,7 +24,7 @@ export default function Home() {
         >
           <Highlights />
           <DocumentaryList />
-          <FactEntList />
+          <FactEntList id="fact-ent-list" />
         </m.section>
         <m.section
           variants={elementFade}

@@ -1,8 +1,6 @@
 import { motion as m } from "framer-motion";
 import { heroImageFade } from "@/utils/motions";
 import Image from "next/image";
-import JHDunes from "../public/images/JHDunes.jpg";
-import picnic from "../public/images/picnic.JPG";
 import bicycle from "../public/images/bicycle.png";
 import { IoFlowerOutline } from "react-icons/io5";
 import { BsArrowUpRightCircle } from "react-icons/bs";
@@ -16,12 +14,7 @@ export default function Hero() {
       className="grid grid-cols-1 md:grid-cols-12 w-full  bg-sand rounded-t-3xl rounded-b-xl md:rounded-t-[100px] pt-4 pb-10 md:pt-10"
     >
       <div className="md:col-span-12 bg-transparent px-6 md:px-10 py-2 flex flex-col justify-start ">
-        <m.div
-          // initial={{ x: "100%" }}
-          // animate={{ x: "0%" }}
-          // transition={{ duration: 2, ease: "easeIn" }}
-          className="text-7xl md:text-[200px] font-latosce py-4 md:py-0 md:ml-12 text-bone absolute z-10"
-        >
+        <m.div className="text-7xl md:text-[200px] font-latosce py-4 md:py-0 md:ml-12 text-bone absolute z-10">
           {/* Hero Text For Large Screen */}
           <Image
             id="warped-hero"
@@ -29,6 +22,7 @@ export default function Hero() {
             width={1200}
             alt="Ollie Scarth"
           />
+          {/* Hero Text for Mobile */}
           <Image
             id="warped-hero-small"
             src={ollieHeroWarpSmall}
@@ -36,14 +30,6 @@ export default function Hero() {
             alt="Ollie Scarth"
             className="md:hidden ml-8"
           />
-          {/* <div
-            id="hero-text-small"
-            className="flex flex-col md:flex md:flex-row md:gap-12 ml-2 md:ml-0"
-          >
-            <h1>OLLIE</h1>
-            <h2>SCARTH</h2>
-          </div> */}
-          {/* <h3>SAUNDERS</h3> */}
         </m.div>
         <div className="flex flex-col items-center justify-center md:flex-row gap-12">
           <m.div
@@ -85,14 +71,14 @@ export default function Hero() {
               specialising in crafting elegant narratives within the realm of
               <span className="md:text-2xl font-script mx-2 flex gap-2">
                 Documentaries{" "}
-                <Link href="/About">
+                <Link href="/#">
                   <BsArrowUpRightCircle />
                 </Link>{" "}
                 and
               </span>{" "}
               <span className="md:text-2xl font-script flex gap-2">
                 Factual Entertainment{" "}
-                <Link href="/About">
+                <Link href="#">
                   <BsArrowUpRightCircle />
                 </Link>
               </span>
