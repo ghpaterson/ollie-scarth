@@ -1,7 +1,7 @@
 "use client";
 
 import Hero from "@/components/Hero";
-import WorkCarousel from "@/components/WorkCarousel";
+import Highlights from "@/components/Highlights";
 import ScrollToTop from "@/utils/scrollToTop";
 import DocumentaryList from "@/components/DocumentaryList";
 import FactEntList from "@/components/FactEntList";
@@ -23,7 +23,7 @@ export default function Home() {
           whileInView="show"
           id="work-section"
         >
-          <WorkCarousel />
+          <Highlights />
           <DocumentaryList />
           <FactEntList />
         </m.section>

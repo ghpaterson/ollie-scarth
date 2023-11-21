@@ -30,7 +30,7 @@ export default function FactEntList() {
             {factEntData.map((item) => (
               <li
                 key={item.id}
-                className="group hover:text-shade/90 hover:cursor-pointer md:hover:-translate-x-8 transition duration-500 ease-in flex"
+                className="group hover:text-shade/90 hover:cursor-pointer md:hover:translate-x-8 transition duration-500 ease-in flex"
               >
                 <span className="text-xs md:text-3xl px-2">{`(*${item.id})`}</span>
                 {item.title}

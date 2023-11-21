@@ -18,7 +18,7 @@ export default function Hero() {
           transition={{ duration: 2, ease: "easeIn" }}
           className="text-7xl md:text-[200px] font-latosce py-12 md:py-6 text-bone absolute z-10"
         >
-          <div className="flex flex-col md:flex md:flex-row md:gap-12 ml-2 md:ml-0">
+          <div className="flex flex-col md:flex md:flex-row md:gap-12 ml-2 md:ml-0 md:mt-10">
             <h1>OLLIE</h1>
             <h2>SCARTH</h2>
           </div>

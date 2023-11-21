@@ -2,9 +2,8 @@
 
 import { motion as m, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
-import DummyText from "@/utils/textPassages";
 
-export default function WorkCarousel() {
+export default function Highlights() {
   return (
     <>
       <section id="scrolling-section">
@@ -24,18 +23,17 @@ const HorizontalScrollCarousel = () => {
 
   return (
     <section ref={targetRef} className="relative h-[300vh] bg-bone pb-20">
-      <div className="flex justify-start gap-6 py-10 px-10 text-blak font-raleway text-3xl md:text-6xl">
-        <h1>{`HIGHLIGHTS (*7)`}</h1>
+      <div className="flex justify-center gap-6 py-10 px-10 text-blak font-raleway text-3xl md:text-6xl">
+        <h1 className=" flex-wrap">
+          Highlights of some of Ollie's favourite projects he's worked on
+        </h1>
       </div>
-      <div className="sticky top-0 flex h-96 md:h-[600px] items-center overflow-hidden pt-40 -mt-32 md:-mt-40">
+      <div className="sticky top-0 flex h-96 md:h-[650px] items-center overflow-hidden pt-40 -mt-32 md:-mt-40">
         <m.div style={{ x }} className="flex gap-4">
           {cards.map((card) => {
             return <Card card={card} key={card.id} />;
           })}
         </m.div>
-      </div>
-      <div className="flex flex-col items-center py-2 px-6 text-shade/10 font-raleway md:text-2xl invisible md:visible">
-        <DummyText />
       </div>
     </section>
   );
@@ -45,21 +43,40 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group relative h-[200px] w-[300px] md:h-[400px] md:w-[550px] overflow-hidden bg-shade rounded-xl"
+      className="group h-[450px] w-[700px]  overflow-hidden bg-sand rounded-[24px] p-4 flex flex-col "
     >
       <div
+        className="w-[700] h-[300px] rounded-[16px] border-2 border-sand grayscale group-hover:grayscale-0"
         style={{
           backgroundImage: `url(${card.url})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="absolute inset-0 z-0 grayscale group-hover:grayscale-0 transition-transform duration-300 group-hover:scale-110 group-hover:cursor-pointer"
       ></div>
-      <div className="group absolute inset-0 z-10 grid place-content-center">
+      <div className="pt-2">
+        <h1 className="text-xl font-raleway">{card.title}</h1>
+      </div>
+      <div>
+        <h2 className="text-lg font-raleway">{`(${card.channel})`}</h2>
+      </div>
+      <div className="flex justify-between font-raleway">
+        <p>{card.desc}</p>
+        <p>Link</p>
+      </div>
+      {/* <div
+        style={{
+          backgroundImage: `url(${card.url})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        className="w-[448px] h-[280px] rounded-[16px] mt-6 ml-6 absolute inset-0 z-0 grayscale group-hover:grayscale-0 transition-transform duration-300 group-hover:cursor-pointer"
+      ></div>
+
+      <div className="group relative inset-0 z-10 ">
         <p className=" p-2 text-sm md:text-2xl font-raleway group-hover:bg-blak opacity-70 text-bone group-hover:text-honey rounded-xl">
           {card.title}
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };
@@ -68,6 +85,8 @@ const cards = [
   {
     url: "https://images.pexels.com/photos/1008155/pexels-photo-1008155.jpeg",
     title: "Body In The Suitcase",
+    channel: "BBC1",
+    desc: "This is a description of the television show",
     id: 1,
   },
   {
@@ -90,14 +109,14 @@ const cards = [
     title: "Living With A Serial Killer",
     id: 5,
   },
-  {
-    url: "../images/garden-perfect-press.jpeg",
-    title: "Your Garden Made Perfect",
-    id: 6,
-  },
-  {
-    url: "../images/home-perfect.webp",
-    title: "Your Home Made Perfect",
-    id: 7,
-  },
+  // {
+  //   url: "../images/garden-perfect-press.jpeg",
+  //   title: "Your Garden Made Perfect",
+  //   id: 6,
+  // },
+  // {
+  //   url: "../images/home-perfect.webp",
+  //   title: "Your Home Made Perfect",
+  //   id: 7,
+  // },
 ];
