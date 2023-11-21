@@ -17,6 +17,7 @@ module.exports = {
         fungis: ["fungis", "sans-serif"],
         raleway: ["raleway", "sans-serif"],
         latosce: ["latosce", "sans-serif"],
+        script: ["Petit Formal Script", "cursive"],
       },
       colors: {
         bone: "#F6F6F6",

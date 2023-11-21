@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Poppins&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "fungis";
-  src: url("/fonts/Fungis-Bold.otf") format("opentype");
-}
+
 
 @font-face {
   font-family: "latosce";
