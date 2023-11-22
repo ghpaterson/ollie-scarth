@@ -4,6 +4,7 @@ import { motion as m, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 import Link from "next/link";
+import HighlightsInfiniteScroll from "@/utils/HighLightsInfiniteScroll";
 
 export default function Highlights() {
   return (
@@ -24,13 +25,14 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-80%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] bg-bone pb-20">
-      <div className="flex justify-center gap-6 py-10 px-10 text-blak font-raleway text-3xl md:text-6xl">
+    <section ref={targetRef} className="relative h-[300vh] bg-bone">
+      {/* <div className="flex justify-center gap-6 py-10 px-10 text-blak font-raleway text-3xl md:text-6xl">
         <h1 className=" flex-wrap font-ralewayLight">
           Highlights of some of Ollie's favourite projects he's worked on
         </h1>
-      </div>
-      <div className="sticky top-0 flex h-96 md:h-[650px] items-center overflow-hidden pt-40 -mt-32 md:-mt-40">
+      </div> */}
+      <HighlightsInfiniteScroll />
+      <div className="sticky top-0 flex h-96 md:h-[650px] items-center overflow-hidden pt-40 -mt-32 md:-mt-20">
         <m.div style={{ x }} className="flex gap-4">
           {cards.map((card) => {
             return <Card card={card} key={card.id} />;
@@ -45,10 +47,10 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group h-[450px] w-[700px]  overflow-hidden bg-sand  p-4 flex flex-col "
+      className="group h-[450px] w-[700px]  overflow-hidden   p-4 flex flex-col "
     >
       <div
-        className="w-[700] h-[300px] border-2 border-bone grayscale group-hover:grayscale-0"
+        className="w-[700] h-[300px] border-2 border-honey grayscale group-hover:grayscale-0"
         style={{
           backgroundImage: `url(${card.url})`,
           backgroundSize: "cover",

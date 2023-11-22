@@ -2,7 +2,7 @@
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 
-export default function FactEntInfiniteScroll() {
+export default function HighlightsInfiniteScroll() {
   const firstText = useRef(null);
   const secondText = useRef(null);
   let xPercent = 0;
@@ -20,7 +20,7 @@ export default function FactEntInfiniteScroll() {
     }
     gsap.set(firstText.current, { xPercent: xPercent });
     gsap.set(secondText.current, { xPercent: xPercent });
-    xPercent += 0.05 * direction;
+    xPercent += 0.025 * direction;
     requestAnimationFrame(animation);
   };
 
@@ -28,8 +28,8 @@ export default function FactEntInfiniteScroll() {
     <main className="main">
       <div className="sliderContainer">
         <div className="slider">
-          <p ref={firstText}>Factual Entertainment - </p>
-          <p ref={secondText}>Factual Entertainment</p>
+          <p ref={firstText}>{`Professional Highlights(*05)`}</p>
+          <p ref={secondText}>{`Professional Highlights(*05)`}</p>
         </div>
       </div>
     </main>

@@ -53,9 +53,9 @@ body {
 .slider p{
   margin: 0px;
   color: #111111;
-  font-size: 120px;
+  font-size: 150px;
   font-weight: 400;
-  font-family: sans-serif;
+  font-family: lactosce;
 }
 
 .slider p:nth-of-type(2){
