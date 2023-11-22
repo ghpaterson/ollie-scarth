@@ -45,7 +45,7 @@ export default function Hero() {
               alt="Image of sand dunes"
               className="border-4 border-bone mt-36 md:-ml-16 md:mt-20"
             />
-            <p className="text-bone text-xs py-2 flex justify-end md:px-16">
+            <p className="text-bone font-neueHaas text-xs py-2 flex justify-end md:px-16">
               - Peckham, South London
             </p>
           </m.div>
@@ -54,14 +54,14 @@ export default function Hero() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="flex flex-col justify-end md:mt-72 text-bone gap-10 text-sm md:text-lg font-raleway md:w-[500px]"
+            className="flex flex-col justify-end md:mt-72 text-bone gap-10 text-sm md:text-lg md:w-[500px]"
           >
-            <div className="flex gap-6 text-xl md:pr-2">
+            <div className="flex gap-8 text-xl md:pr-2 font-neueHaasMed">
               <p>Series Director</p>
               <p>Producer // Director</p>
               <p>Edit Producer</p>
             </div>
-            <p className="pr-6">
+            <p className="pr-6 font-neueHaas">
               Based in South London, with over a decade of expertise,
               specialising in crafting elegant narratives within the realms of
               Documentaries and Factual Entertainment
