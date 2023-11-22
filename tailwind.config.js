@@ -14,10 +14,10 @@ module.exports = {
           "url('https://images.pexels.com/photos/3692639/pexels-photo-3692639.jpeg')",
       },
       fontFamily: {
-        fungis: ["fungis", "sans-serif"],
         raleway: ["raleway", "sans-serif"],
         latosce: ["latosce", "sans-serif"],
-        script: ["Petit Formal Script", "cursive"],
+        neueHaas: ["neue-haas", "sans-serif"],
+        neueHaasMed: ["neue-haas-medium", "sans-serif"],
       },
       colors: {
         bone: "#F6F6F6",

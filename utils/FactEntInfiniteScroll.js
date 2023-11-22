@@ -28,8 +28,8 @@ export default function FactEntInfiniteScroll() {
     <main className="main">
       <div className="sliderContainer">
         <div className="slider">
-          <p ref={firstText}>{`Factual Entertainment (*05)`}</p>
-          <p ref={secondText}>{`Factual Entertainment (*05)`}</p>
+          <p ref={firstText}>{`Factual Entertainment(*05)`}</p>
+          <p ref={secondText}>{`Factual Entertainment(*05)`}</p>
         </div>
       </div>
     </main>

@@ -47,10 +47,10 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group h-[450px] w-[700px]  overflow-hidden   p-4 flex flex-col "
+      className="group h-[450px] w-[700px]  overflow-hidden font-neueHaas   p-4 flex flex-col "
     >
       <div
-        className="w-[700] h-[300px] border-2 border-honey grayscale group-hover:grayscale-0"
+        className="w-[700] h-[300px] border-2 border-blak grayscale group-hover:grayscale-0"
         style={{
           backgroundImage: `url(${card.url})`,
           backgroundSize: "cover",
@@ -59,14 +59,14 @@ const Card = ({ card }) => {
       ></div>
       <div className="px-4">
         <div className="pt-2">
-          <h1 className="text-xl font-raleway text-blak">{card.title}</h1>
+          <h1 className="text-2xl font-neueHaasMed  text-blak">{card.title}</h1>
         </div>
         <div>
-          <h2 className="text-lg font-raleway text-gray-700">{`(${card.channel})`}</h2>
+          <h2 className="text-xl  text-gray-700">{card.channel}</h2>
         </div>
-        <div className="flex justify-between font-raleway text-blak">
+        <div className="flex justify-between gap-10 text-blak">
           <p>{card.desc}</p>
-          <div className="text-2xl">
+          <div className="text-2xl flex justify-end items-end">
             <Link href={card.href}>
               <BsArrowUpRightCircle />
             </Link>
@@ -81,41 +81,41 @@ const Card = ({ card }) => {
 const cards = [
   {
     url: "https://images.pexels.com/photos/1008155/pexels-photo-1008155.jpeg",
-    title: "Body In The Suitcase",
-    channel: "BBC1",
-    desc: "This is a description of the television show",
+    title: "Your Home Made Perfect",
+    channel: "BBC 2",
+    desc: "Transforming problematic pads into heavenly homes. Cutting edge technology and innovative architects reveal the design dream ordinary houses could become. With Angela Scanlon",
     href: "/About",
     id: 1,
   },
   {
     url: "https://images.pexels.com/photos/4916163/pexels-photo-4916163.jpeg",
-    title: "Tales From The Kitchen Garden",
-    channel: "CNN",
-    desc: "This is another description of the television show",
+    title: "I am a Killer",
+    channel: "Netflix (UK), Crime and Investigation(US)",
+    desc: " Death row inmates convicted of capital murder give firsthand accounts of their crimes in this documentary series",
     href: "/About",
     id: 2,
   },
   {
     url: "https://images.pexels.com/photos/6193908/pexels-photo-6193908.jpeg",
     title: "Our Dementia Choir",
-    channel: "Channel 4 News",
-    desc: "This is yet another description of the television show",
+    channel: "BBC 1",
+    desc: "The power of music. Actor Vicky McClure returns home to Nottingham to share a poignant, uplifting journey - proving people living with dementia can achieve truly remarkable things",
     href: "/About",
     id: 3,
   },
   {
     url: "../images/garden-revolution-press.jpeg",
-    title: "Great Garden Revolution",
-    channel: "The Guardian",
-    desc: "This is a description of the newspaper article",
+    title: "Jamie & Jimmy's Friday Night Feast",
+    channel: "Channel 4",
+    desc: "Jamie Oliver and Jimmy Doherty join forces at their end-of-the-pier caff to make top feasts for the weekend",
     href: "/About",
     id: 4,
   },
   {
     url: "https://images.pexels.com/photos/6069511/pexels-photo-6069511.jpeg",
-    title: "Living With A Serial Killer",
-    channel: "Sky Arts",
-    desc: "This is a description of the television show",
+    title: "Marcus Waring: Tales from a Kitchen Garden",
+    channel: "BBC 1",
+    desc: "From field to fork. Restaurateur Marcus teams up with top British producers, farmers and gardeners who inspire him to expand his market garden and create delicious dishes",
     href: "/About",
     id: 5,
   },

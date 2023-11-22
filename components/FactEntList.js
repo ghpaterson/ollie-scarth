@@ -13,8 +13,8 @@ const factEntData = [
 
 export default function FactEntList() {
   return (
-    <main>
-      <div className="grid grid-cols-12 pb-10">
+    <main className="md:pb-10">
+      <div className="grid grid-cols-12 pb-12">
         <FactEntInfiniteScroll />
         {/* <div
           id="work-sub-heading"
@@ -23,7 +23,7 @@ export default function FactEntList() {
         {/* <h1>{`WORK(*${factEntData.length})`}</h1> */}
       </div>
       <div className="col-span-12 w-full flex flex-col items-start py-20">
-        <ul className="flex flex-col gap-4 md:gap-6 items-start font-raleway text-md md:text-5xl text-blak">
+        <ul className="flex flex-col gap-4 md:gap-6 items-start font-neueHaas text-md md:text-5xl text-blak">
           {factEntData.map((item) => (
             <m.li
               variants={elementFade}

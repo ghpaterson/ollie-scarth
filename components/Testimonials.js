@@ -1,6 +1,6 @@
 export default function Testimonials() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-12 font-raleway gap-10 md:gap-20 md:px-40 py-10">
+    <section className="grid grid-cols-1 md:grid-cols-12 font-neueHaas md:text-lg gap-10 md:gap-20 md:px-40 py-10">
       <div className=" col-span-4 flex flex-col items-start justify-start gap-4">
         <p>{`Ollie is absolute top shagger! Couldn't recommed him (*enough) 10/10 would hire`}</p>
         <p className="text-gray-600"> - Jamie Oliver</p>
