@@ -76,7 +76,20 @@ body {
     padding: 1rem;
   }
 
-  
+  .slider p{
+    margin: 0px;
+    color: #111111;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: lactosce;
+  }
+
+  .main{
+    margin-bottom: 0;
+    height: 2vh;
+    position: relative;
+  }
+
   #scrolling-section {
     display: none;
   }
