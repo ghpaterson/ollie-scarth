@@ -31,7 +31,7 @@ export default function Hero() {
             className="md:hidden ml-8"
           />
         </m.div>
-        <div className="flex flex-col items-center justify-center md:flex-row gap-12">
+        <div className="flex flex-col items-center justify-center md:flex-row gap-18">
           <m.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -43,9 +43,9 @@ export default function Hero() {
               src={bicycle}
               width={700}
               alt="Image of sand dunes"
-              className="border-4 border-bone mt-36 md:-ml-6 md:mt-20"
+              className="border-4 border-bone mt-36 md:-ml-16 md:mt-20"
             />
-            <p className="text-bone text-xs py-2 flex justify-end md:px-10">
+            <p className="text-bone text-xs py-2 flex justify-end md:px-16">
               - Peckham, South London
             </p>
           </m.div>
@@ -53,35 +53,17 @@ export default function Hero() {
             variants={heroImageFade}
             initial="hidden"
             whileInView="show"
-            className="flex flex-col justify-end md:mt-72 text-bone gap-1 text-sm md:text-xl font-raleway md:w-[500px]"
+            className="flex flex-col justify-end md:mt-72 text-bone gap-10 text-sm md:text-lg font-raleway md:w-[500px]"
           >
-            <p>
-              Ollie is a{" "}
-              <span className="md:text-2xl font-script hover:text-green-900">
-                Series Producer,{" "}
-              </span>
-              <span className="md:text-2xl font-script hover:text-green-900">
-                Producer + Director
-              </span>{" "}
-              and{" "}
-              <span className="md:text-2xl font-script hover:text-green-900">
-                Edit Producer
-              </span>{" "}
-              based in South London. With over a decade of expertise,
-              specialising in crafting elegant narratives within the realm of
-              <span className="md:text-2xl font-script mx-2 flex gap-2">
-                Documentaries{" "}
-                <Link href="/#">
-                  <BsArrowUpRightCircle />
-                </Link>{" "}
-                and
-              </span>{" "}
-              <span className="md:text-2xl font-script flex gap-2">
-                Factual Entertainment{" "}
-                <Link href="#">
-                  <BsArrowUpRightCircle />
-                </Link>
-              </span>
+            <div className="flex gap-6 text-xl md:pr-2">
+              <p>Series Director</p>
+              <p>Producer // Director</p>
+              <p>Edit Producer</p>
+            </div>
+            <p className="pr-6">
+              Based in South London, with over a decade of expertise,
+              specialising in crafting elegant narratives within the realms of
+              Documentaries and Factual Entertainment
             </p>
 
             <div className="text-7xl flex justify-end md:-mt-4">

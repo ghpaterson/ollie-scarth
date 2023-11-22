@@ -45,28 +45,30 @@ const Card = ({ card }) => {
   return (
     <div
       key={card.id}
-      className="group h-[450px] w-[700px]  overflow-hidden bg-sand rounded-[24px] p-4 flex flex-col "
+      className="group h-[450px] w-[700px]  overflow-hidden bg-sand  p-4 flex flex-col "
     >
       <div
-        className="w-[700] h-[300px] rounded-[16px] border-2 border-sand grayscale group-hover:grayscale-0"
+        className="w-[700] h-[300px] border-2 border-bone grayscale group-hover:grayscale-0"
         style={{
           backgroundImage: `url(${card.url})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       ></div>
-      <div className="pt-2">
-        <h1 className="text-xl font-raleway text-blak">{card.title}</h1>
-      </div>
-      <div>
-        <h2 className="text-lg font-raleway text-gray-700">{`(${card.channel})`}</h2>
-      </div>
-      <div className="flex justify-between font-raleway text-blak">
-        <p>{card.desc}</p>
-        <div className="text-2xl">
-          <Link href={card.href}>
-            <BsArrowUpRightCircle />
-          </Link>
+      <div className="px-4">
+        <div className="pt-2">
+          <h1 className="text-xl font-raleway text-blak">{card.title}</h1>
+        </div>
+        <div>
+          <h2 className="text-lg font-raleway text-gray-700">{`(${card.channel})`}</h2>
+        </div>
+        <div className="flex justify-between font-raleway text-blak">
+          <p>{card.desc}</p>
+          <div className="text-2xl">
+            <Link href={card.href}>
+              <BsArrowUpRightCircle />
+            </Link>
+          </div>
         </div>
       </div>
     </div>
