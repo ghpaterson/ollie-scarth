@@ -21,21 +21,21 @@ export const pageTransition = {
 export const elementFade = {
   hidden: {
     opacity: 0,
-    y: 5,
+    y: 10,
     transition: {
       duration: 2,
       ease: "easeIn",
     },
   },
-  show: {
+  show: (i) => ({
     opacity: 1,
     y: 0,
     transition: {
-      duration: 2,
+      duration: 1,
       ease: "easeIn",
-      delayChildren: 1,
+      delay: 0.5 * i,
     },
-  },
+  }),
 };
 
 export const heroImageFade = {
@@ -45,7 +45,7 @@ export const heroImageFade = {
   show: {
     opacity: 1,
     transition: {
-      duration: 2,
+      duration: 1,
       ease: "easeIn",
     },
   },

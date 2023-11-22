@@ -53,6 +53,7 @@ export default function Hero() {
             variants={heroImageFade}
             initial="hidden"
             whileInView="show"
+            viewport={{ once: true }}
             className="flex flex-col justify-end md:mt-72 text-bone gap-10 text-sm md:text-lg font-raleway md:w-[500px]"
           >
             <div className="flex gap-6 text-xl md:pr-2">
@@ -66,7 +67,7 @@ export default function Hero() {
               Documentaries and Factual Entertainment
             </p>
 
-            <div className="text-7xl flex justify-end md:-mt-4">
+            <div className="text-7xl flex justify-end md:-mt-4 md:-mr-20">
               <IoFlowerOutline />
             </div>
           </m.div>

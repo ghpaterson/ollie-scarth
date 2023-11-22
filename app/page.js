@@ -10,6 +10,8 @@ import { motion as m } from "framer-motion";
 import { heroImageFade } from "@/utils/motions";
 import { elementFade } from "@/utils/motions";
 import Testimonials from "@/components/Testimonials";
+import DocInfiniteScroll from "@/components/DocInfiniteScroll";
+import FactEntInfiniteScroll from "@/components/FactEntInfiniteScroll";
 
 export default function Home() {
   return (
@@ -21,9 +23,12 @@ export default function Home() {
           initial="hidden"
           whileInView="show"
           id="work-section"
+          viewport={{ once: true }}
         >
           <Highlights />
+          <DocInfiniteScroll />
           <DocumentaryList />
+          <FactEntInfiniteScroll />
           <FactEntList id="fact-ent-list" />
         </m.section>
         <m.section

@@ -12,23 +12,22 @@ const factEntData = [
 
 export default function FactEntList() {
   return (
-    <m.main
-      variants={elementFade}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true }}
-    >
+    <main>
       <div className="grid grid-cols-12 pt-10 pb-10 md:py-20">
         <div
           id="work-sub-heading"
           className="flex justify-start pb-6 px-4 text-blak font-raleway text-3xl"
         >
-          <h1>{`WORK(*${factEntData.length})`}</h1>
+          {/* <h1>{`WORK(*${factEntData.length})`}</h1> */}
         </div>
         <div className="col-span-12 w-full flex flex-col items-start">
           <ul className="flex flex-col gap-4 md:gap-6 items-start font-raleway text-md md:text-5xl text-blak">
             {factEntData.map((item) => (
-              <li
+              <m.li
+                variants={elementFade}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
                 key={item.id}
                 className="group hover:text-shade/90 hover:cursor-pointer md:hover:translate-x-8 transition duration-500 ease-in flex"
               >
@@ -37,11 +36,11 @@ export default function FactEntList() {
                 <span className="invisible group-hover:visible px-2">
                   <GoArrowUpRight />
                 </span>
-              </li>
+              </m.li>
             ))}
           </ul>
         </div>
       </div>
-    </m.main>
+    </main>
   );
 }
