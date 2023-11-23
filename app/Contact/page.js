@@ -1,6 +1,5 @@
 "use client";
 
-import NavBar from "@/components/NavBar";
 import CopyEmailAddress from "@/utils/CopyEmailAddress";
 import Link from "next/link";
 
@@ -14,18 +13,17 @@ export default function Contact() {
 
   return (
     <main>
-      {/* <NavBar /> */}
       <m.section variants={pageTransition} initial="hidden" whileInView="show">
-        <div className="mt-10 h grid grid-cols-1 md:grid-cols-12 border-t-2 border-b-2 border-blak rounded-lg ">
+        <div className="mt-10 h grid grid-cols-1 md:grid-cols-12  ">
           <div className="md:col-span-6 text-blak rounded-lg px-4 py-10 md:py-32 md:px-20  flex flex-col items-start border-blak">
-            <h1 className="text-blak text-2xl md:text-4xl font-raleway">
-              GET IN TOUCH
+            <h1 className="text-blak text-2xl md:text-5xl font-neueHaasMed">
+              Get in touch
             </h1>
-            <p className=" py-6 font-raleway">
+            <p className="text-3xl py-6 font-neueHaas">
               Copy my email address or contact me through one of my social
               accounts
             </p>
-            <div className="flex flex-col gap-2 font-raleway">
+            <div className="flex flex-col gap-2 font-neueHaas">
               <CopyEmailAddress />
               <p className=" md:text-xl">07853341968</p>
               <Link href={linkedinURL} target="_blank">

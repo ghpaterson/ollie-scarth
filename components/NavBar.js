@@ -4,8 +4,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useRouter } from "next/navigation";
 
 export default function NavBar() {
+  const router = useRouter();
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -16,6 +18,33 @@ export default function NavBar() {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+
+  const handleScrollToDocumentary = () => {
+    const target = document.getElementById("documentary-list-section");
+
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const handleScrollToFactEnt = () => {
+    const target = document.getElementById("factEnt-list-section");
+
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
+
+  // const handleScrollToDocumentary = () => {
+  //   router.push("#documentary-list-section", { shallow: true });
+  // };
+  // const handleScrollToFactEnt = () => {
+  //   router.push("#factEnt-list-section", { shallow: true });
+  // };
 
   return (
     <header className=" sticky top-0 z-20 pb-2">
@@ -48,14 +77,24 @@ export default function NavBar() {
         >
           <ul
             className="flex flex-col items-center gap-8 md:flex-row md:items-center
-               font-neueHaas text-2xl md:text-lg md:py-0 py-10 text-blak md:px-6"
+               font-neueHaas text-2xl md:text-lg md:py-0 py-10 text-blak md:px-6 cursor-pointer"
           >
-            <Link href="#">
-              <li onClick={closeMenu}>Documentary</li>
-            </Link>
-            <Link href="#">
-              <li onClick={closeMenu}>Fact. Entertainment</li>
-            </Link>
+            <li
+              onClick={() => {
+                closeMenu();
+                handleScrollToDocumentary();
+              }}
+            >
+              Documentary
+            </li>
+            <li
+              onClick={() => {
+                closeMenu();
+                handleScrollToFactEnt();
+              }}
+            >
+              Fact. Entertainment
+            </li>
             <Link href={"/About"}>
               <li onClick={closeMenu}>About</li>
             </Link>

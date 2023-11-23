@@ -38,12 +38,12 @@ export default function DocumentaryList() {
     setHoveredItem(title);
   };
 
-  const handleMouseLeave = () => {
-    setHoveredItem(null);
-  };
+  // const handleMouseLeave = () => {
+  //   setHoveredItem(null);
+  // };
 
   return (
-    <main className="">
+    <main id="documentary-list-section">
       <div className="">
         <DocInfiniteScroll />
       </div>
@@ -56,12 +56,12 @@ export default function DocumentaryList() {
                 hoveredItem
                   ? documentaryData.find((item) => item.title === hoveredItem)
                       ?.imageUrl
-                  : JHDunes
+                  : "/images/bicycle.png"
               }')`,
               backgroundSize: "cover",
               backgroundPosition: "center",
-              width: "500px", // Set the width of the container
-              height: "410px", // Set the height of the container
+              width: "550px", // Set the width of the container
+              height: "350px", // Set the height of the container
             }}
           ></div>
           <p className="text-blak text-lg font-neueHaas">

@@ -1,6 +1,5 @@
 "use client";
 
-import NavBar from "@/components/NavBar";
 import { motion as m } from "framer-motion";
 import { pageTransition } from "@/utils/motions";
 import ScrollToTop from "@/utils/scrollToTop";
@@ -8,17 +7,16 @@ import ScrollToTop from "@/utils/scrollToTop";
 export default function About() {
   return (
     <main>
-      {/* <NavBar /> */}
       <m.section variants={pageTransition} initial="hidden" whileInView="show">
         <section>
-          <h1 className="font-raleway text-3xl md:text-6xl py-6 md:py-10 md:px-6">
+          <h1 className="font-neueHaas text-3xl md:text-6xl py-6 md:py-10 md:px-6">
             {`ABOUT(*Ollie)`}
           </h1>
         </section>
         <section>
-          <div className="grid grid-cols-1 md:grid-cols-12  rounded-lg border-b-2 border-t-2 border-blak ">
+          <div className="grid grid-cols-1 md:grid-cols-12 font-neueHaas">
             <div className="md:col-span-6 rounded-lg px-4 py-20 md:py-20 md:px-20  flex items-center">
-              <p className="text-blak md:text-lg font-raleway font-bold">
+              <p className="text-blak md:text-lg">
                 Hi! I'm Ollie, a director and producer with a chameleon-like
                 approach to storytelling. I believe that the best way to create
                 impactful content is to adapt to the unique vision and voice of

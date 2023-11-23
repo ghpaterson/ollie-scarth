@@ -13,7 +13,7 @@ const factEntData = [
 
 export default function FactEntList() {
   return (
-    <main className="md:pb-10">
+    <main id="factEnt-list-section" className="md:pb-10">
       <div className="">
         <FactEntInfiniteScroll />
       </div>
