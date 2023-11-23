@@ -47,8 +47,8 @@ export default function DocumentaryList() {
       <div className="">
         <DocInfiniteScroll />
       </div>
-      <div className=" w-full flex flex-col md:flex-row items-start md:justify-between pb-10">
-        <div id="documentary-list-image" className="ml-20">
+      <div className=" w-full flex flex-col md:flex-row items-start md:justify-center gap-40 md md:items-center pb-10">
+        <div id="documentary-list-image" className="">
           <div
             className=""
             style={{
@@ -64,9 +64,15 @@ export default function DocumentaryList() {
               height: "410px", // Set the height of the container
             }}
           ></div>
+          <p className="text-blak text-lg font-neueHaas">
+            {hoveredItem
+              ? documentaryData.find((item) => item.title === hoveredItem)
+                  ?.title
+              : ""}
+          </p>
         </div>
 
-        <ul className="flex flex-col gap-4 md:gap-6 items-start md:items-end font-neueHaas text-md md:text-5xl text-blak">
+        <ul className="flex flex-col gap-4 md:gap-6 items-start md:items-end font-neueHaas text-md md:text-4xl text-blak">
           {documentaryData.map((item) => (
             <m.li
               variants={elementFade}

@@ -18,7 +18,7 @@ export default function FactEntList() {
         <FactEntInfiniteScroll />
       </div>
       <div className=" w-full flex flex-col items-start">
-        <ul className="flex flex-col gap-4 md:gap-6 items-start font-neueHaas text-md md:text-5xl text-blak">
+        <ul className="flex flex-col gap-4 md:gap-6 items-start font-neueHaas text-md md:text-4xl text-blak">
           {factEntData.map((item) => (
             <m.li
               variants={elementFade}
