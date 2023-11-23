@@ -39,13 +39,6 @@ export default function NavBar() {
     }
   };
 
-  // const handleScrollToDocumentary = () => {
-  //   router.push("#documentary-list-section", { shallow: true });
-  // };
-  // const handleScrollToFactEnt = () => {
-  //   router.push("#factEnt-list-section", { shallow: true });
-  // };
-
   return (
     <header className=" sticky top-0 z-20 pb-2">
       <div

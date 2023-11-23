@@ -3,20 +3,9 @@ import { heroImageFade } from "@/utils/motions";
 import Image from "next/image";
 import bicycle from "../public/images/bicycle.png";
 import { IoFlowerOutline } from "react-icons/io5";
-import { BsArrowUpRightCircle } from "react-icons/bs";
 import ollieHeroWarp from "../public/images/ollieHeroWarp.svg";
 import ollieHeroWarpSmall from "../public/images/ollieHeroWarpSmall.svg";
-import { useRouter } from "next/navigation";
 export default function Hero() {
-  const router = useRouter();
-
-  const handleScrollToDocumentary = () => {
-    router.push("#documentary-list-section", { shallow: true });
-  };
-  const handleScrollToFactEnt = () => {
-    router.push("#factEnt-list-section", { shallow: true });
-  };
-
   return (
     <section
       id="hero"

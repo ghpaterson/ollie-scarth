@@ -1,9 +1,7 @@
 import DocInfiniteScroll from "@/utils/DocInfiniteScroll";
 import { elementFade } from "@/utils/motions";
 import { motion as m } from "framer-motion";
-import Image from "next/image";
 import { GoArrowUpRight } from "react-icons/go";
-import JHDunes from "../public/images/JHDunes.jpg";
 import { useState } from "react";
 
 const documentaryData = [
@@ -50,7 +48,7 @@ export default function DocumentaryList() {
       <div className=" w-full flex flex-col md:flex-row items-start md:justify-center gap-40 md md:items-center pb-10">
         <div id="documentary-list-image" className="">
           <div
-            className=""
+            className=" border-2 border-blak"
             style={{
               backgroundImage: `url('${
                 hoveredItem

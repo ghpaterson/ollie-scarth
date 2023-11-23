@@ -2,22 +2,37 @@ import FactEntInfiniteScroll from "@/utils/FactEntInfiniteScroll";
 import { elementFade } from "@/utils/motions";
 import { motion as m } from "framer-motion";
 import { GoArrowUpRight } from "react-icons/go";
+import { useState } from "react";
 
 const factEntData = [
-  { id: 1, title: "JAMIE & JIMMY'S FRIDAY NIGHT FEAST" },
-  { id: 2, title: "MARCUS WARING: Tales from a Kitchen Garden" },
-  { id: 3, title: "YOUR HOME MADE PERFECT" },
-  { id: 4, title: "YOUR GARDEN MADE PERFECT" },
-  { id: 5, title: "BEAR GRYLLS: The Island" },
+  {
+    id: 1,
+    title: "JAMIE & JIMMY'S FRIDAY NIGHT FEAST",
+    imageUrl: "/images/bicycle.png",
+  },
+  {
+    id: 2,
+    title: "MARCUS WARING: Tales from a Kitchen Garden",
+    imageUrl: "/images/picnic.JPG",
+  },
+  { id: 3, title: "YOUR HOME MADE PERFECT", imageUrl: "/images/bicycle.png" },
+  { id: 4, title: "YOUR GARDEN MADE PERFECT", imageUrl: "/images/picnic.JPG" },
+  { id: 5, title: "BEAR GRYLLS: The Island", imageUrl: "/images/bicycle.png" },
 ];
 
 export default function FactEntList() {
+  const [hoveredItem, setHoveredItem] = useState(null);
+
+  const handleMouseEnter = (title) => {
+    setHoveredItem(title);
+  };
+
   return (
     <main id="factEnt-list-section" className="md:pb-10">
       <div className="">
         <FactEntInfiniteScroll />
       </div>
-      <div className=" w-full flex flex-col items-start">
+      <div className="w-full flex flex-col md:flex-row items-start md:justify-center gap-10 md md:items-center pb-10">
         <ul className="flex flex-col gap-4 md:gap-6 items-start font-neueHaas text-md md:text-4xl text-blak">
           {factEntData.map((item) => (
             <m.li
@@ -27,6 +42,7 @@ export default function FactEntList() {
               viewport={{ once: true }}
               key={item.id}
               className="group hover:text-shade/90 hover:cursor-pointer md:hover:translate-x-8 transition duration-500 ease-in flex"
+              onMouseEnter={() => handleMouseEnter(item.title)}
             >
               <span className="text-xs md:text-3xl px-2">{`(*${item.id})`}</span>
               {item.title}
@@ -36,8 +52,29 @@ export default function FactEntList() {
             </m.li>
           ))}
         </ul>
+        <div id="factEnt-list-image" className="">
+          <div
+            className="border-2 border-blak"
+            style={{
+              backgroundImage: `url('${
+                hoveredItem
+                  ? factEntData.find((item) => item.title === hoveredItem)
+                      ?.imageUrl
+                  : "/images/bicycle.png"
+              }')`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              width: "550px", // Set the width of the container
+              height: "350px", // Set the height of the container
+            }}
+          ></div>
+          <p className="text-blak text-lg font-neueHaas">
+            {hoveredItem
+              ? factEntData.find((item) => item.title === hoveredItem)?.title
+              : ""}
+          </p>
+        </div>
       </div>
-      {/* </div> */}
     </main>
   );
 }
