@@ -40,8 +40,8 @@ export default function DocInfiniteScroll() {
     <main className="main">
       <div className="sliderContainer">
         <div ref={slider} className="slider">
-          <p ref={firstText}>{`Documentary Series(*6) `}</p>
-          <p ref={secondText}>{`Documentary Series(*6) `}</p>
+          <p ref={firstText}>{`Documentary(*6) `}</p>
+          <p ref={secondText}>{`Documentary(*6) `}</p>
         </div>
       </div>
     </main>

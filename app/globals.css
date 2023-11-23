@@ -110,6 +110,10 @@ body {
     display: none;
   }
 
+  #documentary-list-image{
+    display: none;
+  }
+
   #gallery-card {
     background-image: url('https://images.pexels.com/photos/3692639/pexels-photo-3692639.jpeg');
     background-size: cover;
