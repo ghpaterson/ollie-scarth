@@ -14,15 +14,10 @@ const factEntData = [
 export default function FactEntList() {
   return (
     <main className="md:pb-10">
-      <div className="grid grid-cols-12 pb-12">
+      <div className="">
         <FactEntInfiniteScroll />
-        {/* <div
-          id="work-sub-heading"
-          className="flex justify-start pb-6 px-4 text-blak font-raleway text-3xl"
-        > */}
-        {/* <h1>{`WORK(*${factEntData.length})`}</h1> */}
       </div>
-      <div className="col-span-12 w-full flex flex-col items-start py-20">
+      <div className=" w-full flex flex-col items-start">
         <ul className="flex flex-col gap-4 md:gap-6 items-start font-neueHaas text-md md:text-5xl text-blak">
           {factEntData.map((item) => (
             <m.li

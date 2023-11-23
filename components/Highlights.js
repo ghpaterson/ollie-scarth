@@ -32,7 +32,7 @@ const HorizontalScrollCarousel = () => {
         </h1>
       </div> */}
       <HighlightsInfiniteScroll />
-      <div className="sticky top-0 flex h-96 md:h-[650px] items-center overflow-hidden pt-40 -mt-32 md:-mt-20">
+      <div className="sticky top-0 flex h-96 md:h-[650px] items-center overflow-hidden pt-40 -mt-32 md:-mt-60">
         <m.div style={{ x }} className="flex gap-4">
           {cards.map((card) => {
             return <Card card={card} key={card.id} />;

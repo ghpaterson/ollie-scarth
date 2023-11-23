@@ -43,26 +43,30 @@ export default function DocumentaryList() {
   };
 
   return (
-    <main>
-      <div className="grid grid-cols-12 pb-10">
+    <main className="">
+      <div className="">
         <DocInfiniteScroll />
       </div>
-      <div className=" w-full flex flex-col md:flex-row items-start md:justify-between py-20">
+      <div className=" w-full flex flex-col md:flex-row items-start md:justify-between pb-10">
         <div id="documentary-list-image" className="ml-20">
-          <Image
-            src={
-              hoveredItem
-                ? documentaryData.find((item) => item.title === hoveredItem)
-                    ?.imageUrl
-                : JHDunes
-            }
-            width={500}
-            height={700}
-            alt="documentary-image"
-            className="bg-cover overflow-hidden"
-          />
+          <div
+            className=""
+            style={{
+              backgroundImage: `url('${
+                hoveredItem
+                  ? documentaryData.find((item) => item.title === hoveredItem)
+                      ?.imageUrl
+                  : JHDunes
+              }')`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              width: "500px", // Set the width of the container
+              height: "410px", // Set the height of the container
+            }}
+          ></div>
         </div>
-        <ul className="flex flex-col gap-4 md:gap-6 items-start md:items-end font-neueHaas text-md md:text-5xl text-blak bg-red-300">
+
+        <ul className="flex flex-col gap-4 md:gap-6 items-start md:items-end font-neueHaas text-md md:text-5xl text-blak">
           {documentaryData.map((item) => (
             <m.li
               variants={elementFade}
