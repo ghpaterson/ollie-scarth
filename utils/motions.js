@@ -53,7 +53,7 @@ export const heroImageFade = {
 
 export const imageReveal = {
   hidden: {
-    height: 0,
+    height: "0%",
   },
   show: {
     height: "100%",

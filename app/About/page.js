@@ -16,7 +16,7 @@ export default function About() {
         <section>
           <div className="grid grid-cols-1 md:grid-cols-12 font-neueHaas">
             <div className="md:col-span-6 rounded-lg px-4 py-20 md:py-20 md:px-20  flex items-center">
-              <p className="text-blak md:text-lg">
+              <p className="text-blak md:text-2xl font-bold">
                 Hi! I'm Ollie, a director and producer with a chameleon-like
                 approach to storytelling. I believe that the best way to create
                 impactful content is to adapt to the unique vision and voice of

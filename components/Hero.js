@@ -6,13 +6,33 @@ import { IoFlowerOutline } from "react-icons/io5";
 import ollieHeroWarp from "../public/images/ollieHeroWarp.svg";
 import ollieHeroWarpSmall from "../public/images/ollieHeroWarpSmall.svg";
 export default function Hero() {
+  const handleScrollToDocumentary = () => {
+    const target = document.getElementById("documentary-list-section");
+
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const handleScrollToFactEnt = () => {
+    const target = document.getElementById("factEnt-list-section");
+
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <section
       id="hero"
       className="grid grid-cols-1 md:grid-cols-12 w-full  bg-sand rounded-t-3xl rounded-b-xl md:rounded-t-[100px] pt-4 pb-10 md:pt-10"
     >
       <div className="md:col-span-12 bg-transparent px-6 md:px-10 py-2 flex flex-col justify-start ">
-        <m.div className="text-7xl md:text-[200px] font-latosce py-4 md:py-0 md:ml-12 text-bone absolute z-10">
+        <div className="text-7xl md:text-[200px] font-latosce py-4 md:py-0 md:ml-12 text-bone absolute z-10">
           {/* Hero Text For Large Screen */}
           <Image
             id="warped-hero"
@@ -28,12 +48,13 @@ export default function Hero() {
             alt="Ollie Scarth"
             className="md:hidden ml-8"
           />
-        </m.div>
+        </div>
         <div className="flex flex-col items-center justify-center md:flex-row gap-18">
           <m.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 2, ease: "easeIn", delay: 0.25 }}
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 1, ease: "easeIn" }}
             className="z-0"
           >
             <Image
@@ -47,13 +68,7 @@ export default function Hero() {
               - Peckham, South London
             </p>
           </m.div>
-          <m.div
-            variants={heroImageFade}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            className="flex flex-col justify-end md:mt-72 text-bone gap-10 text-sm md:text-lg md:w-[500px]"
-          >
+          <div className="flex flex-col justify-end md:mt-72 text-bone gap-6 text-sm md:text-lg md:w-[500px]">
             <div className="flex gap-8 text-xl md:pr-2 font-neueHaasMed">
               <p>Series Director</p>
               <p>Producer // Director</p>
@@ -64,11 +79,15 @@ export default function Hero() {
               specialising in crafting elegant narratives within the realms of
               Documentaries and Factual Entertainment
             </p>
+            <div>
+              <h1 onClick={handleScrollToDocumentary}>Documentary</h1>
+              <h1 onClick={handleScrollToFactEnt}>Factual Entertainment</h1>
+            </div>
 
             <div className="text-7xl flex justify-end md:-mt-4 md:-mr-20">
               <IoFlowerOutline />
             </div>
-          </m.div>
+          </div>
         </div>
       </div>
     </section>

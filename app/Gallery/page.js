@@ -1,13 +1,11 @@
 "use client";
 
-import NavBar from "@/components/NavBar";
 import ScrollToTop from "@/utils/scrollToTop";
 import { motion as m } from "framer-motion";
 import { pageTransition } from "@/utils/motions";
 export default function Gallery() {
   return (
     <main>
-      {/* <NavBar /> */}
       <m.section
         variants={pageTransition}
         initial="hidden"
@@ -15,9 +13,9 @@ export default function Gallery() {
         className="pb-6"
       >
         <section>
-          <h1 className="font-raleway text-3xl md:text-6xl py-6 md:py-10 md:px-6">{`GALLERY(*9)`}</h1>
+          <h1 className="font-neueHaas text-3xl md:text-6xl py-6 md:py-10 md:px-6">{`GALLERY(*9)`}</h1>
         </section>
-        <section className="grid grid-cols-1 md:grid-cols-12 border-t-2 border-b-2 border-blak rounded-xl gap-2 py-10 font-raleway">
+        <section className="grid grid-cols-1 md:grid-cols-12 border-t-2 border-b-2 border-blak rounded-xl gap-2 py-10 font-neueHaas">
           {/* below is the template to make image appear on hover on md:screen NO hover-reveal on mobile  note the globals.css stylesheet*/}
           <div
             id="gallery-card"

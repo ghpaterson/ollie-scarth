@@ -1,6 +1,14 @@
+import { elementFade } from "@/utils/motions";
+import { motion as m } from "framer-motion";
+
 export default function AboutSection() {
   return (
-    <main>
+    <m.main
+      variants={elementFade}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+    >
       <div className="grid grid-cols-1 md:grid-cols-12   ">
         <div className="md:col-span-6 rounded-lg px-4 py-20 md:py-32 md:px-20  flex items-center">
           <p className="text-blak md:text-2xl font-neueHaas font-bold">
@@ -17,6 +25,6 @@ export default function AboutSection() {
         </div>
         <div className="md:col-span-6 rounded-lg px-10 flex items-center justify-center py-20 bg-landing-about bg-cover bg-no-repeat"></div>
       </div>
-    </main>
+    </m.main>
   );
 }

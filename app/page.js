@@ -25,20 +25,12 @@ export default function Home() {
         >
           <Highlights />
           <DocumentaryList />
-          <FactEntList id="fact-ent-list" />
-        </m.section>
-        <m.section
-          variants={elementFade}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          id="about-section"
-          className="md:pb-10"
-        >
+          <FactEntList />
+
           <AboutSection />
+          <Testimonials />
+          <ScrollToTop />
         </m.section>
-        <Testimonials />
-        <ScrollToTop />
       </m.main>
     </>
   );
