@@ -8,7 +8,7 @@ export default function Testimonials() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="grid grid-cols-1 md:grid-cols-12 font-neueHaas md:text-lg gap-10 md:gap-20 md:px-40 py-10"
+      className="grid grid-cols-1 md:grid-cols-12 font-neueHaas md:text-lg gap-10 md:gap-20 md:px-40 py-20"
     >
       <div className=" col-span-4 flex flex-col items-start justify-start gap-4">
         <p>{`Ollie is absolute top shagger! Couldn't recommed him (*enough) 10/10 would hire`}</p>

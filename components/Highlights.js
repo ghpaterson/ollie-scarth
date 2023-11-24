@@ -25,7 +25,7 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-80%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] bg-bone">
+    <section ref={targetRef} className="relative h-[300vh] rounded-xl mt-4">
       {/* <div className="flex justify-center gap-6 py-10 px-10 text-blak font-raleway text-3xl md:text-6xl">
         <h1 className=" flex-wrap font-ralewayLight">
           Highlights of some of Ollie's favourite projects he's worked on
@@ -50,7 +50,7 @@ const Card = ({ card }) => {
       className="group h-[450px] w-[700px]  overflow-hidden font-neueHaas   p-4 flex flex-col "
     >
       <div
-        className="w-[700] h-[300px] border-2 border-blak grayscale group-hover:grayscale-0"
+        className="w-[700] h-[300px] border-2 border-olive grayscale group-hover:grayscale-0"
         style={{
           backgroundImage: `url(${card.url})`,
           backgroundSize: "cover",
@@ -62,7 +62,7 @@ const Card = ({ card }) => {
           <h1 className="text-2xl font-neueHaasMed  text-blak">{card.title}</h1>
         </div>
         <div>
-          <h2 className="text-xl  text-gray-700">{card.channel}</h2>
+          <h2 className="text-xl  text-blak">{card.channel}</h2>
         </div>
         <div className="flex justify-between gap-10 text-blak">
           <p>{card.desc}</p>

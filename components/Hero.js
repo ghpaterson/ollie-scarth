@@ -29,7 +29,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="grid grid-cols-1 md:grid-cols-12 w-full  bg-sand rounded-t-3xl rounded-b-xl md:rounded-t-[100px] pt-4 pb-10 md:pt-10"
+      className="grid grid-cols-1 md:grid-cols-12 w-full bg-sand rounded-t-3xl rounded-b-xl md:rounded-t-[100px] pt-4 pb-10 md:pt-10"
     >
       <div className="md:col-span-12 bg-transparent px-6 md:px-10 py-2 flex flex-col justify-start ">
         <div className="text-7xl md:text-[200px] font-latosce py-4 md:py-0 md:ml-12 text-bone absolute z-10">
@@ -50,13 +50,7 @@ export default function Hero() {
           />
         </div>
         <div className="flex flex-col items-center justify-center md:flex-row gap-18">
-          <m.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 1, ease: "easeIn" }}
-            className="z-0"
-          >
+          <div className="z-0">
             <Image
               id="dune-image"
               src={bicycle}
@@ -67,8 +61,8 @@ export default function Hero() {
             <p className="text-bone font-neueHaas text-xs py-2 flex justify-end md:px-16">
               - Peckham, South London
             </p>
-          </m.div>
-          <div className="flex flex-col justify-end md:mt-72 text-bone gap-6 text-sm md:text-lg md:w-[500px]">
+          </div>
+          <div className="flex flex-col justify-end md:mt-72 text-bone gap-6 text-sm md:text-lg md:w-[500px] font-neueHaas">
             <div className="flex gap-8 text-xl md:pr-2 font-neueHaasMed">
               <p>Series Director</p>
               <p>Producer // Director</p>
@@ -79,14 +73,24 @@ export default function Hero() {
               specialising in crafting elegant narratives within the realms of
               Documentaries and Factual Entertainment
             </p>
-            <div>
-              <h1 onClick={handleScrollToDocumentary}>Documentary</h1>
-              <h1 onClick={handleScrollToFactEnt}>Factual Entertainment</h1>
+            <div className="flex gap-4 ">
+              <h1
+                className="py-2 px-4 rounded-full border-2 border-bone cursor-pointer"
+                onClick={handleScrollToDocumentary}
+              >
+                Documentary
+              </h1>
+              <h1
+                className="py-2 px-4 rounded-full border-2 border-bone cursor-pointer"
+                onClick={handleScrollToFactEnt}
+              >
+                Factual Entertainment
+              </h1>
             </div>
 
-            <div className="text-7xl flex justify-end md:-mt-4 md:-mr-20">
+            {/* <div className="text-7xl flex justify-end md:-mt-4 md:-mr-20">
               <IoFlowerOutline />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
