@@ -10,6 +10,7 @@ import { motion as m } from "framer-motion";
 import { heroImageFade } from "@/utils/motions";
 import { elementFade } from "@/utils/motions";
 import Testimonials from "@/components/Testimonials";
+import Loader from "@/components/Loader";
 
 export default function Home() {
   return (
