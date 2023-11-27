@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { motion as m } from "framer-motion";
+import { FiArrowDownCircle } from "react-icons/fi";
 
 const scrollToSection = (id) => {
   const target = document.getElementById(id);
@@ -51,22 +52,30 @@ export default function NavBar() {
       >
         {pathname === "/" && (
           <div id="doc-fact-scroll">
-            <ul className="flex gap-4 font-neueHaas text-red-500">
+            <ul className="flex gap-8 font-neueHaas text-md text-red-500 bg-blue-200 px-6">
               <li
+                className=" cursor-pointer flex gap-2 items-center"
                 onClick={() => {
                   closeMenu();
                   scrollToSection("documentary-list-section");
                 }}
               >
                 Documentary
+                <span>
+                  <FiArrowDownCircle />
+                </span>
               </li>
               <li
+                className=" cursor-pointer flex gap-2 items-center"
                 onClick={() => {
                   closeMenu();
                   scrollToSection("factEnt-list-section");
                 }}
               >
                 Factual Entertainment
+                <span>
+                  <FiArrowDownCircle />
+                </span>
               </li>
             </ul>
           </div>
@@ -99,7 +108,7 @@ export default function NavBar() {
           } ${textColorClass} z-10`}
         >
           {}
-          <ul className="flex flex-col items-center gap-8 md:flex-row md:items-center font-neueHaas text-2xl md:text-lg md:py-0 py-10 md:px-6 cursor-pointer">
+          <ul className="flex flex-col items-center gap-8 md:flex-row md:items-center font-neueHaas text-2xl md:text-base md:py-0 py-10 md:px-6 cursor-pointer">
             <NavLink path="#" text="Work" closeMenu={closeMenu} />
             <NavLink path="/About" text="About" closeMenu={closeMenu} />
             <NavLink path="/Gallery" text="Gallery" closeMenu={closeMenu} />
