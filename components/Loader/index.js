@@ -24,7 +24,9 @@ export default function Loader({ timeline }) {
     <div className="loader-wrapper">
       <div className="loader-progressWrapper">
         <div className="loader-progress" ref={progressRef}></div>
-        <span className="loader-progressNumber" ref={progressNumberRef}></span>
+        <span className="loader-progressNumber" ref={progressNumberRef}>
+          0
+        </span>
       </div>
       <div className="loader" ref={loaderRef}>
         <div className="loader-words">

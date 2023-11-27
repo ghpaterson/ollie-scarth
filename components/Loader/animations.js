@@ -19,7 +19,29 @@ export const progressAnimation = (progressRef, progressNumberRef) => {
     scaleX: 1,
     duration: 5,
     ease: "power3.inOut",
-  });
+  })
+    .to(
+      progressNumberRef.current,
+      {
+        x: "100vw",
+        duration: 5,
+        ease: "power3.inOut",
+      },
+      "<"
+    )
+    .to(
+      progressNumberRef.current,
+      {
+        textContent: "100",
+        duration: 5,
+        roundProps: "textContent",
+      },
+      "<"
+    )
+    .to(progressNumberRef.current, {
+      y: 24,
+      autoAlpha: 0,
+    });
 
   return tl;
 };
