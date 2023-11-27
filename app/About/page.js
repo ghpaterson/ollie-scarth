@@ -3,10 +3,12 @@
 import { motion as m } from "framer-motion";
 import { pageTransition } from "@/utils/motions";
 import ScrollToTop from "@/utils/scrollToTop";
+import NavBar from "@/components/NavBar";
 
 export default function About() {
   return (
     <main>
+      <NavBar />
       <m.section variants={pageTransition} initial="hidden" whileInView="show">
         <section>
           <h1 className="font-neueHaas text-3xl md:text-6xl py-6 md:py-10 md:px-6">
