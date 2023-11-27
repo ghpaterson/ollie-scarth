@@ -51,7 +51,12 @@ export default function Hero() {
             </div>
           </div>
           <div className="flex justify-center uppercase font-neueHaasMed">
-            <h1 className="text-[200px]">Ollie Scarth</h1>
+            <div className="flex gap-6">
+              <h1 className="text-[200px]">Ollie</h1>
+              <h1 className="text-[200px]">
+                Scarth<span className="text-red-500">.</span>
+              </h1>
+            </div>
           </div>
         </section>
       </main>

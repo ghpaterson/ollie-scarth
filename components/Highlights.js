@@ -26,13 +26,13 @@ const HorizontalScrollCarousel = () => {
 
   return (
     <section ref={targetRef} className="relative h-[300vh] rounded-xl mt-4">
-      {/* <div className="flex justify-center gap-6 py-10 px-10 text-blak font-raleway text-3xl md:text-6xl">
-        <h1 className=" flex-wrap font-ralewayLight">
-          Highlights of some of Ollie's favourite projects he's worked on
+      <div className="flex justify-center gap-6 font-neueHaasMed  text-blak  text-3xl md:text-9xl uppercase md:py-20">
+        <h1 className="">
+          Highlights<span className="text-red-500">.</span>
         </h1>
-      </div> */}
-      <HighlightsInfiniteScroll />
-      <div className="sticky top-0 flex h-96 md:h-[650px] items-center overflow-hidden pt-40 -mt-32 md:-mt-60">
+      </div>
+      {/* <HighlightsInfiniteScroll /> */}
+      <div className="sticky top-0 flex h-96 md:h-[650px] items-center overflow-hidden pt-40 -mt-32 md:-mt-52">
         <m.div style={{ x }} className="flex gap-4">
           {cards.map((card) => {
             return <Card card={card} key={card.id} />;
@@ -50,7 +50,7 @@ const Card = ({ card }) => {
       className="group h-[450px] w-[700px]  overflow-hidden font-neueHaas   p-4 flex flex-col "
     >
       <div
-        className="w-[700] h-[300px] border-2 border-olive grayscale group-hover:grayscale-0"
+        className="w-[700] h-[300px] border-2 border-red-500 grayscale group-hover:grayscale-0"
         style={{
           backgroundImage: `url(${card.url})`,
           backgroundSize: "cover",
@@ -59,7 +59,10 @@ const Card = ({ card }) => {
       ></div>
       <div className="px-4">
         <div className="pt-2">
-          <h1 className="text-2xl font-neueHaasMed  text-blak">{card.title}</h1>
+          <h1 className="text-2xl font-neueHaasMed uppercase  text-blak">
+            {card.title}
+            <span className="text-red-500">.</span>
+          </h1>
         </div>
         <div>
           <h2 className="text-xl  text-blak">{card.channel}</h2>

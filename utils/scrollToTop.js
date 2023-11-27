@@ -23,10 +23,10 @@ export default function ScrollToTop() {
   }, []);
 
   return (
-    <div className="flex justify-center text-3xl font-neueHaas py-10">
+    <div className="flex justify-center text-3xl font-neueHaasMed py-10">
       <button
         id="scrollToTopBtn"
-        className="py-2 px-4 bg-sand text-bone rounded-full"
+        className="py-2 px-4 bg-red-500 text-blak"
       >{`(Scroll to top)`}</button>
     </div>
   );

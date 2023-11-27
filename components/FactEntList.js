@@ -28,12 +28,17 @@ export default function FactEntList() {
   };
 
   return (
-    <main id="factEnt-list-section" className="md:pb-10">
-      <div className="">
+    <main id="factEnt-list-section" className="md:pb-20">
+      {/* <div className="">
         <FactEntInfiniteScroll />
+      </div> */}
+      <div className="flex justify-center gap-6 font-neueHaasMed  text-blak  text-3xl md:text-9xl uppercase md:py-20">
+        <h1 className="">
+          fact entertainment<span className="text-red-500">.</span>
+        </h1>
       </div>
-      <div className="w-full flex flex-col md:flex-row items-start md:justify-center gap-10 md md:items-center pb-10">
-        <ul className="flex flex-col gap-4 md:gap-6 items-start font-neueHaas text-md md:text-4xl text-blak">
+      <div className="w-full flex flex-col md:flex-row items-start md:justify-between md:px-10 md:items-center pb-10">
+        <ul className="flex flex-col gap-4 md:gap-6 items-start font-neueHaasMed text-md md:text-3xl text-blak">
           {factEntData.map((item) => (
             <m.li
               variants={elementFade}
@@ -41,7 +46,7 @@ export default function FactEntList() {
               whileInView="show"
               viewport={{ once: true }}
               key={item.id}
-              className="group hover:text-shade/90 hover:cursor-pointer md:hover:translate-x-8 transition duration-500 ease-in flex"
+              className="group hover:text-red-500 hover:cursor-pointer md:hover:translate-x-8 transition duration-500 ease-in flex"
               onMouseEnter={() => handleMouseEnter(item.title)}
             >
               <span className="text-xs md:text-3xl px-2">{`(*${item.id})`}</span>

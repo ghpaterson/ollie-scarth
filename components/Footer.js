@@ -11,9 +11,9 @@ export default function Footer() {
 
   const instaURL = "https://www.instagram.com/olliescarth/";
   return (
-    <main className="relative bottom-0 z-20 py-4 font-neueHaas">
+    <main className="relative bottom-0 z-20 py-4 font-neueHaas px-10">
       {pathname === "/" && (
-        <div id="contact-details" className="flex justify-start py-4 text-blak">
+        <div id="contact-details" className="flex justify-start text-blak">
           <div>
             <p>Ollie Scarth-Saunders</p>
             <p>olliescarth686@gmail.com</p>
@@ -31,7 +31,7 @@ export default function Footer() {
       )}
       <div
         id="copyright"
-        className="flex justify-center md:justify-end pt-10 text-blak "
+        className="flex justify-center md:justify-end text-blak "
       >
         <span>&copy; Ollie Scarth-Saunders 2023</span>
       </div>

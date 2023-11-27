@@ -42,10 +42,15 @@ export default function DocumentaryList() {
 
   return (
     <main id="documentary-list-section">
-      <div className="">
+      {/* <div className="">
         <DocInfiniteScroll />
+      </div> */}
+      <div className="flex justify-center gap-6 font-neueHaasMed  text-blak  text-3xl md:text-9xl uppercase md:py-20">
+        <h1 className="">
+          documentary<span className="text-red-500">.</span>
+        </h1>
       </div>
-      <div className=" w-full flex flex-col md:flex-row items-start md:justify-center gap-40 md md:items-center pb-10">
+      <div className=" w-full flex flex-col md:flex-row items-start md:justify-between md:items-center md:px-10 pb-10">
         <div id="documentary-list-image" className="">
           <div
             className=" border-2 border-blak"
@@ -70,7 +75,7 @@ export default function DocumentaryList() {
           </p>
         </div>
 
-        <ul className="flex flex-col gap-4 md:gap-6 items-start md:items-end font-neueHaas text-md md:text-4xl text-blak">
+        <ul className="flex flex-col gap-4 md:gap-6 items-start md:items-end font-neueHaasMed text-md md:text-3xl text-blak">
           {documentaryData.map((item) => (
             <m.li
               variants={elementFade}
@@ -78,7 +83,7 @@ export default function DocumentaryList() {
               whileInView="show"
               viewport={{ once: true }}
               key={item.id}
-              className="group hover:text-shade/70 hover:cursor-pointer md:hover:-translate-x-8 transition duration-500 ease-in flex"
+              className="group hover:text-red-500 hover:cursor-pointer md:hover:-translate-x-8 transition duration-500 ease-in flex"
               onMouseEnter={() => handleMouseEnter(item.title)}
               // onMouseLeave={handleMouseLeave}
             >

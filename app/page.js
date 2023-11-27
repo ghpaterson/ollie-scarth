@@ -11,6 +11,7 @@ import Testimonials from "@/components/Testimonials";
 import Loader from "@/components/Loader";
 import { useLayoutEffect, useState } from "react";
 import { gsap } from "gsap";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [loaderFinished, setLoaderFinished] = useState(false);
@@ -50,6 +51,7 @@ export default function Home() {
             <AboutSection />
             <Testimonials />
             <ScrollToTop />
+            <Footer />
           </>
         ) : (
           <Loader timeline={timeline} />
