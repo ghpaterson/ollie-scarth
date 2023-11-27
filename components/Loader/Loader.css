@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "neue-haas-medium";
+  src: url("/fonts/NeueHaasDisplayMediu.ttf") format("truetype");
+}
+
 .loader {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   
@@ -50,6 +55,7 @@
 .loader-word{
   display: block;
   font-size: 2rem;
+  font-family: neue-haas-medium;
   /* margin-bottom: 0.5rem; */
 }
 

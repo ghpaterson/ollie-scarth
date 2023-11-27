@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-const textureImage = "url('/images/blackTexture.svg')";
+const bicycleHero = "url('/images/bicycleHero.png')";
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,7 +14,7 @@ module.exports = {
           "url('https://images.pexels.com/photos/3178786/pexels-photo-3178786.jpeg')",
         "landing-about":
           "url('https://images.pexels.com/photos/3692639/pexels-photo-3692639.jpeg')",
-        texture: textureImage,
+        bicycleHero: bicycleHero,
       },
       fontFamily: {
         raleway: ["raleway", "sans-serif"],

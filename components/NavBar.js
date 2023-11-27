@@ -40,19 +40,19 @@ export default function NavBar() {
     textColorClass = "text-blak";
   } else if (pathname === "/" && !isMenuOpen) {
     // Check if pathname is "/" and isMenuOpen is false
-    textColorClass = "text-red-500";
+    textColorClass = "text-bone";
   }
 
   return (
-    <header className="sticky top-0 z-20 pb-2">
+    <header className="z-20 pb-2">
       <div
         className={`flex ${
           pathname === "/" ? "justify-end" : "justify-between"
-        } md:justify-start text-blak h-14 w-full bg-bone items-center relative`}
+        } md:justify-start text-blak h-14 w-full items-center relative`}
       >
         {pathname === "/" && (
           <div id="doc-fact-scroll">
-            <ul className="flex gap-8 font-neueHaas text-md uppercase text-red-500 bg-blue-200 px-6">
+            <ul className="flex gap-8 font-neueHaas text-md uppercase text-bone px-6">
               <li
                 className=" cursor-pointer flex gap-2 items-center"
                 onClick={() => {
@@ -95,7 +95,7 @@ export default function NavBar() {
 
         <button
           className={`md:hidden ${
-            pathname === "/" ? "text-red-500" : "text-blak"
+            pathname === "/" ? "text-bone" : "text-blak"
           } focus:outline-none font-fungis flex justify-end items-center px-4 text-2xl`}
           onClick={toggleMenu}
         >
@@ -103,7 +103,7 @@ export default function NavBar() {
         </button>
         <nav
           id="navbar"
-          className={`md:flex md:justify-end md:items-center bg-blue-200 absolute top-full right-0 md:py-0 w-full md:w-[400px] py-6 md:-mt-10 ${
+          className={`md:flex md:justify-end md:items-center  absolute top-full right-0 md:py-0 w-full md:w-[400px] py-6 md:-mt-10 ${
             isMenuOpen ? "flex justify-center bg-bone h-screen" : "hidden"
           } ${textColorClass} z-10`}
         >
