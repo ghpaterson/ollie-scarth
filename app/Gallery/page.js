@@ -3,9 +3,11 @@
 import ScrollToTop from "@/utils/scrollToTop";
 import { motion as m } from "framer-motion";
 import { pageTransition } from "@/utils/motions";
+import NavBar from "@/components/NavBar";
 export default function Gallery() {
   return (
     <main>
+      <NavBar />
       <m.section
         variants={pageTransition}
         initial="hidden"

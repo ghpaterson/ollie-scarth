@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import { motion as m } from "framer-motion";
 import { pageTransition } from "@/utils/motions";
+import NavBar from "@/components/NavBar";
 export default function Contact() {
   const linkedinURL =
     "https://www.linkedin.com/in/oliver-scarth-saunders-619aab1b0/";
@@ -13,6 +14,7 @@ export default function Contact() {
 
   return (
     <main>
+      <NavBar />
       <m.section variants={pageTransition} initial="hidden" whileInView="show">
         <div className="mt-10 h grid grid-cols-1 md:grid-cols-12  ">
           <div className="md:col-span-6 text-blak rounded-lg px-4 py-10 md:py-32 md:px-20  flex flex-col items-start border-blak">

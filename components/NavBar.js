@@ -18,7 +18,7 @@ const NavLink = ({ path, text, closeMenu }) => (
   <Link href={path}>
     <li
       onClick={closeMenu}
-      className={usePathname() === path ? "underline" : ""}
+      className={usePathname() === path ? "border-b-2 border-red-500" : ""}
     >
       {text}
     </li>
@@ -85,9 +85,10 @@ export default function NavBar() {
             <Link href={"/"}>
               <h1
                 onClick={closeMenu}
-                className="text-3xl w-60 font-neueHaas text-blak z-0 pt-2 md:px-4"
+                className="text-3xl w-60 font-neueHaasMed text-blak z-0 pt-2 md:px-4"
               >
                 {`O.S-(*S)`}
+                <span className="text-red-500">.</span>
               </h1>
             </Link>
           </div>

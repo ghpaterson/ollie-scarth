@@ -46,8 +46,8 @@ export default function Hero() {
               <div className="text-6xl text-red-600">
                 <TbWorld />
               </div>
-              <h3>Works Worldwide</h3>
-              <h3>Based in south London</h3>
+              <h3>Based in London</h3>
+              <h3>Working Worldwide</h3>
             </div>
           </div>
           <div className="flex justify-center uppercase font-neueHaasMed">

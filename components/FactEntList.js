@@ -76,7 +76,7 @@ export default function FactEntList() {
           <p className="text-blak text-lg font-neueHaas">
             {hoveredItem
               ? factEntData.find((item) => item.title === hoveredItem)?.title
-              : ""}
+              : "JAMIE & JIMMY'S FRIDAY NIGHT FEAST"}
           </p>
         </div>
       </div>

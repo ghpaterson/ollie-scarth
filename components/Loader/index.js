@@ -36,6 +36,7 @@ export default function Loader({ timeline }) {
               return (
                 <span key={index} className="loader-word">
                   {word}
+                  <span className="text-red-500">.</span>
                 </span>
               );
             })}

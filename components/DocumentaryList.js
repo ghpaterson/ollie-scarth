@@ -71,7 +71,7 @@ export default function DocumentaryList() {
             {hoveredItem
               ? documentaryData.find((item) => item.title === hoveredItem)
                   ?.title
-              : ""}
+              : "OUR DOCUMENTARY CHOIR"}
           </p>
         </div>
 
