@@ -17,15 +17,26 @@ export default function Home() {
   const [timeline, setTimeline] = useState(null);
 
   useLayoutEffect(() => {
-    const context = gsap.context(() => {
-      const tl = gsap.timeline({
-        onComplete: () => setLoaderFinished(true),
+    const hasLoadedBefore = sessionStorage.getItem("hasLoadedBefore");
+
+    if (hasLoadedBefore) {
+      // If the page has been loaded before, set loaderFinished to true
+      setLoaderFinished(true);
+    } else {
+      // If it's the first load, set up the loader animation
+      const context = gsap.context(() => {
+        const tl = gsap.timeline({
+          onComplete: () => {
+            setLoaderFinished(true);
+            sessionStorage.setItem("hasLoadedBefore", "true");
+          },
+        });
+
+        setTimeline(tl);
       });
 
-      setTimeline(tl);
-    });
-
-    return () => context.revert();
+      return () => context.revert();
+    }
   }, []);
   return (
     <>
