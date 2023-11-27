@@ -3,28 +3,30 @@
 import React, { useEffect, useRef } from "react";
 import { words } from "./data";
 import { gsap } from "gsap";
+import { collapseWords, introAnimation, progressAnimation } from "./animations";
 
 import "./Loader.css";
-export default function Loader() {
+export default function Loader({ timeline }) {
   const loaderRef = useRef(null);
   const progressRef = useRef(null);
   const progressNumberRef = useRef(null);
   const wordGroupsRef = useRef(null);
 
   useEffect(() => {
-    gsap.to(wordGroupsRef.current, {
-      yPercent: -80,
-      duration: 5,
-    });
-  }, []);
+    timeline &&
+      timeline
+        .add(introAnimation(wordGroupsRef))
+        .add(progressAnimation(progressRef, progressNumberRef), 0)
+        .add(collapseWords(loaderRef), "-=1");
+  }, [timeline]);
 
   return (
-    <div className="loader-wrapper" ref={loaderRef}>
+    <div className="loader-wrapper">
       <div className="loader-progressWrapper">
         <div className="loader-progress" ref={progressRef}></div>
         <span className="loader-progressNumber" ref={progressNumberRef}></span>
       </div>
-      <div className="loader">
+      <div className="loader" ref={loaderRef}>
         <div className="loader-words">
           <div className="loader-overlay"></div>
           <div className="loader-wordsGroup" ref={wordGroupsRef}>
