@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { motion as m } from "framer-motion";
 
 const scrollToSection = (id) => {
   const target = document.getElementById(id);
@@ -31,7 +32,15 @@ export default function NavBar() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className="sticky top-0 z-20 pb-2">
+    <m.header
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{
+        duration: 10,
+        ease: "easeIn",
+      }}
+      className="sticky top-0 z-20 pb-2"
+    >
       <div className="flex justify-between text-blak h-14 w-full bg-bone items-center relative">
         <div id="logo">
           <Link href={"/"}>
@@ -80,6 +89,6 @@ export default function NavBar() {
           </ul>
         </nav>
       </div>
-    </header>
+    </m.header>
   );
 }
