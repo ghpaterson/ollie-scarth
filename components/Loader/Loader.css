@@ -15,11 +15,12 @@
 
 .loader-wrapper{
   position: relative;
-  height: 90%;
+  height: 75%;
   width: 100%;
   position: fixed;
   inset: 0;
   overflow: hidden;
+  margin-top: 7rem;
 }
 
 .loader-words{
@@ -36,9 +37,9 @@
   background: linear-gradient(
     to bottom,
     rgba(246, 246, 246, 0.9),
-    rgba(246, 246, 246, 0.9) 47%,
+    rgba(246, 246, 246, 0.9) 48%,
     transparent,
-    transparent 47%,
+    transparent 40%,
     transparent,
     transparent 55%,
     rgba(246, 246, 246, 0.9) 50%,
@@ -48,7 +49,8 @@
 
 .loader-word{
   display: block;
-  font-size: 3rem;
+  font-size: 2rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 .loader-progressWrapper{
