@@ -3,6 +3,7 @@ import { elementFade } from "@/utils/motions";
 import { motion as m } from "framer-motion";
 import { GoArrowUpRight } from "react-icons/go";
 import { useState } from "react";
+import Link from "next/link";
 
 const documentaryData = [
   {
@@ -46,9 +47,11 @@ export default function DocumentaryList() {
         <DocInfiniteScroll />
       </div> */}
       <div className="flex justify-center gap-6 font-neueHaasMed  text-blak  text-3xl md:text-9xl uppercase md:py-20">
-        <h1 className="">
-          documentary<span className="text-red-500">.</span>
-        </h1>
+        <Link href="/Work/Documentary" alt="link to documentary credits">
+          <h1>
+            documentary<span className="text-red-500">.</span>
+          </h1>
+        </Link>
       </div>
       <div className=" w-full flex flex-col md:flex-row items-start md:justify-between md:items-center md:px-10 pb-10">
         <div id="documentary-list-image" className="">
