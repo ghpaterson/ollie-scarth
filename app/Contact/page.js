@@ -6,6 +6,7 @@ import Link from "next/link";
 import { motion as m } from "framer-motion";
 import { pageTransition } from "@/utils/motions";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 export default function Contact() {
   const linkedinURL =
     "https://www.linkedin.com/in/oliver-scarth-saunders-619aab1b0/";
@@ -42,6 +43,7 @@ export default function Contact() {
           </div>
         </div>
       </m.section>
+      <Footer />
     </main>
   );
 }
