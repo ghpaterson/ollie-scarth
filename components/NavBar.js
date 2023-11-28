@@ -87,7 +87,7 @@ export default function NavBar() {
                 onClick={closeMenu}
                 className="text-3xl w-60 font-neueHaasMed text-blak z-0 pt-2 md:px-4"
               >
-                {`O.S-(*S)`}
+                O.S
                 <span className="text-red-500">.</span>
               </h1>
             </Link>

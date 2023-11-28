@@ -57,7 +57,7 @@ const Card = ({ card }) => {
           backgroundPosition: "center",
         }}
       ></div>
-      <div className="px-4">
+      <div className="px-2">
         <div className="pt-2">
           <h1 className="text-2xl font-neueHaasMed uppercase  text-blak">
             {card.title}
@@ -69,7 +69,7 @@ const Card = ({ card }) => {
         </div>
         <div className="flex justify-between gap-10 text-blak">
           <p>{card.desc}</p>
-          <div className="text-2xl flex justify-end items-end">
+          <div className="text-5xl flex justify-end items-end">
             <Link href={card.href}>
               <BsArrowUpRightCircle />
             </Link>

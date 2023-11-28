@@ -34,7 +34,7 @@ export default function FactEntList() {
       </div> */}
       <div className="flex justify-center gap-6 font-neueHaasMed  text-blak  text-3xl md:text-9xl uppercase md:py-20">
         <h1 className="">
-          fact entertainment<span className="text-red-500">.</span>
+          fact ent<span className="text-red-500">.</span>
         </h1>
       </div>
       <div className="w-full flex flex-col md:flex-row items-start md:justify-between md:px-10 md:items-center pb-10">

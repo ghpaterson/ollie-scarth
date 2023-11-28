@@ -1,7 +1,7 @@
 import Image from "next/image";
 import NavBar from "./NavBar";
 import { TbWorld } from "react-icons/tb";
-import { PiFilmReel } from "react-icons/pi";
+import { GoDotFill } from "react-icons/go";
 export default function Hero() {
   const handleScrollToDocumentary = () => {
     const target = document.getElementById("documentary-list-section");
@@ -29,8 +29,8 @@ export default function Hero() {
         <NavBar />
         <section className="flex flex-col justify-start w-full h-[90vh] uppercase font-neueHaasMed">
           <div className="flex justify-center -mt-10">
-            <div className="grid place-content-center w-32 h-32 bg-red-600 rounded-full">
-              <h1 className="text-4xl font-neueHaasMed text-bone">O.S*S</h1>
+            <div className="grid place-content-center w-32 h-32 bg-red-500 rounded-full">
+              <h1 className="text-5xl font-neueHaasMed text-bone">O.S</h1>
             </div>
           </div>
           <div className="flex justify-between items-end text-2xl px-14 -mb-10 pt-52">
@@ -38,12 +38,16 @@ export default function Hero() {
               {/* <div className="text-6xl text-red-600">
                 <PiFilmReel />
               </div> */}
+              <h2>series director</h2>
+              <div className="flex">
+                <h2>
+                  producer <span className="text-red-500">.</span> director
+                </h2>
+              </div>
               <h2>edit producer</h2>
-              <h2>series producer</h2>
-              <h2>producer . director</h2>
             </div>
             <div className="flex flex-col items-end">
-              <div className="text-6xl text-red-600">
+              <div className="text-6xl text-red-500">
                 <TbWorld />
               </div>
               <h3>Based in London</h3>
