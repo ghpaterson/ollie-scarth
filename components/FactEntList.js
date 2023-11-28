@@ -3,6 +3,7 @@ import { elementFade } from "@/utils/motions";
 import { motion as m } from "framer-motion";
 import { GoArrowUpRight } from "react-icons/go";
 import { useState } from "react";
+import Link from "next/link";
 
 const factEntData = [
   {
@@ -33,9 +34,11 @@ export default function FactEntList() {
         <FactEntInfiniteScroll />
       </div> */}
       <div className="flex justify-center gap-6 font-neueHaasMed  text-blak  text-3xl md:text-9xl uppercase md:py-20">
-        <h1 className="">
-          fact ent<span className="text-red-500">.</span>
-        </h1>
+        <Link href="/Work/FactEnt" alt="link to fact ent credits page">
+          <h1>
+            fact ent<span className="text-red-500">.</span>
+          </h1>
+        </Link>
       </div>
       <div className="w-full flex flex-col md:flex-row items-start md:justify-between md:px-10 md:items-center pb-10">
         <ul className="flex flex-col gap-4 md:gap-6 items-start font-neueHaasMed text-md md:text-3xl text-blak">
