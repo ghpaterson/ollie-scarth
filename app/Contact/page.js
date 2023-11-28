@@ -18,8 +18,8 @@ export default function Contact() {
       <m.section variants={pageTransition} initial="hidden" whileInView="show">
         <div className="mt-10 h grid grid-cols-1 md:grid-cols-12  ">
           <div className="md:col-span-6 text-blak rounded-lg px-4 py-10 md:py-32 md:px-20  flex flex-col items-start border-blak">
-            <h1 className="text-blak text-2xl md:text-6xl font-neueHaas">
-              Get in touch
+            <h1 className="text-blak text-2xl md:text-6xl font-neueHaasMed uppercase">
+              Get in touch<span className="text-red-500">.</span>
             </h1>
             <p className="text-2xl py-6 font-neueHaas">
               Copy my email address or contact me through one of my social

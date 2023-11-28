@@ -14,10 +14,12 @@ export default function Gallery() {
         whileInView="show"
         className="pb-6"
       >
-        <section>
-          <h1 className="font-neueHaas text-3xl md:text-6xl py-6 md:py-10 md:px-6">{`GALLERY(*9)`}</h1>
+        <section className="flex justify-center">
+          <h1 className="font-neueHaasMed uppercase text-3xl md:text-6xl py-6 md:py-10 md:px-6">
+            gallery<span className="text-red-500">.</span>
+          </h1>
         </section>
-        <section className="grid grid-cols-1 md:grid-cols-12 border-t-2 border-b-2 border-blak rounded-xl gap-2 py-10 font-neueHaas">
+        <section className="grid grid-cols-1 md:grid-cols-12  rounded-xl gap-2 py-10 font-neueHaas">
           {/* below is the template to make image appear on hover on md:screen NO hover-reveal on mobile  note the globals.css stylesheet*/}
           <div
             id="gallery-card"

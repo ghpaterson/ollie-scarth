@@ -11,14 +11,14 @@ export default function About() {
       <NavBar />
       <m.section variants={pageTransition} initial="hidden" whileInView="show">
         <section>
-          <h1 className="font-neueHaas text-3xl md:text-6xl py-6 md:py-10 md:px-6">
-            {`ABOUT(*Ollie)`}
+          <h1 className="flex justify-center font-neueHaasMed uppercase text-3xl md:text-6xl py-6 md:py-10 md:px-6">
+            ABOUT Ollie<span className="text-red-500">.</span>
           </h1>
         </section>
         <section>
           <div className="grid grid-cols-1 md:grid-cols-12 font-neueHaas">
             <div className="md:col-span-6 rounded-lg px-4 py-20 md:py-20 md:px-20  flex items-center">
-              <p className="text-blak md:text-2xl font-bold">
+              <p className="text-blak md:text-2xl font-bold leading-loose">
                 Hi! I'm Ollie, a director and producer with a chameleon-like
                 approach to storytelling. I believe that the best way to create
                 impactful content is to adapt to the unique vision and voice of
@@ -27,7 +27,8 @@ export default function About() {
                 crafting narratives that resonate with your target audience. My
                 primary focus lies in video directing, production and editing.
                 My versatility allows me to tackle a wide range of projects with
-                confidence and expertise.
+                confidence and expertise
+                <span className="text-red-500">.</span>
               </p>
             </div>
             <div className="md:col-span-6 rounded-lg px-10 flex items-center justify-center py-20 bg-landing-about bg-cover bg-no-repeat"></div>
