@@ -4,7 +4,6 @@ import { motion as m, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 import Link from "next/link";
-import HighlightsInfiniteScroll from "@/utils/HighLightsInfiniteScroll";
 
 export default function Highlights() {
   return (
@@ -31,7 +30,6 @@ const HorizontalScrollCarousel = () => {
           Highlights<span className="text-red-500">.</span>
         </h1>
       </div>
-      {/* <HighlightsInfiniteScroll /> */}
       <div className="sticky top-0 flex h-96 md:h-[650px] items-center overflow-hidden pt-40 -mt-32 md:-mt-52">
         <m.div style={{ x }} className="flex gap-4">
           {cards.map((card) => {

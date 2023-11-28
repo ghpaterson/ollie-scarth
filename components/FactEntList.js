@@ -1,4 +1,3 @@
-import FactEntInfiniteScroll from "@/utils/FactEntInfiniteScroll";
 import { elementFade } from "@/utils/motions";
 import { motion as m } from "framer-motion";
 import { GoArrowUpRight } from "react-icons/go";
@@ -30,9 +29,6 @@ export default function FactEntList() {
 
   return (
     <main id="factEnt-list-section" className="md:pb-20">
-      {/* <div className="">
-        <FactEntInfiniteScroll />
-      </div> */}
       <div className="flex justify-center gap-6 font-neueHaasMed  text-blak  text-3xl md:text-9xl uppercase md:py-20">
         <Link href="/Work/FactEnt" alt="link to fact ent credits page">
           <h1>

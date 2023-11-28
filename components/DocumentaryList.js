@@ -1,4 +1,3 @@
-import DocInfiniteScroll from "@/utils/DocInfiniteScroll";
 import { elementFade } from "@/utils/motions";
 import { motion as m } from "framer-motion";
 import { GoArrowUpRight } from "react-icons/go";
@@ -43,9 +42,6 @@ export default function DocumentaryList() {
 
   return (
     <main id="documentary-list-section">
-      {/* <div className="">
-        <DocInfiniteScroll />
-      </div> */}
       <div className="flex justify-center gap-6 font-neueHaasMed  text-blak  text-3xl md:text-9xl uppercase md:py-20">
         <Link href="/Work/Documentary" alt="link to documentary credits">
           <h1>
