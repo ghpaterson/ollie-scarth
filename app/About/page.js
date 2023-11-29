@@ -4,6 +4,7 @@ import { motion as m, AnimatePresence } from "framer-motion";
 import { pageTransition } from "@/utils/motions";
 import ScrollToTop from "@/utils/scrollToTop";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 export default function About() {
   return (
@@ -21,7 +22,7 @@ export default function About() {
             </h1>
           </section>
           <section>
-            <div className="grid grid-cols-1 md:grid-cols-12 font-neueHaas">
+            <div className="grid grid-cols-1 md:grid-cols-12 font-neueHaas px-10">
               <div className="md:col-span-6 rounded-lg px-4 py-20 md:py-20 md:px-20  flex items-center">
                 <p className="text-blak md:text-2xl font-bold leading-loose">
                   Hi! I'm Ollie, a director and producer with a chameleon-like
@@ -42,6 +43,7 @@ export default function About() {
         </m.section>
 
         <ScrollToTop />
+        <Footer />
       </main>
       <m.div
         className="slide-in"

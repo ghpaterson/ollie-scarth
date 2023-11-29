@@ -4,6 +4,7 @@ import ScrollToTop from "@/utils/scrollToTop";
 import { motion as m, AnimatePresence } from "framer-motion";
 import { pageTransition } from "@/utils/motions";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 export default function Gallery() {
   return (
     <AnimatePresence mode="wait">
@@ -20,7 +21,7 @@ export default function Gallery() {
               gallery<span className="text-red-500">.</span>
             </h1>
           </section>
-          <section className="grid grid-cols-1 md:grid-cols-12  rounded-xl gap-2 py-10 font-neueHaas">
+          <section className="grid grid-cols-1 md:grid-cols-12  rounded-xl gap-2 py-10 font-neueHaas px-10">
             {/* below is the template to make image appear on hover on md:screen NO hover-reveal on mobile  note the globals.css stylesheet*/}
             <div
               id="gallery-card"
@@ -42,6 +43,7 @@ export default function Gallery() {
           </section>
         </m.section>
         <ScrollToTop />
+        <Footer />
         <m.div
           className="slide-in"
           initial={{ scaleY: 0 }}
