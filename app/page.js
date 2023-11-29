@@ -6,7 +6,7 @@ import ScrollToTop from "@/utils/scrollToTop";
 import DocumentaryList from "@/components/DocumentaryList";
 import FactEntList from "@/components/FactEntList";
 import AboutSection from "@/components/AboutSection";
-import { motion as m } from "framer-motion";
+import { motion as m, AnimatePresence } from "framer-motion";
 import Testimonials from "@/components/Testimonials";
 import Loader from "@/components/Loader";
 import { useLayoutEffect, useState } from "react";
@@ -41,22 +41,46 @@ export default function Home() {
   }, []);
   return (
     <>
-      <main>
-        {loaderFinished ? (
-          <>
-            <Hero />
-            <Highlights />
-            <DocumentaryList />
-            <FactEntList />
-            <AboutSection />
-            <Testimonials />
-            <ScrollToTop />
-            <Footer />
-          </>
-        ) : (
-          <Loader timeline={timeline} />
-        )}
-      </main>
+      <AnimatePresence mode="wait">
+        <main>
+          {loaderFinished ? (
+            <>
+              <Hero />
+              <m.div
+                className="slide-in-hero"
+                initial={{ scaleX: 0 }}
+                animate={{ scaleX: 0 }}
+                exit={{ scaleX: 1 }}
+                transition={{
+                  delay: 1,
+                  duration: 1.5,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+              ></m.div>
+              <m.div
+                className="slide-out-hero"
+                initial={{ scaleX: 1 }}
+                animate={{ scaleX: 0 }}
+                exit={{ scaleX: 0 }}
+                transition={{
+                  delay: 1,
+                  duration: 1.5,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+              ></m.div>
+              <Highlights />
+              <DocumentaryList />
+              <FactEntList />
+              <AboutSection />
+              <Testimonials />
+              <ScrollToTop />
+              <Footer />
+            </>
+          ) : (
+            <Loader timeline={timeline} />
+          )}
+        </main>
+      </AnimatePresence>
     </>
   );
 }
