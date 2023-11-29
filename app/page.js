@@ -46,6 +46,8 @@ export default function Home() {
           {loaderFinished ? (
             <>
               <Hero />
+
+              {/* Slide in transition for hero hage */}
               <m.div
                 className="slide-in-hero"
                 initial={{ scaleX: 0 }}

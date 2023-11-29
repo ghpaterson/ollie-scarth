@@ -84,7 +84,7 @@ const cards = [
     url: "https://images.pexels.com/photos/1008155/pexels-photo-1008155.jpeg",
     title: "Your Home Made Perfect",
     channel: "BBC 2",
-    desc: "Transforming problematic pads into heavenly homes. Cutting edge technology and innovative architects reveal the design dream ordinary houses could become. With Angela Scanlon",
+    desc: "Transforming problematic pads into heavenly homes. Cutting edge technology and innovative architects reveal the design dream ordinary houses could become.",
     href: "/About",
     id: 1,
   },
