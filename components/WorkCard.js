@@ -12,10 +12,9 @@ export default function WorkCard({
   return (
     <div className="group overflow-hidden font-neueHaas   p-4 flex flex-col ">
       <div
-        className="w-[700] h-[300px] border-2 border-red-500"
+        className="w-[700] h-[280px] border-2 border-red-500"
         style={{
-          backgroundImage:
-            "url('https://images.pexels.com/photos/3178786/pexels-photo-3178786.jpeg')",
+          backgroundImage: `url(${creditImage.url})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
