@@ -29,7 +29,7 @@ export default function WorkCard({
         <div>
           <h2 className="text-xl  text-blak">{channel}</h2>
         </div>
-        <div className="flex justify-between gap-10 text-blak">
+        <div className="flex justify-end gap-10 text-blak">
           <p>{description}</p>
           <div className="text-5xl flex justify-end items-end">
             <Link href={"#"}>
