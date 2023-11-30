@@ -48,7 +48,7 @@ export default async function Documentary() {
           <WorkCard
             title={credit.title}
             channel={credit.channel}
-            creditImage={credit.creditImage.url}
+            creditImage={credit.creditImage}
             key={credit.id}
             slug={credit.slug}
             description={credit.description}
