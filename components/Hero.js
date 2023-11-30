@@ -1,81 +1,48 @@
 import Image from "next/image";
 import NavBar from "./NavBar";
 import { TbWorld } from "react-icons/tb";
-import { motion as m, AnimatePresence } from "framer-motion";
 export default function Hero() {
   return (
     <>
-      <AnimatePresence mode="wait">
-        <main className="w-full h-screen bg-bicycleHero bg-cover bg-no-repeat text-bone">
-          <NavBar />
-          <section className="flex flex-col justify-start w-full h-[90vh] uppercase font-neueHaasMed">
-            <div className="flex justify-center -mt-10">
-              <m.div
-                initial={{ scaleY: 0 }}
-                animate={{ scaleY: 1 }}
-                exit={{ scaleY: 0 }}
-                transition={{
-                  delay: 2.8,
-                  duration: 1,
-                  ease: [0, 1, 0, 1],
-                }}
-                className="grid place-content-center w-32 h-32 bg-red-500 rounded-full"
-              >
-                <h1 className="text-5xl font-neueHaasMed text-bone">O.S</h1>
-              </m.div>
+      <main className="w-full h-screen bg-bicycleHero bg-cover bg-no-repeat text-bone">
+        <NavBar />
+        <section className="flex flex-col justify-start w-full h-[90vh] uppercase font-neueHaasMed">
+          <div className="flex justify-center -mt-10">
+            <div className="grid place-content-center w-32 h-32 bg-red-500 rounded-full">
+              <h1 className="text-5xl font-neueHaasMed text-bone">O.S</h1>
             </div>
-            <m.div
-              initial={{ scaleX: 0 }}
-              animate={{ scaleX: 1 }}
-              exit={{ scaleX: 0 }}
-              transition={{
-                delay: 2.3,
-                duration: 1.5,
-                ease: [0.22, 1, 0.36, 1],
-              }}
-              className="flex justify-between items-end text-2xl px-14 -mb-10 pt-52"
-            >
-              <div className="">
-                {/* <div className="text-6xl text-red-600">
+          </div>
+          <div className="flex justify-between items-end text-2xl px-14 -mb-10 pt-52">
+            <div className="">
+              {/* <div className="text-6xl text-red-600">
                 <PiFilmReel />
               </div> */}
-                <h2>series director</h2>
-                <div className="flex">
-                  <h2>
-                    producer <span className="text-red-500">.</span> director
-                  </h2>
-                </div>
-                <h2>edit producer</h2>
+              <h2>series director</h2>
+              <div className="flex">
+                <h2>
+                  producer <span className="text-red-500">.</span> director
+                </h2>
               </div>
-              <div className="flex flex-col items-end">
-                <div className="text-6xl text-red-500">
-                  <TbWorld />
-                </div>
-                <h3>Based in London</h3>
-                <h3>Working Worldwide</h3>
+              <h2>edit producer</h2>
+            </div>
+            <div className="flex flex-col items-end">
+              <div className="text-6xl text-red-500">
+                <TbWorld />
               </div>
-            </m.div>
-            <m.div
-              initial={{ scaleX: 0 }}
-              animate={{ scaleX: 1 }}
-              exit={{ scaleX: 0 }}
-              transition={{
-                delay: 2,
-                duration: 1.5,
-                ease: [0, 1, 0, 1],
-              }}
-              className="flex justify-center uppercase font-neueHaasMed"
-            >
-              <div className="flex gap-6">
-                <h1 className="text-[200px]">Ollie</h1>
-                <h1 className="text-[200px]">
-                  Scarth<span className="text-red-500">.</span>
-                </h1>
-              </div>
-            </m.div>
-          </section>
-        </main>
-      </AnimatePresence>
+              <h3>Based in London</h3>
+              <h3>Working Worldwide</h3>
+            </div>
+          </div>
+          <div className="flex justify-center uppercase font-neueHaasMed">
+            <div className="flex gap-6">
+              <h1 className="text-[200px]">Ollie</h1>
+              <h1 className="text-[200px]">
+                Scarth<span className="text-red-500">.</span>
+              </h1>
+            </div>
+          </div>
+        </section>
+      </main>
     </>
   );
 }
