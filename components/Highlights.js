@@ -85,7 +85,7 @@ const cards = [
     title: "Your Home Made Perfect",
     channel: "BBC 2",
     desc: "Transforming problematic pads into heavenly homes. Cutting edge technology and innovative architects reveal the design dream ordinary houses could become.",
-    href: "/About",
+    href: "/Work/factent/your-home-made-perfect",
     id: 1,
   },
   {
@@ -93,7 +93,7 @@ const cards = [
     title: "I am a Killer",
     channel: "Netflix (UK), Crime and Investigation(US)",
     desc: " Death row inmates convicted of capital murder give firsthand accounts of their crimes in this documentary series",
-    href: "/About",
+    href: "/Work/documentary/i-am-a-killer",
     id: 2,
   },
   {
@@ -101,7 +101,7 @@ const cards = [
     title: "Our Dementia Choir",
     channel: "BBC 1",
     desc: "The power of music. Actor Vicky McClure returns home to Nottingham to share a poignant, uplifting journey - proving people living with dementia can achieve truly remarkable things",
-    href: "/About",
+    href: "/Work/documentary/our-dementia-choir",
     id: 3,
   },
   {
@@ -109,7 +109,7 @@ const cards = [
     title: "Jamie & Jimmy's Friday Night Feast",
     channel: "Channel 4",
     desc: "Jamie Oliver and Jimmy Doherty join forces at their end-of-the-pier caff to make top feasts for the weekend",
-    href: "/About",
+    href: "/Work/factent/jamie-and-jimmys-friday-night-feast",
     id: 4,
   },
   {
@@ -117,7 +117,7 @@ const cards = [
     title: "Marcus Waring: Tales from a Kitchen Garden",
     channel: "BBC 1",
     desc: "From field to fork. Restaurateur Marcus teams up with top British producers, farmers and gardeners who inspire him to expand his market garden and create delicious dishes",
-    href: "/About",
+    href: "/Work/factent/marcus-wareing-tales-from-a-kitchen-garden",
     id: 5,
   },
 ];
