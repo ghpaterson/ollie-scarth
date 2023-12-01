@@ -8,6 +8,7 @@ export default function WorkCard({
   description,
   creditImage,
   slug,
+  category,
 }) {
   return (
     <div className="group overflow-hidden font-neueHaas   p-4 flex flex-col ">

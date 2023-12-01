@@ -24,6 +24,7 @@ async function getDocumentaryData() {
         }
       }
     }
+   
       `,
     }),
   });
@@ -36,6 +37,12 @@ async function getDocumentaryData() {
 
 export default async function Documentary() {
   const credits = await getDocumentaryData();
+
+  //filter credits with categoryName equal to 'documentary'
+
+  const documentaryCredits = credits.filter(
+    (credit) => credit.category.categoryName === "documentary"
+  );
   return (
     <main>
       <NavBar />
@@ -44,7 +51,7 @@ export default async function Documentary() {
       </h1>
       {/* four WorkCard Components at the moment but will be one component mapping over all the data to display however many cards required  */}
       <section className="grid grid-cols-2 px-10 gap-4 py-6">
-        {credits.map((credit) => (
+        {documentaryCredits.map((credit) => (
           <WorkCard
             title={credit.title}
             channel={credit.channel}
@@ -52,6 +59,7 @@ export default async function Documentary() {
             key={credit.id}
             slug={credit.slug}
             description={credit.description}
+            category={credit.category}
           />
         ))}
       </section>
