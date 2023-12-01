@@ -33,7 +33,7 @@ export default function WorkCard({
         <div className="flex justify-end gap-10 text-blak">
           <p>{description}</p>
           <div className="text-5xl flex justify-end items-end">
-            <Link href={"#"}>
+            <Link href={`/Work/${category.categoryName}/${slug}`}>
               <BsArrowUpRightCircle />
             </Link>
           </div>
