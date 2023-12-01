@@ -24,6 +24,7 @@ async function getFactEntCredit(slug) {
                     }
                 }
             }
+           
             `,
       variables: {
         slug: slug,
