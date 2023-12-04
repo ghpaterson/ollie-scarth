@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 
 const bicycleHero = "url('/images/bicycleHero.png')";
+const OlliePortrait = "url('/images/OllieSelfPortrait.jpg')";
+const OllieCamera = "url('/images/OllieCameraB&W.png')";
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,11 +12,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-image":
-          "url('https://images.pexels.com/photos/3178786/pexels-photo-3178786.jpeg')",
-        "landing-about":
-          "url('https://images.pexels.com/photos/3692639/pexels-photo-3692639.jpeg')",
         bicycleHero: bicycleHero,
+        OlliePortrait: OlliePortrait,
+        OllieCamera: OllieCamera,
       },
       fontFamily: {
         raleway: ["raleway", "sans-serif"],

@@ -109,7 +109,7 @@ export default function NavBar() {
           } ${textColorClass} z-10`}
         >
           {}
-          <ul className="flex flex-col items-center gap-8 md:flex-row md:items-center font-neueHaas uppercase text-2xl md:text-base md:py-0 py-10 md:px-6 cursor-pointer">
+          <ul className="flex flex-col items-center gap-8 md:flex-row md:items-center md:justify-center font-neueHaas uppercase text-2xl md:text-base md:py-0 py-10 md:px-6 cursor-pointer">
             <NavLink path="/Work" text="Work" closeMenu={closeMenu} />
             <NavLink path="/About" text="About" closeMenu={closeMenu} />
             <NavLink path="/Gallery" text="Gallery" closeMenu={closeMenu} />

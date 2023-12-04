@@ -42,7 +42,7 @@ export default function Contact() {
                 </Link>
               </div>
             </div>
-            <div className="md:col-span-6 rounded-lg px-10 bg-bicycleHero bg-cover bg-no-repeat flex flex-col items-center justify-center py-20 text-blak"></div>
+            <div className="md:col-span-6 rounded-lg px-10 bg-OllieCamera bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center py-20 text-blak"></div>
           </div>
         </m.section>
         <Footer />

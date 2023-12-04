@@ -30,7 +30,7 @@ export default function FactEntList() {
   return (
     <main id="factEnt-list-section" className="md:pb-20">
       <div className="flex justify-center gap-6 font-neueHaasMed  text-blak  text-3xl md:text-9xl uppercase md:py-20">
-        <Link href="/Work/FactEnt" alt="link to fact ent credits page">
+        <Link href="/Work/factent" alt="link to fact ent credits page">
           <h1>
             fact ent<span className="text-red-500">.</span>
           </h1>
