@@ -4,7 +4,7 @@ import { TbWorld } from "react-icons/tb";
 export default function Hero() {
   return (
     <>
-      <main className="w-full h-screen bg-bicycleHero bg-cover bg-no-repeat text-bone">
+      <main className="w-full h-screen bg-ChefHero bg-cover bg-no-repeat text-bone">
         <NavBar />
         <section className="flex flex-col justify-start w-full h-[90vh] uppercase font-neueHaasMed">
           <div className="flex justify-center -mt-10">

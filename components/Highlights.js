@@ -89,7 +89,7 @@ const cards = [
     id: 1,
   },
   {
-    url: "https://images.pexels.com/photos/4916163/pexels-photo-4916163.jpeg",
+    url: "../images/IAmAKiller.JPG",
     title: "I am a Killer",
     channel: "Netflix (UK), Crime and Investigation(US)",
     desc: " Death row inmates convicted of capital murder give firsthand accounts of their crimes in this documentary series",

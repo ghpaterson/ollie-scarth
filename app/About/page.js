@@ -37,7 +37,7 @@ export default function About() {
                   <span className="text-red-500">.</span>
                 </p>
               </div>
-              <div className="md:col-span-6 rounded-lg px-10 flex items-center justify-center py-20 bg-landing-about bg-cover bg-no-repeat"></div>
+              <div className="md:col-span-6 rounded-lg px-10 flex items-center justify-center py-20 bg-OllieCamera bg-cover bg-center bg-no-repeat"></div>
             </div>
           </section>
         </m.section>

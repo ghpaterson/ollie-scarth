@@ -24,7 +24,7 @@ export default function AboutSection() {
             expertise<span className="text-red-500 md:text-4xl">.</span>
           </p>
         </div>
-        <div className="md:col-span-6 rounded-lg px-10 flex items-center justify-center py-20 bg-OlliePortrait bg-cover bg-no-repeat"></div>
+        <div className="md:col-span-6 rounded-lg px-10 flex items-center justify-center py-20 bg-OllieTukTuk bg-center bg-cover bg-no-repeat"></div>
       </div>
     </m.main>
   );

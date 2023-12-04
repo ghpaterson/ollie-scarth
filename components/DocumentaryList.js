@@ -10,7 +10,7 @@ const documentaryData = [
     title: "OUR DEMENTIA CHOIR",
     imageUrl: "/images/home-perfect.webp",
   },
-  { id: 2, title: "I AM A KILLER", imageUrl: "/images/picnic.JPG" },
+  { id: 2, title: "I AM A KILLER", imageUrl: "/images/IAmAKiller.JPG" },
   {
     id: 3,
     title: "LIVING WITH A SERIAL KILLER",
@@ -19,7 +19,7 @@ const documentaryData = [
   {
     id: 4,
     title: "THE BODY IN THE SUITCASE",
-    imageUrl: "/images/picnic.JPG",
+    imageUrl: "/images/BodyInTheSuitacase.png",
   },
   {
     id: 5,
