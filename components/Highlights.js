@@ -48,7 +48,7 @@ const Card = ({ card }) => {
       className="group h-[450px] w-[700px]  overflow-hidden font-neueHaas   p-4 flex flex-col "
     >
       <div
-        className="w-[700] h-[300px] border-2 border-red-500 grayscale group-hover:grayscale-0"
+        className="w-[700] h-[300px] border-2 border-blak grayscale group-hover:grayscale-0"
         style={{
           backgroundImage: `url(${card.url})`,
           backgroundSize: "cover",

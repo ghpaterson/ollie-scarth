@@ -14,7 +14,7 @@ const documentaryData = [
   {
     id: 3,
     title: "LIVING WITH A SERIAL KILLER",
-    imageUrl: "/images/home-perfect.webp",
+    imageUrl: "/images/LivingWithAKiller.jpg",
   },
   {
     id: 4,
