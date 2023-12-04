@@ -21,7 +21,7 @@ export default function WorkCard({
             backgroundPosition: "top",
           }}
         ></div>
-        <div className="px-2">
+        <div className="flex flex-col gap-2 px-2">
           <div className="pt-2">
             <h1 className="text-2xl font-neueHaasMed uppercase  text-blak">
               {title}
