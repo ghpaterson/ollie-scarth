@@ -3,26 +3,7 @@ import { motion as m } from "framer-motion";
 import { GoArrowUpRight } from "react-icons/go";
 import { useState } from "react";
 import Link from "next/link";
-
-const factEntData = [
-  {
-    id: 1,
-    title: "JAMIE & JIMMY'S FRIDAY NIGHT FEAST",
-    imageUrl: "/images/bicycle.png",
-  },
-  {
-    id: 2,
-    title: "MARCUS WARING: Tales from a Kitchen Garden",
-    imageUrl: "/images/picnic.JPG",
-  },
-  { id: 3, title: "YOUR HOME MADE PERFECT", imageUrl: "/images/YourHome.webp" },
-  {
-    id: 4,
-    title: "YOUR GARDEN MADE PERFECT",
-    imageUrl: "/images/YourGarden.jpeg",
-  },
-  { id: 5, title: "BEAR GRYLLS: The Island", imageUrl: "/images/bicycle.png" },
-];
+import { factEntData } from "@/Data/factEntData";
 
 export default function FactEntList() {
   const [hoveredItem, setHoveredItem] = useState(null);
@@ -53,7 +34,7 @@ export default function FactEntList() {
               onMouseEnter={() => handleMouseEnter(item.title)}
             >
               <span className="text-xs md:text-3xl px-2">{`(*${item.id})`}</span>
-              {item.title}
+              <Link href={item.href}>{item.title}</Link>
               <span className="invisible group-hover:visible px-2">
                 <GoArrowUpRight />
               </span>

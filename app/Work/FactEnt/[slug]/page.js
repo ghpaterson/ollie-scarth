@@ -47,6 +47,9 @@ export default async function FactEntCredit({ params }) {
         <div className=" px-6 py-20">
           <h1 className="text-4xl font-neueHaasMed">{creditData.title}</h1>
           <h2 className="text-2xl">{creditData.channel}</h2>
+          <p className="text-xl uppercase">
+            {creditData.category.categoryName}
+          </p>
           <p className="text-xl py-6">{creditData.description}</p>
           <p className="text-xl">
             Director:{" "}
