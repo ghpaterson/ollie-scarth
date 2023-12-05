@@ -87,7 +87,7 @@ const Card = ({ card }) => {
 // Cards are filled with mostly dummy data! Needs to be filled correctly
 const cards = [
   {
-    url: "https://images.pexels.com/photos/1008155/pexels-photo-1008155.jpeg",
+    url: "../images/YourHome.webp",
     title: "Your Home Made Perfect",
     channel: "BBC 2",
     desc: "Transforming problematic pads into heavenly homes. Cutting edge technology and innovative architects reveal the design dream ordinary houses could become.",

@@ -15,8 +15,12 @@ const factEntData = [
     title: "MARCUS WARING: Tales from a Kitchen Garden",
     imageUrl: "/images/picnic.JPG",
   },
-  { id: 3, title: "YOUR HOME MADE PERFECT", imageUrl: "/images/bicycle.png" },
-  { id: 4, title: "YOUR GARDEN MADE PERFECT", imageUrl: "/images/picnic.JPG" },
+  { id: 3, title: "YOUR HOME MADE PERFECT", imageUrl: "/images/YourHome.webp" },
+  {
+    id: 4,
+    title: "YOUR GARDEN MADE PERFECT",
+    imageUrl: "/images/YourGarden.jpeg",
+  },
   { id: 5, title: "BEAR GRYLLS: The Island", imageUrl: "/images/bicycle.png" },
 ];
 
