@@ -57,8 +57,9 @@ export default async function FactEntCredit({ params }) {
           className="rounded-xl"
           style={{
             backgroundImage: `url(${creditData.creditImage.url})`,
-            backgroundSize: "cover",
+            backgroundSize: "contain",
             backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
           }}
         ></div>
       </section>

@@ -25,6 +25,7 @@ async function getDocumentaryCredit(slug) {
                     }
                 }
             }
+
             `,
       variables: {
         slug: slug,
@@ -56,8 +57,9 @@ export default async function DocumentaryCredit({ params }) {
           className="rounded-xl"
           style={{
             backgroundImage: `url(${creditData.creditImage.url})`,
-            backgroundSize: "cover",
+            backgroundSize: "contain",
             backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
           }}
         ></div>
       </section>

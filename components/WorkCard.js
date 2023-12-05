@@ -14,7 +14,7 @@ export default function WorkCard({
     <div className="group overflow-hidden font-neueHaas   p-4 flex flex-col ">
       <Link href={`/Work/${category.categoryName}/${slug}`}>
         <div
-          className="w-[600] h-[280px] border-2 border-blak"
+          className="w-[650px] h-[320px] border-2 border-blak"
           style={{
             backgroundImage: `url(${creditImage.url})`,
             backgroundSize: "cover",
@@ -33,7 +33,7 @@ export default function WorkCard({
           </div>
           <div className="flex justify-end gap-10 text-blak">
             <p>{description}</p>
-            <div className="text-5xl flex justify-end items-end">
+            <div className="text-5xl flex items-end justify-end">
               <Link href={`/Work/${category.categoryName}/${slug}`}>
                 <BsArrowUpRightCircle />
               </Link>
