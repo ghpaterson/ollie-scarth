@@ -42,14 +42,8 @@ export default async function FactEntCredit({ params }) {
   return (
     <main>
       <NavBar />
-      <div>
-        <div className="text-3xl py-4 font-neueHaasMed uppercase px-4">
-          <Link href={"/Work/factent"}>
-            go Back<span className="text-red-500">.</span>
-          </Link>
-        </div>
-      </div>
-      <section className="w-full grid grid-cols-2 gap-10 px-10 py-10 text-blak font-neueHaas border-b-2 border-blak">
+
+      <section className="w-full grid grid-cols-2 gap-10 px-10 py-20 text-blak font-neueHaas border-b-2 border-blak">
         <div className=" px-6 py-20">
           <h1 className="text-4xl font-neueHaasMed">{creditData.title}</h1>
           <h2 className="text-2xl">{creditData.channel}</h2>
@@ -67,6 +61,15 @@ export default async function FactEntCredit({ params }) {
             backgroundPosition: "center",
           }}
         ></div>
+      </section>
+      <section className="py-10">
+        <div className="flex justify-center">
+          <div className="text-3xl py-4 font-neueHaasMed uppercase px-4">
+            <Link href={"/Work/factent"}>
+              Back to fact ent<span className="text-red-500">.</span>
+            </Link>
+          </div>
+        </div>
       </section>
     </main>
   );
