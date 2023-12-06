@@ -30,7 +30,7 @@ export default function DocumentaryList() {
                 hoveredItem
                   ? documentaryData.find((item) => item.title === hoveredItem)
                       ?.imageUrl
-                  : "/images/bicycle.png"
+                  : "/images/dementia1.jpg"
               }')`,
               backgroundSize: "cover",
               backgroundPosition: "center",

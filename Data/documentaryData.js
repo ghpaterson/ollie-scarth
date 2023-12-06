@@ -2,7 +2,7 @@ export const documentaryData = [
   {
     id: 1,
     title: "OUR DEMENTIA CHOIR",
-    imageUrl: "/images/home-perfect.webp",
+    imageUrl: "/images/dementia1.jpg",
   },
   { id: 2, title: "I AM A KILLER", imageUrl: "/images/IAmAKiller.JPG" },
   {
