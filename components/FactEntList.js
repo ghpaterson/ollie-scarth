@@ -49,7 +49,7 @@ export default function FactEntList() {
                 hoveredItem
                   ? factEntData.find((item) => item.title === hoveredItem)
                       ?.imageUrl
-                  : "/images/bicycle.png"
+                  : "/images/Jamie2.jpg"
               }')`,
               backgroundSize: "cover",
               backgroundPosition: "center",

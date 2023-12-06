@@ -22,10 +22,12 @@ async function getFactEntData() {
         category {
           categoryName
         }
+        channelLogo {
+          url
+        }
       }
     }
-    
-    
+   
    
       `,
     }),

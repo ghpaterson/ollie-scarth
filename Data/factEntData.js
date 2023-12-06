@@ -2,13 +2,13 @@ export const factEntData = [
   {
     id: 1,
     title: "JAMIE & JIMMY'S FRIDAY NIGHT FEAST",
-    imageUrl: "/images/bicycle.png",
+    imageUrl: "/images/Jamie2.jpg",
     href: "/Work/factent/jamie-and-jimmys-friday-night-feast",
   },
   {
     id: 2,
     title: "MARCUS WARING: Tales from a Kitchen Garden",
-    imageUrl: "/images/picnic.JPG",
+    imageUrl: "/images/MW3.jpg",
     href: "/Work/factent/marcus-wareing-tales-from-a-kitchen-garden",
   },
   {
