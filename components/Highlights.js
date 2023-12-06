@@ -103,7 +103,7 @@ const cards = [
     id: 2,
   },
   {
-    url: "https://images.pexels.com/photos/6193908/pexels-photo-6193908.jpeg",
+    url: "../images/dementia1.jpg",
     title: "Our Dementia Choir",
     channel: "BBC 1",
     desc: "The power of music. Actor Vicky McClure returns home to Nottingham to share a poignant, uplifting journey - proving people living with dementia can achieve truly remarkable things",
@@ -111,7 +111,7 @@ const cards = [
     id: 3,
   },
   {
-    url: "../images/garden-revolution-press.jpeg",
+    url: "../images/Jamie2.jpg",
     title: "Jamie & Jimmy's Friday Night Feast",
     channel: "Channel 4",
     desc: "Jamie Oliver and Jimmy Doherty join forces at their end-of-the-pier caff to make top feasts for the weekend",
@@ -119,7 +119,7 @@ const cards = [
     id: 4,
   },
   {
-    url: "https://images.pexels.com/photos/6069511/pexels-photo-6069511.jpeg",
+    url: "../images/MW3.jpg",
     title: "Marcus Waring: Tales from a Kitchen Garden",
     channel: "BBC 1",
     desc: "From field to fork. Restaurateur Marcus teams up with top British producers, farmers and gardeners who inspire him to expand his market garden and create delicious dishes",
