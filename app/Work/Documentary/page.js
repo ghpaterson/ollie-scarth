@@ -1,5 +1,3 @@
-// "use client";
-
 import NavBar from "@/components/NavBar";
 import WorkCard from "@/components/WorkCard";
 
@@ -23,10 +21,12 @@ async function getDocumentaryData() {
           id
           categoryName
         }
+        channelLogo {
+          url
+        }
       }
     }
    
-
       `,
     }),
   });
@@ -62,6 +62,7 @@ export default async function Documentary() {
             slug={credit.slug}
             description={credit.description}
             category={credit.category}
+            channelLogo={credit.channelLogo}
           />
         ))}
       </section>

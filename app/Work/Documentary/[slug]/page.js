@@ -23,6 +23,9 @@ async function getDocumentaryCredit(slug) {
                     creditImage {
                         url
                     }
+                    channelLogo{
+                      url
+                    }
                 }
             }
 
@@ -46,10 +49,16 @@ export default async function DocumentaryCredit({ params }) {
       <section className="w-full grid grid-cols-2 gap-10 px-10 py-20 text-blak font-neueHaas border-b-2 border-blak">
         <div className=" px-6 py-20">
           <h1 className="text-4xl font-neueHaasMed">{creditData.title}</h1>
-          <h2 className="text-2xl">{creditData.channel}</h2>
-          <p className="text-xl uppercase">
-            {creditData.category.categoryName}
-          </p>
+          <div
+            className="w-32 h-10 mt-4"
+            style={{
+              backgroundImage: `url(${creditData.channelLogo.url})`,
+              backgroundSize: "contain",
+              backgroundPosition: "left",
+              backgroundRepeat: "no-repeat",
+            }}
+          ></div>
+
           <p className="text-xl py-6">{creditData.description}</p>
 
           <p className="text-xl">
