@@ -21,8 +21,8 @@ export default function FactEntList() {
           </h1>
         </Link>
       </div>
-      <div className="w-full flex flex-col md:flex-row items-start md:justify-between md:px-10 md:items-center pb-10">
-        <ul className="flex flex-col gap-4 md:gap-6 items-start font-neueHaasMed text-md md:text-3xl text-blak">
+      <div className="w-full flex flex-col md:flex-row items-center md:justify-between md:px-10 md:items-center py-10 md:pb-10">
+        <ul className="flex flex-col gap-6 md:gap-6 items-center md:items-start font-neueHaasMed text-sm md:text-3xl text-blak">
           {factEntData.map((item) => (
             <m.li
               variants={elementFade}
