@@ -10,7 +10,7 @@ export const cards = [
     desc: "Transforming problematic pads into heavenly homes. Cutting edge technology and innovative architects reveal the design dream ordinary houses could become.",
     href: "/Work/factent/your-home-made-perfect",
     id: 1,
-    style: "text-4xl text-pink-600",
+    style: "text-purple-600 text-4xl",
   },
   {
     url: "../images/IAmAKiller.JPG",

@@ -63,6 +63,7 @@ export default async function FactEnt() {
             slug={credit.slug}
             description={credit.description}
             category={credit.category}
+            channelLogo={credit.channelLogo}
           />
         ))}
       </section>

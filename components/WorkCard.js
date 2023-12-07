@@ -9,6 +9,7 @@ export default function WorkCard({
   creditImage,
   slug,
   category,
+  channelLogo,
 }) {
   return (
     <div className="group overflow-hidden font-neueHaas   p-4 flex flex-col ">
@@ -28,9 +29,15 @@ export default function WorkCard({
               <span className="text-red-500">.</span>
             </h1>
           </div>
-          <div>
-            <h2 className="text-xl  text-blak">{channel}</h2>
-          </div>
+          <div
+            className="w-32 h-6"
+            style={{
+              backgroundImage: `url(${channelLogo.url})`,
+              backgroundSize: "contain",
+              backgroundPosition: "left",
+              backgroundRepeat: "no-repeat",
+            }}
+          ></div>
           <div className="flex justify-end gap-10 text-blak">
             <p>{description}</p>
             <div className="text-5xl flex items-end justify-end">
