@@ -26,8 +26,12 @@ async function getDocumentaryCredit(slug) {
                     channelLogo{
                       url
                     }
+                    creditGallery{
+                      url
+                    }
                 }
             }
+           
 
             `,
       variables: {
@@ -50,7 +54,7 @@ export default async function DocumentaryCredit({ params }) {
         <div className=" px-6 py-20">
           <h1 className="text-4xl font-neueHaasMed">{creditData.title}</h1>
           <div
-            className="w-32 h-10 mt-4"
+            className="w-32 h-6 mt-4"
             style={{
               backgroundImage: `url(${creditData.channelLogo.url})`,
               backgroundSize: "contain",
@@ -75,6 +79,19 @@ export default async function DocumentaryCredit({ params }) {
             backgroundRepeat: "no-repeat",
           }}
         ></div>
+      </section>
+
+      <section className="px-10 py-10">
+        <div className="grid grid-cols-2 gap-4">
+          {creditData.creditGallery.map((image, index) => (
+            <img
+              key={index}
+              src={image.url}
+              alt={`Gallery Image ${index + 1}`}
+              className=""
+            />
+          ))}
+        </div>
       </section>
       <section>
         <div className="flex justify-center py-10">

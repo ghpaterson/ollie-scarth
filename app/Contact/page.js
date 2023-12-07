@@ -22,9 +22,9 @@ export default function Contact() {
           initial="hidden"
           whileInView="show"
         >
-          <div className="mt-10 h grid grid-cols-1 md:grid-cols-12 px-10 ">
+          <div className="md:mt-10 h grid grid-cols-1 md:grid-cols-12 px-10 ">
             <div className="md:col-span-6 text-blak rounded-lg px-4 py-10 md:py-32 md:px-20  flex flex-col items-start border-blak">
-              <h1 className="text-blak text-2xl md:text-6xl font-neueHaasMed uppercase">
+              <h1 className=" text-blak text-2xl md:text-6xl font-neueHaasMed uppercase">
                 Get in touch<span className="text-red-500">.</span>
               </h1>
               <p className="text-2xl py-6 font-neueHaas">
@@ -42,7 +42,7 @@ export default function Contact() {
                 </Link>
               </div>
             </div>
-            <div className="md:col-span-6 rounded-lg px-10 bg-OllieMirror bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center py-20 text-blak"></div>
+            <div className="md:col-span-6 rounded-lg px-10 bg-OllieMirror bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center py-32 md:py-20 text-blak"></div>
           </div>
         </m.section>
         <Footer />

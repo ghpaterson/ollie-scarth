@@ -23,7 +23,7 @@ export default function About() {
           </section>
           <section>
             <div className="grid grid-cols-1 md:grid-cols-12 font-neueHaas px-10">
-              <div className="md:col-span-6 rounded-lg px-4 py-20 md:py-20 md:px-20  flex items-center">
+              <div className="md:col-span-6 rounded-lg px-4 py-10 md:py-20 md:px-20  flex items-center">
                 <p className="text-blak md:text-2xl font-bold leading-loose">
                   Hi! I'm Ollie, a director and producer with a chameleon-like
                   approach to storytelling. I believe that the best way to
@@ -37,7 +37,7 @@ export default function About() {
                   <span className="text-red-500">.</span>
                 </p>
               </div>
-              <div className="md:col-span-6 rounded-lg px-10 flex items-center justify-center py-20 bg-OllieCamera bg-cover bg-center bg-no-repeat"></div>
+              <div className="md:col-span-6 rounded-lg px-10 flex items-center justify-center py-32 md:py-20 bg-OllieCamera bg-cover bg-center bg-no-repeat"></div>
             </div>
           </section>
         </m.section>

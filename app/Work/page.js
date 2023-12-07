@@ -10,7 +10,7 @@ export default function Work() {
       <main>
         <NavBar />
         <section>
-          <h1 className="flex justify-center font-neueHaasMed uppercase text-3xl md:text-6xl py-6 md:py-10 md:px-6">
+          <h1 className="invisible md:visible flex justify-center font-neueHaasMed uppercase text-3xl md:text-6xl py-6 md:py-10 md:px-6">
             work<span className="text-red-500">.</span>
           </h1>
           <section className="flex flex-col items-center justify-center gap-6 font-neueHaasMed  text-blak  text-4xl md:text-9xl uppercase mt-32 md:mt-0 md:py-20">
