@@ -131,6 +131,10 @@ body {
     position: relative;
   }
 
+  #hero-location-description{
+    display: none;
+  }
+
   #scrolling-section {
     display: none;
   }

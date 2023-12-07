@@ -12,11 +12,8 @@ export default function Hero() {
               <h1 className="text-5xl font-neueHaasMed text-bone">O.S</h1>
             </div>
           </div>
-          <div className="flex justify-between items-end text-2xl px-14 -mb-10 pt-52">
-            <div className="">
-              {/* <div className="text-6xl text-red-600">
-                <PiFilmReel />
-              </div> */}
+          <div className="flex justify-center md:justify-between items-end md:text-2xl px-14 md:-mb-10 pt-32 md:pt-52">
+            <div className="flex flex-col items-center md:items-start">
               <h2>series director</h2>
               <div className="flex">
                 <h2>
@@ -25,7 +22,10 @@ export default function Hero() {
               </div>
               <h2>edit producer</h2>
             </div>
-            <div className="flex flex-col items-end">
+            <div
+              id="hero-location-description"
+              className="flex flex-col items-end"
+            >
               <div className="text-6xl text-red-500">
                 <TbWorld />
               </div>
@@ -33,10 +33,10 @@ export default function Hero() {
               <h3>Working Worldwide</h3>
             </div>
           </div>
-          <div className="flex justify-center uppercase font-neueHaasMed">
-            <div className="flex gap-6">
-              <h1 className="text-[200px]">Ollie</h1>
-              <h1 className="text-[200px]">
+          <div className="flex justify-center uppercase font-neueHaasMed mt-20 md:mt-14">
+            <div className="text-7xl flex flex-col items-center md:flex-row md:gap-6">
+              <h1 className="md:text-[200px]">Ollie</h1>
+              <h1 className="md:text-[200px]">
                 Scarth<span className="text-red-500">.</span>
               </h1>
             </div>
