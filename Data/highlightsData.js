@@ -40,7 +40,7 @@ export const cards = [
     style: "text-xl text-blue-800 py-2",
   },
   {
-    url: "../images/MW3.jpg",
+    url: "../images/MW5.jpeg",
     title: "Marcus Waring: Tales from a Kitchen Garden",
     channel: <SiBbc />,
     desc: "From field to fork. Restaurateur Marcus teams up with top British producers, farmers and gardeners who inspire him to expand his market garden and create delicious dishes",

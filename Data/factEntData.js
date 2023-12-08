@@ -8,7 +8,7 @@ export const factEntData = [
   {
     id: 2,
     title: "MARCUS WARING: Tales from a Kitchen Garden",
-    imageUrl: "/images/MW3.jpg",
+    imageUrl: "/images/MW5.jpeg",
     href: "/Work/factent/marcus-wareing-tales-from-a-kitchen-garden",
   },
   {

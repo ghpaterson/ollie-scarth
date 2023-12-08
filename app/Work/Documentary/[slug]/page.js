@@ -55,7 +55,7 @@ export default async function DocumentaryCredit({ params }) {
         {/* For mobile view (1 column) */}
         <div
           id="credit-image"
-          className="rounded-xl md:order-last mb-6 md:mb-0 md:mt-0 flex flex-col justify-center"
+          className="rounded-xl md:order-lastmb-6 md:mb-0 md:mt-0 flex flex-col justify-center"
         >
           <div
             className="h-40 md:h-80"
@@ -68,7 +68,7 @@ export default async function DocumentaryCredit({ params }) {
           ></div>
         </div>
 
-        <div id="credit-details" className="px-6 md:py-20 md:order-first">
+        <div id="credit-details" className="px-4 md:py-20 md:order-first">
           <h1 className="text-xl md:text-4xl font-neueHaasMed uppercase">
             {creditData.title}
           </h1>
@@ -91,7 +91,7 @@ export default async function DocumentaryCredit({ params }) {
         </div>
       </section>
 
-      <section className="px-10 py-10">
+      <section className="px-4 md:px-10 py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {creditData.creditGallery.map((image, index) => (
             <img

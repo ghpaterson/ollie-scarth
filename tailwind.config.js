@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-const bicycleHero = "url('/images/bicycleHero.png')";
 const OlliePortrait = "url('/images/OllieSelfPortrait.jpg')";
 const OllieCamera = "url('/images/OllieCameraB&W.png')";
 const OllieMirror = "url('/images/BeardMirror.JPG')";
@@ -16,7 +15,6 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        bicycleHero: bicycleHero,
         OlliePortrait: OlliePortrait,
         OllieCamera: OllieCamera,
         OllieMirror: OllieMirror,
