@@ -18,6 +18,7 @@ async function getFactEntCredit(slug) {
                     description
                     channel
                     director
+                    externalLink
                     category {
                         categoryName
                     }
@@ -91,6 +92,20 @@ export default async function FactEntCredit({ params }) {
             <span className="text-gray-700 px-1"> {creditData.director}</span>
           </p>
         </div>
+      </section>
+      <section
+        id="external-link"
+        className="w-full flex justify-center py-10 text-2xl font-neueHaasMed"
+      >
+        {creditData.externalLink && (
+          <Link
+            href={creditData.externalLink}
+            alt="external link to streaming"
+            target="_blank"
+          >
+            Watch {creditData.title} on {creditData.channel}
+          </Link>
+        )}
       </section>
 
       <section className="px-10 py-10">

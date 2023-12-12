@@ -26,15 +26,7 @@ export default function Work() {
             </Link>
           </section>
         </section>
-        <section>
-          <Link
-            href="https://www.netflix.com/watch/80202430"
-            alt="link"
-            target="_blank"
-          >
-            Watch here
-          </Link>
-        </section>
+
         <m.div
           className="slide-in"
           initial={{ scaleY: 0 }}

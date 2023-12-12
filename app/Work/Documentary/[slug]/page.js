@@ -33,6 +33,7 @@ async function getDocumentaryCredit(slug) {
                 }
             }
             
+            
            
 
             `,
@@ -101,7 +102,7 @@ export default async function DocumentaryCredit({ params }) {
             alt="external link to streaming"
             target="_blank"
           >
-            Watch {creditData.title} here
+            Watch {creditData.title} on {creditData.channel}
           </Link>
         )}
       </section>
