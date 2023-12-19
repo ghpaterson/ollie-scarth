@@ -95,7 +95,7 @@ export default async function FactEntCredit({ params }) {
       </section>
       <section
         id="external-link"
-        className="w-full flex justify-center py-10 text-2xl font-neueHaasMed"
+        className="w-full flex justify-center py-10 text-md md:text-2xl font-neueHaasMed"
       >
         {creditData.externalLink && (
           <Link
