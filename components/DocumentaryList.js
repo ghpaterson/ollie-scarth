@@ -62,7 +62,9 @@ export default function DocumentaryList() {
                 // ref={docList}
                 className="text-xs md:text-3xl px-2"
               >{`(*${item.id})`}</span>
-              {item.title}
+              <Link href={item.href} alt={item.title}>
+                {item.title}
+              </Link>
               <span className="invisible group-hover:visible px-2">
                 <GoArrowUpRight />
               </span>
