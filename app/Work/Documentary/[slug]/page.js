@@ -32,10 +32,6 @@ async function getDocumentaryCredit(slug) {
                     }
                 }
             }
-            
-            
-           
-
             `,
       variables: {
         slug: slug,

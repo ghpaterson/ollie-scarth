@@ -33,6 +33,6 @@ export const documentaryData = [
     id: 6,
     title: "HOMESTEAD RESCUE",
     imageUrl: "/images/picnic.JPG",
-    href: "/Work/documentary/",
+    href: "/Work/documentary/homestead-rescue",
   },
 ];
