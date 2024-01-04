@@ -23,10 +23,10 @@ export default function Testimonials() {
       </div>
       <div className=" col-span-4 flex flex-col items-start justify-start gap-4">
         <p>
-          I thought I was a dab-hand in the kitchen but after Ollie produced my
+          {`I thought I was a dab-hand in the kitchen but after Ollie produced my
           show I realised I knew nothing. Let the man cook! He also
           single-handedly delivered all ten piglets on the farm without a shirt
-          on. Didn't want it filmed, didn't want the credit
+          on. Didn't want it filmed, didn't want the credit`}
         </p>
         <p className="text-gray-600"> - Marcus Waring</p>
       </div>
