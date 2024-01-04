@@ -14,12 +14,12 @@ export default function Work() {
             work<span className="text-red-500">.</span>
           </h1>
           <section className="flex flex-col items-center justify-center gap-6 font-neueHaasMed  text-blak  text-4xl md:text-9xl uppercase mt-32 md:mt-0 md:py-20">
-            <Link href="/Work/documentary" alt="link to documentary credits">
+            <Link href="/Work/Documentary" alt="link to documentary credits">
               <h2>
                 documentary<span className="text-red-500">.</span>
               </h2>
             </Link>
-            <Link href="/Work/factent" alt="link to fact ent credits">
+            <Link href="/Work/Factent" alt="link to fact ent credits">
               <h2>
                 fact ent<span className="text-red-500">.</span>
               </h2>
