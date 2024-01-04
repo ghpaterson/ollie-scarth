@@ -2,9 +2,7 @@ import Link from "next/link";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 
 export default function WorkCard({
-  id,
   title,
-  channel,
   description,
   creditImage,
   slug,
@@ -41,7 +39,10 @@ export default function WorkCard({
           <div className="flex flex-col md:flex-row justify-end gap-4 md:gap-10 text-blak">
             <p>{description}</p>
             <div className="invisible md:visible text-5xl flex items-end justify-end">
-              <Link href={`/Work/${category.categoryName}/${slug}`}>
+              <Link
+                href={`/Work/${category.categoryName}/${slug}`}
+                alt="link to individual credit"
+              >
                 <BsArrowUpRightCircle />
               </Link>
             </div>
