@@ -27,8 +27,6 @@ async function getFactEntData() {
         }
       }
     }
-   
-   
       `,
     }),
   });

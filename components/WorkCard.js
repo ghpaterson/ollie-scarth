@@ -8,6 +8,7 @@ export default function WorkCard({
   slug,
   category,
   channelLogo,
+  id,
 }) {
   return (
     <div className="group overflow-hidden font-neueHaas   p-4 flex flex-col ">
@@ -40,6 +41,7 @@ export default function WorkCard({
             <p>{description}</p>
             <div className="invisible md:visible text-5xl flex items-end justify-end">
               <Link
+                id={id}
                 href={`/Work/${category.categoryName}/${slug}`}
                 alt="link to individual credit"
               >

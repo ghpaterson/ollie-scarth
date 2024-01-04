@@ -7,7 +7,7 @@ async function getDocumentaryData() {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       query: `
-      query CreditsAndCategories {
+      query Credits {
       credits {
         id
         slug
@@ -26,7 +26,6 @@ async function getDocumentaryData() {
         }
       }
     }
-   
       `,
     }),
   });
