@@ -14,7 +14,7 @@ export default function DocumentaryList() {
 
   return (
     <main id="documentary-list-section" className="mt-10 md:mt-0">
-      <div className="flex justify-center gap-6 font-neueHaasMed  text-blak  text-3xl md:text-9xl uppercase md:py-20">
+      <div className="flex justify-center gap-6 font-neueHaasMed  text-blak  text-5xl md:text-9xl uppercase md:py-20">
         <Link href="/Work/Documentary" alt="link to documentary credits">
           <h1>
             documentary<span className="text-red-500">.</span>
@@ -46,7 +46,7 @@ export default function DocumentaryList() {
           </p>
         </div>
 
-        <ul className="flex flex-col gap-4 md:gap-6 items-center md:items-end font-neueHaasMed text-md md:text-3xl text-blak">
+        <ul className="flex flex-col gap-4 md:gap-6 items-center md:items-end font-neueHaasMed text-xl md:text-3xl text-blak">
           {documentaryData.map((item) => (
             <m.li
               variants={elementFade}

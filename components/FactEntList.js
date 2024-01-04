@@ -14,7 +14,7 @@ export default function FactEntList() {
 
   return (
     <main id="factEnt-list-section" className="md:pb-20">
-      <div className="flex justify-center gap-6 font-neueHaasMed  text-blak  text-3xl md:text-9xl uppercase md:py-20">
+      <div className="flex justify-center gap-6 font-neueHaasMed  text-blak  text-5xl md:text-9xl uppercase md:py-20">
         <Link href="/Work/FactEnt" alt="link to fact ent credits page">
           <h1>
             fact ent<span className="text-red-500">.</span>
@@ -22,7 +22,7 @@ export default function FactEntList() {
         </Link>
       </div>
       <div className="w-full flex flex-col md:flex-row items-center md:justify-between md:px-10 md:items-center py-10 md:pb-10">
-        <ul className="flex flex-col gap-6 md:gap-6 items-center md:items-start font-neueHaasMed text-sm md:text-3xl text-blak">
+        <ul className="flex flex-col gap-6 md:gap-6 items-center md:items-start font-neueHaasMed text-xl md:text-3xl text-blak">
           {factEntData.map((item) => (
             <m.li
               variants={elementFade}
