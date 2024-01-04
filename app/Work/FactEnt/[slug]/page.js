@@ -71,7 +71,7 @@ export default async function FactEntCredit({ params }) {
           ></div>
         </div>
 
-        <div id="credit-details" className="px-6 md:py-20 md:order-first">
+        <div id="credit-details" className="px-4 md:py-20 md:order-first">
           <h1 className="text-xl md:text-4xl font-neueHaasMed uppercase">
             {creditData.title}
           </h1>
@@ -95,20 +95,21 @@ export default async function FactEntCredit({ params }) {
       </section>
       <section
         id="external-link"
-        className="w-full flex justify-center py-10 text-md md:text-2xl font-neueHaasMed"
+        className=" px-10 pt-10 text-md md:text-2xl font-neueHaasMed"
       >
         {creditData.externalLink && (
           <Link
             href={creditData.externalLink}
             alt="external link to streaming"
             target="_blank"
+            className="flex justify-center"
           >
-            Watch {creditData.title} on {creditData.channel}
+            Watch Here on {creditData.channel}
           </Link>
         )}
       </section>
 
-      <section className="px-10 py-10">
+      <section className="md:px-10 py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {creditData.creditGallery.map((image, index) => (
             <img
