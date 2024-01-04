@@ -118,7 +118,7 @@ export default async function DocumentaryCredit({ params }) {
       <section>
         <div className="flex justify-center py-10">
           <div className="text-xl md:text-3xl py-4 font-neueHaasMed uppercase px-4">
-            <Link href={"/Work/documentary"}>
+            <Link href={"/Work/Documentary"}>
               Back to documentaries<span className="text-red-500">.</span>
             </Link>
           </div>
