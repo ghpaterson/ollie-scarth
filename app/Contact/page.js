@@ -22,23 +22,23 @@ export default function Contact() {
           initial="hidden"
           whileInView="show"
         >
-          <div className="md:mt-10 h grid grid-cols-1 md:grid-cols-12 px-10 ">
-            <div className="md:col-span-6 text-blak rounded-lg px-4 py-10 md:py-32 md:px-20  flex flex-col items-start border-blak">
-              <h1 className=" text-blak text-2xl md:text-6xl font-neueHaasMed uppercase">
+          <div className="md:mt-10 h grid grid-cols-1 md:grid-cols-12 md:px-10 ">
+            <div className="md:col-span-6 text-blak rounded-lg px-4 py-10 md:py-32 md:px-20  flex flex-col items-center md:items-start border-blak">
+              <h1 className=" text-blak text-3xl md:text-6xl font-neueHaasMed uppercase">
                 Get in touch<span className="text-red-500">.</span>
               </h1>
-              <p className="text-2xl py-6 font-neueHaas">
+              <p className="text-2xl py-10 font-neueHaas">
                 Copy my email address or contact me through one of my social
                 accounts
               </p>
-              <div className="flex flex-col gap-2 font-neueHaas">
+              <div className="flex flex-col gap-4 font-neueHaas py-10 md:py-0">
                 <CopyEmailAddress />
-                <p className=" md:text-xl">07853341968</p>
+                <p className=" text-2xl">07853341968</p>
                 <Link href={linkedinURL} target="_blank">
-                  <p className=" md:text-xl">Linkedin</p>
+                  <p className="text-2xl">Linkedin</p>
                 </Link>
                 <Link href={instaURL} target="_blank">
-                  <p className=" md:text-xl">Instagram</p>
+                  <p className="text-2xl">Instagram</p>
                 </Link>
               </div>
             </div>
