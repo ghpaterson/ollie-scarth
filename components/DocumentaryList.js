@@ -46,7 +46,7 @@ export default function DocumentaryList() {
           </p>
         </div>
 
-        <ul className="flex flex-col gap-4 md:gap-6 items-center md:items-end font-neueHaasMed text-xl md:text-3xl text-blak">
+        <ul className="flex flex-col gap-4 md:gap-6 items-start md:items-end font-neueHaasMed text-xl md:text-3xl text-blak">
           {documentaryData.map((item) => (
             <m.li
               variants={elementFade}
