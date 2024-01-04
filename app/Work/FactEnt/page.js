@@ -51,7 +51,7 @@ export default async function FactEnt() {
         Fact ent<span className="text-red-500">.</span>
       </h1>
       {/* four WorkCard Components at the moment but will be one component mapping over all the data to display however many cards required  */}
-      <section className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-10 gap-4 py-6">
+      <section className="grid grid-cols-1 md:grid-cols-2 md:px-10 gap-4 py-6">
         {factEntCredits.map((credit) => (
           <WorkCard
             title={credit.title}
