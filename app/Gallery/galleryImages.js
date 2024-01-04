@@ -38,7 +38,7 @@ export default async function GalleryImages() {
     }
 
     return (
-      <section className="px-10">
+      <section className="md:px-10">
         {galleries.map((gallery, galleryIndex) => (
           <div key={galleryIndex}>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

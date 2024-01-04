@@ -11,7 +11,7 @@ export default function AboutSection() {
       className="md:px-10"
     >
       <div className="grid grid-cols-1 md:grid-cols-12   ">
-        <div className="md:col-span-6 rounded-lg px-4 py-20 md:py-32 md:px-20  flex items-center bg-blak border-r-2 border-red-500">
+        <div className="md:col-span-6 rounded-lg px-4 py-20 md:py-32 md:px-20  flex items-center bg-blak ">
           <p className="text-bone md:text-2xl font-neueHaas font-bold">
             {`Hi! I'm Ollie, a director and producer with a chameleon-like
             approach to storytelling. I believe that the best way to create
@@ -25,7 +25,7 @@ export default function AboutSection() {
             <span className="text-red-500 md:text-4xl">.</span>
           </p>
         </div>
-        <div className="md:col-span-6 rounded-lg px-10 flex items-center justify-center py-20 bg-OllieTukTuk bg-center bg-cover bg-no-repeat"></div>
+        <div className="h-60 md:h-full md:col-span-6 rounded-lg px-10 flex items-center justify-center py-20 bg-OllieTukTuk bg-center bg-cover bg-no-repeat"></div>
       </div>
     </m.main>
   );
