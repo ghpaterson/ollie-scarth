@@ -19,7 +19,7 @@ export default function Work() {
                 documentary<span className="text-red-500">.</span>
               </h2>
             </Link>
-            <Link href="/Work/Factent" alt="link to fact ent credits">
+            <Link href="/Work/FactEnt" alt="link to fact ent credits">
               <h2>
                 fact ent<span className="text-red-500">.</span>
               </h2>
