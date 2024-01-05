@@ -1,5 +1,3 @@
-// "use client";
-
 import NavBar from "@/components/NavBar";
 import WorkCard from "@/components/WorkCard";
 
@@ -10,23 +8,23 @@ async function getFactEntData() {
     body: JSON.stringify({
       query: `
       query Credits {
-      credits {
-        id
-        slug
-        title
-        channel
-        description
-        creditImage{
-          url
-        }
-        category {
-          categoryName
-        }
-        channelLogo {
-          url
+        credits {
+          id
+          slug
+          title
+          channel
+          description
+          creditImage{
+            url
+          }
+          category {
+            categoryName
+          }
+          channelLogo {
+            url
+          }
         }
       }
-    }
       `,
     }),
   });
@@ -65,6 +63,12 @@ export default async function FactEnt() {
           />
         ))}
       </section>
+      <div
+        id="copyright"
+        className="flex justify-center md:justify-end text-blak py-10 px-10 "
+      >
+        <span>&copy; Ollie Scarth-Saunders 2023</span>
+      </div>
     </main>
   );
 }
