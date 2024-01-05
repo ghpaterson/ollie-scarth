@@ -11,13 +11,13 @@ export default function Footer() {
 
   const instaURL = "https://www.instagram.com/olliescarth/";
   return (
-    <main className="relative bottom-0 z-20 pt-20 md:py-4 font-neueHaas px-10">
+    <main className="relative bottom-0 z-20 pt-20 md:py-4 font-neueHaas md:px-10">
       {pathname === "/" && (
         <div id="contact-details" className="flex justify-start text-blak">
           <div>
             <p>Ollie Scarth-Saunders</p>
             <p>olliescarth686@gmail.com</p>
-            <p>07853341968</p>
+            <p>{`(+44) 7853341968`}</p>
             <div className="flex flex-col">
               <Link href={linkedinURL} target="_blank">
                 Linkedin

@@ -27,13 +27,10 @@ export default function Contact() {
               <h1 className=" text-blak text-3xl md:text-6xl font-neueHaasMed uppercase">
                 Get in touch<span className="text-red-500">.</span>
               </h1>
-              <p className="text-2xl py-10 font-neueHaas">
-                Copy my email address or contact me through one of my social
-                accounts
-              </p>
-              <div className="flex flex-col gap-4 font-neueHaas py-10 md:py-0">
+
+              <div className="flex flex-col gap-4 font-neueHaas py-10 ">
                 <CopyEmailAddress />
-                <p className=" text-2xl">07853341968</p>
+                <p className=" text-2xl">{`(+44) 7853341968`}</p>
                 <Link href={linkedinURL} target="_blank">
                   <p className="text-2xl">Linkedin</p>
                 </Link>
