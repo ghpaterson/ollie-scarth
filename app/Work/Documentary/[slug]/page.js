@@ -18,6 +18,8 @@ async function getDocumentaryCredit(slug) {
                     channel
                     director
                     externalLink
+                    longDescription
+                    role
                     category {
                         categoryName
                     }
@@ -80,10 +82,10 @@ export default async function DocumentaryCredit({ params }) {
             }}
           ></div>
 
-          <p className="text-xl py-6">{creditData.description}</p>
+          <p className="text-xl py-6">{creditData.longDescription}</p>
 
           <p className="text-xl">
-            Director:{" "}
+            {creditData.role}:
             <span className="text-gray-700 px-1"> {creditData.director}</span>
           </p>
         </div>
