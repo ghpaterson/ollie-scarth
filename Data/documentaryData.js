@@ -27,6 +27,6 @@ export const documentaryData = [
     id: 5,
     title: "AIRPORT 24/7: Thailand",
     imageUrl: "/images/home-perfect.webp",
-    href: "/Work/documentary/",
+    href: "/Work/documentary/airport-247-thailand",
   },
 ];
