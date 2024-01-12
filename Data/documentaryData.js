@@ -13,26 +13,20 @@ export const documentaryData = [
   },
   {
     id: 3,
-    title: "LIVING WITH A SERIAL KILLER",
-    imageUrl: "/images/LivingWithAKiller.jpg",
-    href: "/Work/documentary/living-with-a-serial-killer",
-  },
-  {
-    id: 4,
     title: "THE BODY IN THE SUITCASE",
     imageUrl: "/images/BodyInTheSuitacase.png",
     href: "/Work/documentary/body-in-the-suitcase",
   },
-  // {
-  //   id: 5,
-  //   title: "SPORT RELIEF: Famously Unfit",
-  //   imageUrl: "/images/home-perfect.webp",
-  //   href: "/Work/documentary/",
-  // },
+  {
+    id: 4,
+    title: "SPORT RELIEF: Famously Unfit",
+    imageUrl: "/images/home-perfect.webp",
+    href: "/Work/documentary/",
+  },
   {
     id: 5,
-    title: "HOMESTEAD RESCUE",
-    imageUrl: "/images/picnic.JPG",
-    href: "/Work/documentary/homestead-rescue",
+    title: "AIRPORT 24/7: Thailand",
+    imageUrl: "/images/home-perfect.webp",
+    href: "/Work/documentary/",
   },
 ];

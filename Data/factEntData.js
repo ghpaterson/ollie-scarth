@@ -29,4 +29,10 @@ export const factEntData = [
     imageUrl: "/images/bicycle.png",
     href: "/Work/factent/the-island-with-bear-grylls",
   },
+  {
+    id: 6,
+    title: "HOMESTEAD RESCUE",
+    imageUrl: "/images/bicycle.png",
+    href: "/Work/factent/",
+  },
 ];
