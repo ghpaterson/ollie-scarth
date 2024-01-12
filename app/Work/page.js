@@ -25,6 +25,15 @@ export default function Work() {
                 fact ent<span className="text-red-500">.</span>
               </h2>
             </Link>
+            <Link
+              href="/OllieScarthCV.pdf"
+              target="_blank"
+              alt="Ollie Scarth CV"
+            >
+              <h2 className="text-xl">
+                Download full CV<span className="text-red-500">.</span>
+              </h2>
+            </Link>
           </section>
         </section>
         <Footer />
