@@ -14,7 +14,7 @@ export default function DocumentaryList() {
 
   return (
     <main id="documentary-list-section" className="mt-10 md:mt-0">
-      <div className="flex justify-center gap-6 font-neueHaasMed  text-blak  text-5xl md:text-9xl uppercase md:py-20">
+      <div className="flex justify-center gap-6 font-neueHaasMed  text-blak  text-5xl md:text-9xl uppercase md:py-10">
         <Link href="/Work/Documentary" alt="link to documentary credits">
           <h1>
             documentary<span className="text-red-500">.</span>
