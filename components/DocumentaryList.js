@@ -46,7 +46,7 @@ export default function DocumentaryList() {
           </p>
         </div>
 
-        <ul className="flex flex-col gap-4 md:gap-6 items-start md:items-end font-neueHaasMed text-xl md:text-3xl text-blak">
+        <ul className="flex flex-col gap-4 md:gap-6 items-start md:items-end font-neueHaasMed text-xl md:text-3xl text-blak md:-mt-10">
           {documentaryData.map((item) => (
             <m.li
               variants={elementFade}
@@ -60,7 +60,7 @@ export default function DocumentaryList() {
             >
               <span
                 // ref={docList}
-                className="text-xs md:text-3xl px-2"
+                className="text-xs md:text-3xl px-2 "
               >{`(*${item.id})`}</span>
               <Link href={item.href} alt={item.title}>
                 {item.title}
