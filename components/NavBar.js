@@ -72,10 +72,20 @@ export default function NavBar() {
                   scrollToSection("factEnt-list-section");
                 }}
               >
-                Factual Entertainment
+                Fact Ent
                 <span>
                   <FiArrowDownCircle />
                 </span>
+              </li>
+              <li>
+                <Link
+                  href="/OllieScarthCV.pdf"
+                  target="_blank"
+                  className="flex gap-2 items-center"
+                >
+                  <h1>Download Full CV</h1>
+                  <FiArrowDownCircle />
+                </Link>
               </li>
             </ul>
           </div>
