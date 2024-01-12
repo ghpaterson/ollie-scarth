@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { motion as m } from "framer-motion";
-import { FiArrowDownCircle } from "react-icons/fi";
+import { FiArrowDownCircle, FiArrowUpCircle } from "react-icons/fi";
 
 const scrollToSection = (id) => {
   const target = document.getElementById(id);
@@ -84,7 +84,7 @@ export default function NavBar() {
                   className="flex gap-2 items-center"
                 >
                   <h1>Download Full CV</h1>
-                  <FiArrowDownCircle />
+                  <FiArrowUpCircle />
                 </Link>
               </li>
             </ul>
