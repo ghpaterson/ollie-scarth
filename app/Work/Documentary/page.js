@@ -13,6 +13,7 @@ async function getDocumentaryData() {
           slug
           title
           channel
+          role
           description
           creditImage{
             url
@@ -26,7 +27,6 @@ async function getDocumentaryData() {
           }
         }
       }
-    
       `,
     }),
   });
