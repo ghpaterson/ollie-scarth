@@ -87,7 +87,9 @@ export default async function FactEntCredit({ params }) {
             }}
           ></div>
 
-          <p className="text-xl py-6">{creditData.longDescription}</p>
+          <p className="text-md md:text-xl py-6">
+            {creditData.longDescription}
+          </p>
 
           <p className="text-xl">
             {creditData.role}:

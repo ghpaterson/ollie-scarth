@@ -30,7 +30,7 @@ export default function Work() {
               target="_blank"
               alt="Ollie Scarth CV"
             >
-              <h2 className="text-xl">
+              <h2 className="text-sm md:text-xl">
                 Download full CV<span className="text-red-500">.</span>
               </h2>
             </Link>
