@@ -12,6 +12,7 @@ import Loader from "@/components/Loader";
 import { useLayoutEffect, useState } from "react";
 import { gsap } from "gsap";
 import Footer from "@/components/Footer";
+import HighlightsCarousel from "@/components/HighlightsCarousel";
 
 export default function Home() {
   const [loaderFinished, setLoaderFinished] = useState(false);
@@ -71,6 +72,7 @@ export default function Home() {
                 }}
               ></m.div>
               <Highlights />
+              {/* <HighlightsCarousel /> */}
               <DocumentaryList />
               <FactEntList />
               <AboutSection />

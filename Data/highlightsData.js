@@ -2,7 +2,7 @@ import { SiBbc } from "react-icons/si";
 import { SiChannel4 } from "react-icons/si";
 import { RiNetflixFill } from "react-icons/ri";
 
-export const cards = [
+export const highlightsData = [
   {
     url: "../images/YourHome.webp",
     title: "Your Home Made Perfect",
