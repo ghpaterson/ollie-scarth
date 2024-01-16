@@ -71,8 +71,8 @@ export default function Home() {
                   ease: [0.22, 1, 0.36, 1],
                 }}
               ></m.div>
-              <Highlights />
-              {/* <HighlightsCarousel /> */}
+              {/* <Highlights /> */}
+              <HighlightsCarousel />
               <DocumentaryList />
               <FactEntList />
               <AboutSection />
