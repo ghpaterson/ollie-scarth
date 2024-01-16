@@ -137,21 +137,9 @@ body {
     display: none;
   }
 
-  #dune-image {
-    width: 250px;
-  }
-
-  #picnic-image {
-    display: none;
-  }
-
-  #down-arrow {
-    display: none;
-  }
-
-  #warped-hero {
-    display: none;
-  }
+ #highlights__carousel {
+  display: none;
+ }
 
   #documentary-list-image{
     display: none;
