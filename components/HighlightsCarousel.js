@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { BsArrowUpRightCircle } from "react-icons/bs";
-import { FiArrowRightCircle } from "react-icons/fi";
-import { FiArrowLeftCircle } from "react-icons/fi";
+import { BsArrowLeftCircle } from "react-icons/bs";
+import { BsArrowRightCircle } from "react-icons/bs";
 import { highlightsData } from "@/Data/highlightsData";
 
 const HighlightsCard = ({ id, title, channel, desc, href, style, url }) => (
@@ -80,15 +80,15 @@ export default function HighlightsCarousel() {
         ))}
         <div
           onClick={nextSlide}
-          className="absolute bottom-0 right-0  text-blak"
+          className="absolute bottom-0 right-0 translate-y-48 mr-20 text-blak cursor-pointer"
         >
-          <FiArrowRightCircle className="text-6xl" />
+          <BsArrowRightCircle className="text-6xl" />
         </div>
         <div
           onClick={previousSlide}
-          className="absolute bottom-0 left-0  text-black"
+          className="absolute bottom-0 left-0 translate-y-48 ml-20 text-black cursor-pointer"
         >
-          <FiArrowLeftCircle className="text-6xl" />
+          <BsArrowLeftCircle className="text-6xl" />
         </div>
       </section>
     </>
