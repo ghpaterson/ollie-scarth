@@ -43,7 +43,7 @@ export default function FactEntList() {
         </ul>
         <div id="factEnt-list-image" className="">
           <div
-            className="border-2 border-blak"
+            className="rounded-lg"
             style={{
               backgroundImage: `url('${
                 hoveredItem
@@ -53,7 +53,7 @@ export default function FactEntList() {
               }')`,
               backgroundSize: "cover",
               backgroundPosition: "center",
-              width: "550px", // Set the width of the container
+              width: "625px", // Set the width of the container
               height: "350px", // Set the height of the container
             }}
           ></div>

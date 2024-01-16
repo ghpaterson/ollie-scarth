@@ -24,7 +24,7 @@ export default function DocumentaryList() {
       <div className=" w-full flex flex-col md:flex-row items-center md:justify-between md:items-center md:px-10 py-10 md:pb-10">
         <div id="documentary-list-image" className="">
           <div
-            className="rounded-xl"
+            className="rounded-lg"
             style={{
               backgroundImage: `url('${
                 hoveredItem
