@@ -4,7 +4,7 @@ import { RiNetflixFill } from "react-icons/ri";
 
 export const highlightsData = [
   {
-    url: "../images/YourHome.webp",
+    url: "/images/YourHome.webp",
     title: "Your Home Made Perfect",
     channel: <SiBbc />,
     desc: "Transforming problematic pads into heavenly homes. Cutting edge technology and innovative architects reveal the design dream ordinary houses could become.",
@@ -13,7 +13,7 @@ export const highlightsData = [
     style: "text-purple-600 text-4xl",
   },
   {
-    url: "../images/IAmAKiller.JPG",
+    url: "/images/IAmAKiller.JPG",
     title: "I am a Killer",
     channel: <RiNetflixFill />,
     desc: " Death row inmates convicted of capital murder give firsthand accounts of their crimes in this documentary series",
@@ -22,7 +22,7 @@ export const highlightsData = [
     style: "text-red-500 text-xl -ml-1 py-2",
   },
   {
-    url: "../images/dementia1.jpg",
+    url: "/images/dementia1.jpg",
     title: "Our Dementia Choir",
     channel: <SiBbc />,
     desc: "The power of music. Actor Vicky McClure returns home to Nottingham to share a poignant, uplifting journey - proving people living with dementia can achieve truly remarkable things",
@@ -31,7 +31,7 @@ export const highlightsData = [
     style: "text-4xl text-pink-600",
   },
   {
-    url: "../images/Jamie2.jpg",
+    url: "/images/Jamie2.jpg",
     title: "Jamie & Jimmy's Friday Night Feast",
     channel: <SiChannel4 />,
     desc: "Jamie Oliver and Jimmy Doherty join forces at their end-of-the-pier caff to make top feasts for the weekend",
@@ -40,7 +40,7 @@ export const highlightsData = [
     style: "text-xl text-blue-800 py-2",
   },
   {
-    url: "../images/MW5.jpeg",
+    url: "/images/MW5.jpeg",
     title: "Marcus Waring: Tales from a Kitchen Garden",
     channel: <SiBbc />,
     desc: "From field to fork. Restaurateur Marcus teams up with top British producers, farmers and gardeners who inspire him to expand his market garden and create delicious dishes",
