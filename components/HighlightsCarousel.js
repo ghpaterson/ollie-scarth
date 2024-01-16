@@ -1,18 +1,22 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
+import Swipe from "react-easy-swipe";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 import { BsArrowLeftCircle } from "react-icons/bs";
 import { BsArrowRightCircle } from "react-icons/bs";
 import { highlightsData } from "@/Data/highlightsData";
 
-const HighlightsCard = ({ id, title, channel, desc, href, style, url }) => (
-  <div className="group h-[450px] w-[700px] overflow-hidden font-neueHaas p-4 flex flex-col">
+const HighlightsCard = ({ title, channel, desc, href, style, url }) => (
+  <div className="group h-[475px] w-[700px] overflow-hidden font-neueHaas p-4 flex flex-col">
     <Link href={href}>
       <div
-        className="w-[700] h-[300px] border-2 border-blak"
+        className="w-[700] h-[300px] rounded-lg"
         style={{
           backgroundImage: `url('${url}')`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "top",
         }}
       ></div>
     </Link>
@@ -41,56 +45,75 @@ const HighlightsCard = ({ id, title, channel, desc, href, style, url }) => (
 );
 
 export default function HighlightsCarousel() {
-  function nextSlide() {
-    let activeSlide = document.querySelector(".slide.translate-x-0");
-    activeSlide.classList.remove("translate-x-0");
-    activeSlide.classList.add("-translate-x-full");
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-    let nextSlide = activeSlide.nextElementSibling;
-    nextSlide.classList.remove("translate-x-full");
-    nextSlide.classList.add("translate-x-0");
-  }
+  const handleNextSlide = () => {
+    let newSlide =
+      currentSlide === highlightsData.length - 1 ? 0 : currentSlide + 1;
+    setCurrentSlide(newSlide);
+  };
 
-  function previousSlide() {
-    let activeSlide = document.querySelector(".slide.translate-x-0");
-    activeSlide.classList.remove("translate-x-0");
-    activeSlide.classList.add("translate-x-full");
+  const handlePrevSlide = () => {
+    let newSlide =
+      currentSlide === 0 ? highlightsData.length - 1 : currentSlide - 1;
+    setCurrentSlide(newSlide);
+  };
 
-    let previousSlide = activeSlide.previousElementSibling;
-    previousSlide.classList.remove("-translate-x-full");
-    previousSlide.classList.add("translate-x-0");
-  }
   return (
     <>
-      <div className="flex justify-center gap-6 font-neueHaasMed text-blak text-3xl md:text-9xl uppercase md:py-10">
+      <div className="flex justify-center gap-6 font-neueHaasMed  text-blak  text-3xl md:text-9xl uppercase md:py-8">
         <h1>
           Highlights<span className="text-red-500">.</span>
         </h1>
       </div>
-      <section className="relative">
-        {highlightsData.map((data, index) => (
-          <div
-            key={data.key}
-            className={`absolute inset-0 w-screen h-[450px] flex items-center justify-center text-5xl transition-all ease-in-out duration-1000 transform ${
-              index === 0 ? "translate-x-0" : "translate-x-full"
-            } slide`}
+      <div className="relative group">
+        <BsArrowLeftCircle
+          onClick={handlePrevSlide}
+          className="hidden absolute left-0 ml-60 m-auto text-5xl mt-40 cursor-pointer text-blak z-20 group-hover:block"
+        />
+        <BsArrowRightCircle
+          onClick={handleNextSlide}
+          className="hidden absolute right-0 mr-60 m-auto text-5xl mt-40 cursor-pointer text-blak z-20 group-hover:block "
+        />
+        <div className="w-full h-[70vh] flex overflow-hidden relative m-auto">
+          <Swipe
+            onSwipeLeft={handleNextSlide}
+            onSwipeRight={handlePrevSlide}
+            className="relative z-10 w-full h-full"
           >
-            <HighlightsCard {...data} />
-          </div>
-        ))}
-        <div
-          onClick={nextSlide}
-          className="absolute bottom-0 right-0 translate-y-48 mr-20 text-blak cursor-pointer"
-        >
-          <BsArrowRightCircle className="text-6xl" />
+            {highlightsData.map((data, index) => {
+              if (index === currentSlide) {
+                return (
+                  <div
+                    key={data.key}
+                    className="absolute inset-0 w-screen h-[450px] flex items-center justify-center text-5xl transition-all ease-in-out duration-1000 transform"
+                  >
+                    <HighlightsCard {...data} />
+                  </div>
+                );
+              }
+            })}
+          </Swipe>
         </div>
-        <div
-          onClick={previousSlide}
-          className="absolute bottom-0 left-0 translate-y-48 ml-20 text-black cursor-pointer"
-        >
-          <BsArrowLeftCircle className="text-6xl" />
+
+        <div className="relative flex justify-center p-2">
+          {highlightsData.map((_, index) => {
+            return (
+              <div
+                className={
+                  index === currentSlide
+                    ? "h-2 w-2 bg-blak rounded-full mx-2 mb-2 cursor-pointer"
+                    : "h-2 w-2 bg-gray-300 rounded-full mx-2 mb-2 cursor-pointer"
+                }
+                key={index}
+                onClick={() => {
+                  setCurrentSlide(index);
+                }}
+              />
+            );
+          })}
         </div>
-      </section>
+      </div>
     </>
   );
 }

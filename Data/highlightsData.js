@@ -19,7 +19,7 @@ export const highlightsData = [
     desc: " Death row inmates convicted of capital murder give firsthand accounts of their crimes in this documentary series",
     href: "/Work/documentary/i-am-a-killer",
     id: 2,
-    style: "text-red-500 text-xl -ml-1 py-2",
+    style: "text-red-500 text-xl -ml-1 py-4",
   },
   {
     url: "/images/dementia1.jpg",
@@ -37,7 +37,7 @@ export const highlightsData = [
     desc: "Jamie Oliver and Jimmy Doherty join forces at their end-of-the-pier caff to make top feasts for the weekend",
     href: "/Work/factent/jamie-and-jimmys-friday-night-feast",
     id: 4,
-    style: "text-xl text-blue-800 py-2",
+    style: "text-xl text-blue-800 py-4",
   },
   {
     url: "/images/MW5.jpeg",
