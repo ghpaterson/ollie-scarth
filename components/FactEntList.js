@@ -22,7 +22,7 @@ export default function FactEntList() {
         </Link>
       </div>
       <div className="w-full flex flex-col md:flex-row items-center md:justify-between md:px-10 md:items-center py-10 md:pb-10">
-        <ul className="flex flex-col gap-6 md:gap-6 items-start font-neueHaasMed text-xl md:text-3xl text-blak">
+        <ul className="flex flex-col gap-6 md:gap-6 items-start font-neueHaasMed text-xl md:text-4xl text-blak">
           {factEntData.map((item) => (
             <m.li
               variants={elementFade}
@@ -33,7 +33,7 @@ export default function FactEntList() {
               className="group hover:text-red-500 hover:cursor-pointer md:hover:translate-x-8 transition duration-500 ease-in flex"
               onMouseEnter={() => handleMouseEnter(item.title)}
             >
-              <span className="text-xs md:text-3xl px-2">{`(*${item.id})`}</span>
+              {/* <span className="text-xs md:text-3xl px-2">{`(*${item.id})`}</span> */}
               <Link href={item.href}>{item.title}</Link>
               <span className="invisible group-hover:visible px-2">
                 <GoArrowUpRight />
@@ -57,7 +57,7 @@ export default function FactEntList() {
               height: "350px", // Set the height of the container
             }}
           ></div>
-          <p className="text-blak text-lg font-neueHaas">
+          <p className="text-blak text-lg font-neueHaasMed">
             {hoveredItem
               ? factEntData.find((item) => item.title === hoveredItem)?.title
               : "JAMIE & JIMMY'S FRIDAY NIGHT FEAST"}
