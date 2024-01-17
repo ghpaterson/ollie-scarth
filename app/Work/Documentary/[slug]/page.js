@@ -58,7 +58,7 @@ export default async function DocumentaryCredit({ params }) {
           className="rounded-xl md:order-lastmb-6 md:mb-0 md:mt-0 flex flex-col justify-center"
         >
           <div
-            className="h-40 md:h-80"
+            className="h-40 md:h-80 rounded-lg"
             style={{
               backgroundImage: `url(${creditData.creditImage.url})`,
               backgroundSize: "contain",

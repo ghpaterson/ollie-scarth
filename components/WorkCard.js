@@ -14,7 +14,7 @@ export default function WorkCard({
     <div className="group overflow-hidden font-neueHaas   p-4 flex flex-col ">
       <Link href={`/Work/${category.categoryName}/${slug}`}>
         <div
-          className="w-[300px] h-[150px] md:w-[625px] md:h-[320px] border-2 border-blak"
+          className="w-[300px] h-[150px] md:w-[625px] md:h-[320px] rounded-lg"
           style={{
             backgroundImage: `url(${creditImage.url})`,
             backgroundSize: "cover",
