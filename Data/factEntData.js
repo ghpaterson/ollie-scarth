@@ -26,13 +26,13 @@ export const factEntData = [
   {
     id: 5,
     title: "BEAR GRYLLS: The Island",
-    imageUrl: "/images/bicycle.png",
+    imageUrl: "/images/BearGrylls.jpeg",
     href: "/Work/factent/the-island-with-bear-grylls",
   },
   {
     id: 6,
     title: "HOMESTEAD RESCUE",
-    imageUrl: "/images/bicycle.png",
-    href: "/Work/factent/",
+    imageUrl: "/images/HomesteadRescue.jpg",
+    href: "/Work/factent/homestead-rescue",
   },
 ];

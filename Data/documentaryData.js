@@ -20,13 +20,13 @@ export const documentaryData = [
   {
     id: 4,
     title: "SPORT RELIEF: Famously Unfit",
-    imageUrl: "/images/home-perfect.webp",
+    imageUrl: "/images/SportsRelief.jpeg",
     href: "/Work/documentary/famously-unfit-for-sports-relief",
   },
   {
     id: 5,
     title: "AIRPORT 24/7: Thailand",
-    imageUrl: "/images/home-perfect.webp",
+    imageUrl: "/images/Airport247.jpeg",
     href: "/Work/documentary/airport-247-thailand",
   },
 ];
