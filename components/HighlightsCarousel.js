@@ -76,7 +76,7 @@ export default function HighlightsCarousel() {
             onClick={handleNextSlide}
             className="hidden absolute right-0 mr-60 m-auto text-5xl mt-40 cursor-pointer text-blak z-20 group-hover:block "
           />
-          <div className="w-full h-[70vh] flex overflow-hidden relative m-auto">
+          <div className="w-full h-[70vh] flex overflow-hidden relative">
             <Swipe
               onSwipeLeft={handleNextSlide}
               onSwipeRight={handlePrevSlide}

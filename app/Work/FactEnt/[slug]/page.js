@@ -35,10 +35,6 @@ async function getFactEntCredit(slug) {
                     }
                 }
             }
-           
-           
-          
-           
             `,
       variables: {
         slug: slug,
@@ -93,7 +89,10 @@ export default async function FactEntCredit({ params }) {
 
           <p className="text-xl">
             {creditData.role}:
-            <span className="text-gray-700 px-1"> {creditData.director}</span>
+            <span className="text-gray-700 font-neueHaasMed px-1">
+              {" "}
+              {creditData.director}
+            </span>
           </p>
         </div>
       </section>
