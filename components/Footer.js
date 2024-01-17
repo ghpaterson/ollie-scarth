@@ -15,7 +15,7 @@ export default function Footer() {
       {pathname === "/" && (
         <div id="contact-details" className="flex justify-start text-blak">
           <div>
-            <p>Ollie Scarth-Saunders</p>
+            <p>Ollie Scarth</p>
             <p>olliescarth686@gmail.com</p>
             <p>{`(+44) 7853341968`}</p>
             <div className="flex flex-col">
@@ -33,7 +33,7 @@ export default function Footer() {
         id="copyright"
         className="flex justify-center md:justify-end text-blak py-10 "
       >
-        <span>&copy; Ollie Scarth-Saunders 2023</span>
+        <span>&copy; Ollie Scarth 2023</span>
       </div>
     </main>
   );

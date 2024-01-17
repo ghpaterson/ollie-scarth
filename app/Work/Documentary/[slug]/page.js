@@ -133,7 +133,7 @@ export default async function DocumentaryCredit({ params }) {
         id="copyright"
         className="flex justify-center md:justify-end text-blak py-10 px-10 "
       >
-        <span>&copy; Ollie Scarth-Saunders 2023</span>
+        <span>&copy; Ollie Scarth 2023</span>
       </div>
     </main>
   );
