@@ -45,7 +45,7 @@ export default function WorkCard({
                 href={`/Work/${category.categoryName}/${slug}`}
                 alt="link to individual credit"
               >
-                <BsArrowUpRightCircle />
+                <BsArrowUpRightCircle className="group-hover:rotate-45 transform" />
               </Link>
             </div>
           </div>

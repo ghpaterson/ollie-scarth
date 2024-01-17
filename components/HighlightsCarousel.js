@@ -34,7 +34,7 @@ const HighlightsCard = ({ title, channel, desc, href, style, url }) => (
       </div>
       <div className="flex justify-between gap-10 text-blak text-base">
         <p>{desc}</p>
-        <div className="text-5xl flex justify-end items-end">
+        <div className="text-5xl flex justify-end items-end group-hover:rotate-45">
           <Link href={href}>
             <BsArrowUpRightCircle />
           </Link>
