@@ -3,6 +3,10 @@
   src: url("/fonts/NeueHaasDisplayMediu.ttf") format("truetype");
 }
 
+.loader-name {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
 .loader {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   
@@ -64,7 +68,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 5vh;
+  height: 15vh;
   width: 100%;
   z-index: 3;
 }
@@ -72,19 +76,23 @@
 .loader-progress{
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: #f6f6f6;
   transform: scaleX(0);
   transform-origin: left center;
+
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .loader-progressNumber{
   position: absolute;
-  left: -5vw;
+  left: -14vw;
   top: 50%;
   transform: translateY(-50%);
   z-index: 4;
   white-space: nowrap;
-  color: white;
-  font-size: 3.2rem;
+  color: black;
+  font-size: 6rem;
+  font-family: neue-haas-medium;
+  
 }
 

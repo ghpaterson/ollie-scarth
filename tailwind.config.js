@@ -22,7 +22,6 @@ module.exports = {
         OllieTukTuk: OllieTukTuk,
       },
       fontFamily: {
-        raleway: ["raleway", "sans-serif"],
         neueHaas: ["neue-haas", "sans-serif"],
         neueHaasMed: ["neue-haas-medium", "sans-serif"],
       },
@@ -30,7 +29,6 @@ module.exports = {
         bone: "#F6F6F6",
         blak: "#111111",
         shade: "#2F2F2F",
-        sand: "#C0BAB2",
       },
     },
   },
