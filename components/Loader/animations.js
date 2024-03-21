@@ -19,7 +19,6 @@ export const progressAnimation = (progressRef, progressNumberRef) => {
     scaleX: 1,
     duration: 5,
     ease: "power3.inOut",
-    // "clip-path": "polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%",
   })
     .to(
       progressNumberRef.current,

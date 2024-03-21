@@ -22,12 +22,28 @@ export default function Loader({ timeline }) {
 
   return (
     <div className="loader-wrapper">
+      {/* <div
+        className="flex justify-center uppercase font-neueHaasMed mt-20 md:mt-14"
+        ref={loaderRef}
+      >
+        <div className="text-7xl flex flex-col items-center md:flex-row md:gap-6">
+          <h1 className="md:text-9xl">Ollie</h1>
+          <h1 className="md:text-9xl">
+            Scarth<span className="text-red-500">.</span>
+          </h1>
+        </div>
+      </div> */}
       <div className="flex justify-center items-center">
         <div
-          className="loader-name text-9xl font-neueHaasMed text-black uppercase"
+          className="loader-name text-7xl md:text-9xl font-neueHaasMed text-black uppercase flex flex-col md:flex-row md:justify-center md:gap-6 "
           ref={loaderRef}
         >
-          Ollie Scarth<span className="text-9xl text-red-500">.</span>
+          <h1>Ollie</h1>
+          <div className="flex flex-row">
+            <h1>
+              Scarth<span className="text-red-500">.</span>
+            </h1>
+          </div>
         </div>
       </div>
       <div className="loader-progressWrapper">

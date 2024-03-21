@@ -68,7 +68,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 15vh;
+  height: 20vh;
   width: 100%;
   z-index: 3;
 }
@@ -85,14 +85,37 @@
 
 .loader-progressNumber{
   position: absolute;
-  left: -14vw;
+  left: -17vw;
   top: 50%;
   transform: translateY(-50%);
   z-index: 4;
   white-space: nowrap;
   color: black;
-  font-size: 6rem;
+  font-size: 8rem;
   font-family: neue-haas-medium;
   
 }
 
+@media (max-width: 768px) {
+  .loader-progressNumber{
+    position: absolute;
+    left: -50vw;
+    top: 50%;
+    transform: translateY(-70%);
+    z-index: 4;
+    white-space: nowrap;
+    color: black;
+    font-size: 5rem;
+    font-family: neue-haas-medium;
+    
+  }
+
+  .loader-progressWrapper{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10vh;
+    width: 100%;
+    z-index: 3;
+  }
+}
